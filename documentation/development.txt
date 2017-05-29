@@ -1,0 +1,5 @@
+1. setting up dev enviroment
+   https://scotch.io/tutorials/mean-app-with-angular-2-and-the-angular-cli
+2. creating routing model
+   2.1 pass data between components while routing
+	using shared service
