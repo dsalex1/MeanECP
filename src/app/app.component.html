@@ -1,4 +1,11 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<ng-container [ngSwitch]="type">
+
+  <app-landscape-plan *ngSwitchCase="'LandscapePlan'" [db]='params.db' [index1]='params.index1' [index2]='params.index2' [slideshow]='params.slideshow'></app-landscape-plan>
+
+  <app-portrait-plan *ngSwitchCase="'PortraitPlan'" [db]='params.db' [index]='params.index1' [slideshow]='params.slideshow'></app-portrait-plan>
+
+  <app-multiple-plan *ngSwitchCase="'MultiplePlan'" [db]='params.db' [firstIndex]='params.firstIndex' [slideshow]='params.slideshow'></app-multiple-plan>
+
+  <app-not-found *ngSwitchDefault [data]='data' [type]="'BASE_DIRECTIVE_ERROR'"></app-not-found>
+
+</ng-container>

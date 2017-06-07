@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PortraitPlanComponent } from './portrait-plan.component';
+import { RootComponent } from './root.component';
 
-describe('PortraitPlanComponent', () => {
-  let component: PortraitPlanComponent;
-  let fixture: ComponentFixture<PortraitPlanComponent>;
+describe('RootComponent', () => {
+  let component: RootComponent;
+  let fixture: ComponentFixture<RootComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PortraitPlanComponent ]
+      declarations: [ RootComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PortraitPlanComponent);
+    fixture = TestBed.createComponent(RootComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

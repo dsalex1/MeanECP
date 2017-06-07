@@ -1,3 +1,10 @@
-<p>
-  multiple-plan works!
-</p>
+<app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
+
+<app-slideshow *ngIf="curSlideshow && !keypress" [id]="curSlideshow.id" [delay]="curSlideshow.delay" [iterations]="curSlideshow.iterations"
+  (completed)="slideComp()"></app-slideshow>
+
+<ng-container *ngIf="!curSlideshow && !keypress">
+  <p>
+    multiple-plan works! db:{{db}} firstIndex:{{firstIndex}} slideshow:{{slideshow}}
+  </p>
+</ng-container>

@@ -1,6 +1,56 @@
-<p>
-  <b>403.10 - invalid configuration</b> <br/>
-	 If this error persists, please contact the system administrator. <br/><br/>
-     Additional information: <br/>
-     Cannot route to '{{route}}', check routing configuration.
-</p>
+<ng-container [ngSwitch]="type">
+
+  <ng-container *ngSwitchCase="'BASE_DIRECTIVE_ERROR'">
+    <p>
+      <b>403.10 - invalid configuration</b>
+      <br/> If this error persists, please contact the system administrator.
+      <br/>
+      <br/> Additional information:
+      <br/> BASE_DIRECTIVE_ERROR - No base directive found for type: '{{data.type}}', check client configuration:
+      <br/> {{data|json}}
+    </p>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="'INDEX_NOT_FOUND'">
+    <p>
+      <b>403.10 - invalid configuration</b>
+      <br/> If this error persists, please contact the system administrator.
+      <br/>
+      <br/> Additional information:
+      <br/> INDEX_NOT_FOUND - No directive associated with keyCode {{data.index}}, check keyCode configuration.
+    </p>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="'KEYPRESS_DIRECTIVE_ERROR'">
+    <p>
+      <b>403.10 - invalid configuration</b>
+      <br/> If this error persists, please contact the system administrator.
+      <br/>
+      <br/> Additional information:
+      <br/> KEYPRESS_DIRECTIVE_ERROR - No keypress directive found for type: '{{data.type}}', check client configuration:
+      <br/> {{data|json}}
+    </p>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="'IMAGE_NOT_FOUND_ERROR'">
+    <p>
+      <b>404 - not found</b>
+      <br/> If this error persists, please contact the system administrator.
+      <br/>
+      <br/> Additional information:
+      <br/> IMAGE_NOT_FOUND_ERROR - couldnt find image '{{data.file}}' on server, check client configuration.
+    </p>
+  </ng-container>
+
+  <ng-container *ngSwitchDefault>
+    <p>
+      <b>403.10 - invalid configuration</b>
+      <br/> If this error persists, please contact the system administrator.
+      <br/>
+      <br/> Additional information:
+      <br/> No Error page found for Error: '{{type}}', check not-found component configuration. Error data:
+      <br/> {{data|json}}
+    </p>
+  </ng-container>
+
+</ng-container>

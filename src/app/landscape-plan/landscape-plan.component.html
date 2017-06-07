@@ -1,3 +1,10 @@
-<p>
-  landscape-plan works!
-</p>
+<app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
+
+<app-slideshow *ngIf="curSlideshow && !keypress" [id]="curSlideshow.id" [delay]="curSlideshow.delay" [iterations]="curSlideshow.iterations"
+  (completed)="slideComp()"></app-slideshow>
+
+<ng-container *ngIf="!curSlideshow && !keypress">
+  <p>
+    landscape-plan works! db:{{db}} index1:{{index1}} index2:{{index2}} slideshow:{{slideshow}}
+  </p>
+</ng-container>

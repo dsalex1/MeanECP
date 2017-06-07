@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-png',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PngComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  file: any
+
+  noImg = false;
+
+  imgErr() {
+    this.noImg = true;
+    console.log("noimg!!!!!!!!!!")
+  }
+  constructor() {
+  }
+
 
   ngOnInit() {
   }
-
 }

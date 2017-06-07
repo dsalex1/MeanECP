@@ -1,0 +1,20 @@
+<ng-container [ngSwitch]="errType">
+  <ng-container *ngSwitchCase="'ABBR_NOT_FOUND'">
+    <p>
+      <b>403.10 - invalid configuration</b>
+      <br/> If this error persists, please contact the system administrator.
+      <br/>
+      <br/> Additional information:
+      <br/> No Association Found for Keycode '{{errData.keyCode}}', check Keycode configuration.
+    </p>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
+    <p>
+      <b>403.10 - invalid configuration</b>
+      <br/> If this error persists, please contact the system administrator.
+      <br/>
+      <br/> Additional information:
+      <br/> Cannot route to '{{route}}', check routing configuration.
+    </p>
+  </ng-container>
+</ng-container>

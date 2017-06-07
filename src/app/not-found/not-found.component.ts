@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router'
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-not-found',
@@ -7,16 +6,16 @@ import {ActivatedRoute} from '@angular/router'
   styleUrls: ['./not-found.component.css']
 })
 export class NotFoundComponent implements OnInit {
-  
-  route=null
 
-  constructor(private _route:ActivatedRoute) {
-    this.route=_route.snapshot.url
+  @Input()
+  data: any
+
+  @Input()
+  type: any
+
+  constructor() {
   }
-
-
-  ngOnInit(){
-
+  ngOnInit() {
   }
 
 }

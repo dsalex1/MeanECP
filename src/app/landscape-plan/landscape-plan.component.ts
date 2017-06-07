@@ -1,20 +1,57 @@
-import { Component, OnInit } from '@angular/core';
-import {AppService} from '../app.service';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
-@Component({
+@Component({ //TODO: landscaoe plan template
   selector: 'app-landscape-plan',
   templateUrl: './landscape-plan.component.html',
   styleUrls: ['./landscape-plan.component.css']
 })
 export class LandscapePlanComponent implements OnInit {
 
-  constructor(private _appService:AppService) { }
+  @Input()
+  db: any
 
-  data:any
+  @Input()
+  index1: any
 
-  ngOnInit() {
-    this.data=this._appService.getRoutingData();
-    console.log("landscape plan:"+this.data)
+  @Input()
+  index2: any
+
+  @Input()
+  slideshow: any
+
+  keypress: KeyboardEvent = null
+
+  curSlideshow = null
+
+  constructor() {
   }
 
+  ngOnInit() {
+    this.setupSlide()
+  }
+
+  slideComp() {
+    this.curSlideshow = null;
+    this.setupSlide();
+  }
+
+  setupSlide() {
+    console.log(this.slideshow)
+    if (this.slideshow) {
+      setTimeout(() => {
+        this.curSlideshow = this.slideshow.params
+      }, this.slideshow.interval)
+    }
+  }
+
+  @HostListener('window:keyup', ['$event'])
+  onKeyUp(ev: KeyboardEvent) {
+    this.keypress = ev;
+    console.log(this.keypress)
+  }
+
+  keypressComp() {
+    this.keypress = null;
+  }
 }
+
