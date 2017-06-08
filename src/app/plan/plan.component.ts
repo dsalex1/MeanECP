@@ -10,7 +10,6 @@ export class PlanComponent implements OnInit {
   @Input()
   plan: Object
 
-
   constructor() { }
 
   ngOnInit() {
