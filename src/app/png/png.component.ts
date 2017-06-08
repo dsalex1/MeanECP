@@ -14,7 +14,6 @@ export class PngComponent implements OnInit {
 
   imgErr() {
     this.noImg = true;
-    console.log("noimg!!!!!!!!!!")
   }
   constructor() {
   }

@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
   res.send('api works');
 });
 
-// Get all posts
+// Get all posts 
 router.get('/posts', (req, res) => {
   // Get posts from the mock api
   // This should ideally be replaced with a service that connects to MongoDB

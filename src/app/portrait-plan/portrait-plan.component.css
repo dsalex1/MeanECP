@@ -1,0 +1,10 @@
+body
+{
+    background:url(/assets/images/background_portrait_1080px.png) no-repeat;
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:1080px;
+    height:1920px;
+    transform: rotate(90deg) translate(-420px,-420px);
+    
+}

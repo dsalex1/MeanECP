@@ -1,0 +1,4 @@
+#slideContainer{ 
+    width: 100%; 
+    height: calc(100% + 28px);
+}

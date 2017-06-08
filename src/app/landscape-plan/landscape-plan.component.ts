@@ -36,7 +36,6 @@ export class LandscapePlanComponent implements OnInit {
   }
 
   setupSlide() {
-    console.log(this.slideshow)
     if (this.slideshow) {
       setTimeout(() => {
         this.curSlideshow = this.slideshow.params
@@ -47,7 +46,6 @@ export class LandscapePlanComponent implements OnInit {
   @HostListener('window:keyup', ['$event'])
   onKeyUp(ev: KeyboardEvent) {
     this.keypress = ev;
-    console.log(this.keypress)
   }
 
   keypressComp() {

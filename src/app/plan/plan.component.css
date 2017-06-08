@@ -1,0 +1,49 @@
+
+.plan.container{ 
+  margin:0px;
+  padding:0px;
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-direction:column;
+} 
+
+.rowStunde, .rowKlasse, .rowFach, .rowLeher, .rowRaum, .rowVertretung, .rowAnmerkung
+{
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.plan.absents{
+	padding: 10px;
+}
+.plan.exchanges{
+	flex: 1 0 auto;
+}
+.plan.annot
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.annotation
+{
+	padding-left: 10px;
+	padding-rigth: 10px;
+}
+.plan.exchAnnot{
+	flex-grow: 1;
+}
+.table
+{
+margin:0px;
+margin-right:5px;
+padding:0px;
+width:100%;
+}
+.annot.element
+{
+	padding-left:10px;
+	padding-right:10px;
+}

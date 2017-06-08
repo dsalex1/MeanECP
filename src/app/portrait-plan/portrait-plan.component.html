@@ -1,10 +1,10 @@
-<app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
+<body>
+  <app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
 
-<app-slideshow *ngIf="curSlideshow && !keypress" [id]="curSlideshow.id" [delay]="curSlideshow.delay" [iterations]="curSlideshow.iterations"
-  (completed)="slideComp()"></app-slideshow>
+  <app-slideshow *ngIf="curSlideshow && !keypress" [id]="curSlideshow.id" [delay]="curSlideshow.delay" [iterations]="curSlideshow.iterations"
+    (completed)="slideComp()"></app-slideshow>
 
-<ng-container *ngIf="!curSlideshow && !keypress">
-  <p>
-    portrait-plan works! db:{{db}} index:{{index}} slideshow:{{slideshow}}
-  </p>
-</ng-container>
+  <ng-container *ngIf="!curSlideshow && !keypress">
+    <app-plan [plan]="plan"></app-plan>
+  </ng-container>
+</body>

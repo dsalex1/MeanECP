@@ -19,14 +19,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PortraitPlanComponent } from './portrait-plan/portrait-plan.component';
 import { RootComponent } from './root/root.component';
 import { FilteredPlanComponent } from './filtered-plan/filtered-plan.component';
-/*REFACTOR:
-  keyhandler over portrait, route:
-    png,
-    filtered,
-    presentationctrl, route:
-      presentation
-      plan
-*/
 @NgModule({
   declarations: [
     AppComponent,

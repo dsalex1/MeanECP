@@ -33,7 +33,6 @@ export class MultiplePlanComponent implements OnInit {
   }
 
   setupSlide() {
-    console.log(this.slideshow)
     if (this.slideshow) {
       setTimeout(() => {
         this.curSlideshow = this.slideshow.params
@@ -44,7 +43,6 @@ export class MultiplePlanComponent implements OnInit {
   @HostListener('window:keyup', ['$event'])
   onKeyUp(ev: KeyboardEvent) {
     this.keypress = ev;
-    console.log(this.keypress)
   }
 
   keypressComp() {

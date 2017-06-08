@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({ //TODO: implement plan template
   selector: 'app-plan',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plan.component.css']
 })
 export class PlanComponent implements OnInit {
+
+  @Input()
+  plan: Object
+
 
   constructor() { }
 
