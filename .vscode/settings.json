@@ -1,0 +1,23 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/backups": true,
+        "**/e2e": true,
+        "**/.*": true,
+        "**/tsconfig.*": true,
+        "**/test.ts": true,
+        "**/polyfills.ts": true,
+        "**/typings.d.ts": true,
+        "**/bs-config.js": true,
+        "**/karma.conf.js": true,
+        "**/package.json": true,
+        "**/protractor.conf.js": true,
+        "**/lslint.js": true
+    }
+}

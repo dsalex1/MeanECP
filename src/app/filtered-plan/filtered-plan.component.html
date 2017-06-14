@@ -1,3 +1,1 @@
-<p>
-  filtered-plan works! db;{{db}} index:{{index}} filter:{{filter}}
-</p>
+<app-plan *ngFor="let plan of plans" [plan]="plan" [filter]="filter"></app-plan>

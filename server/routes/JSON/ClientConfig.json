@@ -1,0 +1,19 @@
+{
+      type: "LandscapePlan",
+      params: {
+        db: './schuelerPlan.json',
+        index1: 0,
+        index2: 1,
+        firstIndex: 3,
+         slideshow: {
+           interval: 4000,
+           timeStart: "2017-6-12T00:00:00", 
+           timeEnd: "2017-6-12T20:10:00", 
+           params: {
+             id: '1DOeyOhWo9hjwJDhcMJLW8Kb2kA9SEHAGcuSOLNV9sKU',
+             iterations: 2,
+             delay: 1000
+           }
+         }
+      }
+}

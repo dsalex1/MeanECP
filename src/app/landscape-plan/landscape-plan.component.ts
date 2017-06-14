@@ -1,11 +1,12 @@
-import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, HostListener } from '@angular/core';
+import { AppService } from '../app.service'
 
-@Component({ //TODO: landscaoe plan template
+@Component({
   selector: 'app-landscape-plan',
   templateUrl: './landscape-plan.component.html',
   styleUrls: ['./landscape-plan.component.css']
 })
-export class LandscapePlanComponent implements OnInit {
+export class LandscapePlanComponent implements OnInit, OnChanges {
 
   @Input()
   db: any
@@ -19,15 +20,26 @@ export class LandscapePlanComponent implements OnInit {
   @Input()
   slideshow: any
 
+  leftPlan: object
+
+  rightPlan: object
+
   keypress: KeyboardEvent = null
 
   curSlideshow = null
 
-  constructor() {
+  constructor(private _appService: AppService) {
   }
 
   ngOnInit() {
     this.setupSlide()
+  }
+
+  ngOnChanges() {
+    this._appService.getJsonData(this.db).subscribe((data) => {
+      this.leftPlan = data[this.index1];
+      this.rightPlan = data[this.index2];
+    })
   }
 
   slideComp() {

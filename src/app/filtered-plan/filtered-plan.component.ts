@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as types from '../util/dataTypes'
+import { AppService } from '../app.service'
 
-@Component({ //TODO: filtered plan template
+@Component({
   selector: 'app-filtered-plan',
   templateUrl: './filtered-plan.component.html',
   styleUrls: ['./filtered-plan.component.css']
@@ -11,15 +11,22 @@ export class FilteredPlanComponent implements OnInit {
   db: any
 
   @Input()
-  index: any
+  firstIndex: any
 
   @Input()
   filter: any
 
-  constructor() {
+  plans: any
+
+  constructor(private _appService: AppService) {
   }
 
   ngOnInit() { }
 
+  ngOnChanges() {
+    this._appService.getJsonData(this.db).subscribe((data) => {
+      this.plans = data.slice(this.firstIndex);
+    })
+  }
 
 }

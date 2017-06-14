@@ -1,11 +1,12 @@
-import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, HostListener } from '@angular/core';
+import { AppService } from '../app.service'
 
-@Component({ //TODO: multiple plan template
+@Component({
   selector: 'app-multiple-plan',
   templateUrl: './multiple-plan.component.html',
   styleUrls: ['./multiple-plan.component.css']
 })
-export class MultiplePlanComponent implements OnInit {
+export class MultiplePlanComponent implements OnInit, OnChanges {
 
   @Input()
   db: any
@@ -16,15 +17,23 @@ export class MultiplePlanComponent implements OnInit {
   @Input()
   slideshow: any
 
+  plans: any
+
   keypress: KeyboardEvent = null
 
   curSlideshow = null
 
-  constructor() {
+  constructor(private _appService: AppService) {
   }
 
   ngOnInit() {
     this.setupSlide()
+  }
+
+  ngOnChanges() {
+    this._appService.getJsonData(this.db).subscribe((data) => {
+      this.plans = data.slice(this.firstIndex);
+    })
   }
 
   slideComp() {

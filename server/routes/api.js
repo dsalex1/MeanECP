@@ -1,26 +1,43 @@
 const express = require('express');
 const router = express.Router();
-
-// declare axios for making http requests
-const axios = require('axios');
-const API = 'https://jsonplaceholder.typicode.com';
+const path = require('path');
+const http = require('http');
 
 /* GET api listing. */
-router.get('/', (req, res) => {
-  res.send('api works');
+
+router.get('/JSON/ClientConfig', (req, res) => {
+  res.sendFile(path.join(__dirname, 'JSON/ClientConfig.json'));
 });
 
-// Get all posts 
-router.get('/posts', (req, res) => {
-  // Get posts from the mock api
-  // This should ideally be replaced with a service that connects to MongoDB
-  axios.get(`${API}/posts`)
-    .then(posts => {
-      res.status(200).json(posts.data);
-    })
-    .catch(error => {
-      res.status(500).send(error)
-    });
+router.get('/JSON/ServerConfig', (req, res) => {
+  res.sendFile(path.join(__dirname, 'JSON/ServerConfig.json'));
+});
+
+router.get('/JSON/KeyCodeConfig', (req, res) => {
+  res.sendFile(path.join(__dirname, 'JSON/KeyCodeConfig.json'));
+});
+
+router.get(/\/JSON\/(Lehrer|Schueler)Plan/, function (req, res) {
+  // AUTHORIZED 
+  //if (req.client.authorized) {
+  console.log()
+  var externalReq = http.request({
+    hostname: "www.plaene.iks.bullencode.de",
+    path: req.url == '/JSON/LehrerPlan' ? '/json/lehrerPlan.json'
+      : (req.url == '/JSON/SchuelerPlan' ? '/json/schuelerPlan.json'
+        : ''),
+  }, function (externalRes) {
+    externalRes.pipe(res);
+  });
+  externalReq.end();
+
+  // NOT AUTHORIZED
+  //} else {
+  //  res.send(CLIENT_CERT_UNTRUSTED_ERR());
+  //}
+});
+router.get('/', (req, res) => {
+  res.send('api works');
 });
 
 module.exports = router;

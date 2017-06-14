@@ -1,6 +1,6 @@
 import { Component, OnInit, OnChanges, Input, HostListener } from '@angular/core';
 import { AppService } from '../app.service'
-@Component({ //TODO: portrait plan template
+@Component({
   selector: 'app-portrait-plan',
   templateUrl: './portrait-plan.component.html',
   styleUrls: ['./portrait-plan.component.css']
@@ -33,7 +33,6 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
   ngOnChanges() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plan = data[this.index];
-      console.log(this.plan)
     })
   }
 
