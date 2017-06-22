@@ -1,51 +1,52 @@
+.container{ 
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+}
 
-.plan.container{ 
-  margin:0px;
-  padding:0px;
-  height:100%;
-  width:100%;
-  display: flex;
-  flex-direction:column;
-} 
+.header{
+	flex-shrink: 0;
+	flex-basis:5.0%;
+	display: flex;
+	align-items: center;
+	font-size:20pt;
+	color:#FFFFFF;
+	padding-left:10px;
+	padding-top:5px;
+}
 
-.rowStunde, .rowKlasse, .rowFach, .rowLeher, .rowRaum, .rowVertretung, .rowAnmerkung
-{
+.absents{
+	padding: 10px;
+}
+
+.exchanges{
+	flex: 1 0 auto;
+}
+.scrollContainer{
+	max-height: 100%;
+}
+.exchangeTable{
+	margin:0px;
+	margin-right:5px;
+	padding:0px;
+	width:100%;
+}
+
+.rowStunde, .rowKlasse, .rowFach, .rowLeher, .rowRaum, .rowVertretung, .rowAnmerkung{
 	padding-left:8px;
 	padding-right:8px;
 	padding-top:3px;
 	padding-bottom:3px;
 }
 
-.plan.absents{
-	padding: 10px;
-}
-.plan.exchanges{
-	flex: 1 0 auto;
-}
-.plan.annot
-{
+.annotation{
 	padding-top: 10px;
-	padding-bottom: 10px;
 }
-.annotation
-{
-	padding-left: 10px;
-	padding-rigth: 10px;
-}
-.plan.exchAnnot{
-	flex-grow: 1;
-}
-.table
-{
-margin:0px;
-margin-right:5px;
-padding:0px;
-width:100%;
-}
-.annot.element
-{
-	padding-top:3px;
-	padding-bottom:3px;
+
+.annotation.element{
 	padding-left:10px;
 	padding-right:10px;
 }
