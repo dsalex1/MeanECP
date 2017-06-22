@@ -27,13 +27,14 @@ export class MultiplePlanComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.setupSlide()
   }
 
   ngOnChanges() {
+    console.log(this.db);
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plans = data.slice(this.firstIndex);
     })
+    this.setupSlide()
   }
 
   slideComp() {

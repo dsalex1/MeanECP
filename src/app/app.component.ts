@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { Router } from '@angular/router'
 
 @Component({ //TODO: overall design
-  selector: 'app-root', //TODO: automatic update
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   providers: []

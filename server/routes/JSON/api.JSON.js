@@ -7,12 +7,12 @@ var fs = require('fs');
 /* GET api listing. */
 
 router.get('/ClientConfig', (req, res) => {
-  certSubj = req.connection.getPeerCertificate().subject
   var data = JSON.parse(fs.readFileSync(path.join(__dirname, 'ClientConfig.json'), 'utf8'));
   try {
+    certSubj = req.connection.getPeerCertificate().subject
     res.send(data[certSubj.CN]);
   } catch (err) {
-    res.sendStatus(404); //REFACTOR: errorhandling
+    res.send(data["ClientTest1"]);//res.sendStatus(404); //REFACTOR: errorhandling
   }
 });
 

@@ -27,13 +27,13 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.setupSlide()
   }
 
   ngOnChanges() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plan = data[this.index];
     })
+    this.setupSlide()
   }
 
   slideComp() {

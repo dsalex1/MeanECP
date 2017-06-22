@@ -7,37 +7,54 @@ import { Observable } from 'rxjs/Rx';
 import { Router } from '@angular/router';
 
 @Injectable()
-export class AppService {//TODO: replace by server data get
+export class AppService {
 
   constructor(private http: Http) { }
 
+  ClientLastDate = ""
   getInitialData(): Observable<any> {
-    //return this.http.get('/api/InitialData')
-    //.map(res=>res.json());
-    return Observable.from([]);
-  }
-
-  getJsonData(file: String): Observable<any> {
-    return Observable.from([]);
+    return this.getConfigData()
+      .flatMap((data) =>
+        Observable.timer(0, data["pollInterval"])
+          .switchMap(() => this.http.get('/api/JSON/ClientConfig')
+            .map(res => res.json()))
+          .map(res => { console.log(res); return res })
+          .distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
+      );
   }
 
 
   getConfigData(): Observable<any> {
-    //return this.http.get('/api/InitialData')
-    //.map(res=>res.json());
-    return Observable.from([]);
+    return this.http.get('/api/JSON/ServerConfig')
+      .map(res => res.json());
   }
-  data: any
 
+  getJsonData(file: string): Observable<any> {
+    return this.getConfigData()
+      .flatMap((data) =>
+        Observable.timer(0, data["pollInterval"])
+          .switchMap(() => this.http.get(file)
+            .map(res => res.json()))
+          .distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
+      );
+  }
+
+  getKeyCodeData() {
+    return this.getConfigData()
+      .flatMap((data) =>
+        Observable.timer(0, data["pollInterval"])
+          .switchMap(() => this.http.get('/api/JSON/KeyCodeConfig')
+            .map(res => res.json()))
+          .distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
+      );
+  }
+
+  data: any
   setRoutingData(data: any) {
     this.data = data
   }
 
   getRoutingData() {
     return this.data;
-  }
-
-  getKeyCodeData() {
-    return Observable.from([]);
   }
 }

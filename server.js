@@ -1,7 +1,7 @@
 // Get dependencies 
 const express = require('express');
 const path = require('path');
-const https = require('http'); //FIXME: https
+const https = require('http');
 const bodyParser = require('body-parser');
 var fs = require('fs'); //to supply files certificate files 
 // Load configuration file
@@ -20,7 +20,7 @@ var options = {
   rejectUnauthorized: config["EnableAuthetification"]
 };//set up https server with client certification required and rejected invalid
 const app = express();
-const server = https.createServer(app)//options, app);/FIXME: options
+const server = https.createServer(app); //options, 
 
 // Parsers for POST data
 app.use(bodyParser.json());
