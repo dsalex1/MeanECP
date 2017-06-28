@@ -1,2 +1,5 @@
-<img *ngIf="!noImg" [src]="file" (error)="imgErr()" />
+<div>
+    <img *ngIf="!noImg" [src]="file" (error)="imgErr()" />
+</div>
+
 <app-not-found *ngIf="noImg" [data]="{ 'file':file} " [type]=" 'IMAGE_NOT_FOUND_ERROR' "></app-not-found>

@@ -28,6 +28,10 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
 
   curSlideshow = null
 
+  state: string
+
+  footer: any
+
   constructor(private _appService: AppService) {
   }
 
@@ -38,6 +42,8 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.leftPlan = data[this.index1];
       this.rightPlan = data[this.index2];
+      this.state = this.leftPlan["Stand"]["Inhalt"]
+      this.footer = this.leftPlan["Footer"]
     })
     this.setupSlide()
   }

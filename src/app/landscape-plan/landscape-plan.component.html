@@ -4,17 +4,25 @@
     (completed)="slideComp()">
   </app-slideshow>
 
-  <div class="contentContainer">
+  <app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
 
-    <app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
+  <ng-container *ngIf="!curSlideshow && !keypress">
+    <div class="contentContainer">
+      <div class="header">
+        <div class="state">
+          {{state}}
+        </div>
+      </div>
 
-    <ng-container *ngIf="!curSlideshow && !keypress">
       <div class="plans">
         <app-plan class="leftPlan" [plan]="leftPlan"></app-plan>
         <app-plan class="rightPlan" [plan]="rightPlan"></app-plan>
       </div>
-    </ng-container>
 
-  </div>
+      <div class="footer" *ngIf="footer && footer.length>0">
+        {{footer}}
+      </div>
+    </div>
+  </ng-container>
 
 </body>

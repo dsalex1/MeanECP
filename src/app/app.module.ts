@@ -16,7 +16,8 @@ import { PortraitPlanComponent } from './portrait-plan/portrait-plan.component';
 import { FilteredPlanComponent } from './filtered-plan/filtered-plan.component';
 import { KeypressComponent } from './keypress/keypress.component';
 
-import { JSONColToCSSPipe } from './util/JSONColToCSS.pipe'
+import { JSONColToCSSPipe } from './util/JSONColToCSS.pipe';
+import { AutoScrollDirective } from './util/auto-scroll.directive'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { JSONColToCSSPipe } from './util/JSONColToCSS.pipe'
     PortraitPlanComponent,
     FilteredPlanComponent,
     KeypressComponent,
-    JSONColToCSSPipe
+    JSONColToCSSPipe,
+    AutoScrollDirective
   ],
   imports: [
     BrowserModule,

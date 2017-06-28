@@ -1,0 +1,65 @@
+body{
+    background:url(/assets/images/background_portrait_1080px.png) no-repeat;
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:1080px;
+    height:1920px;
+   /* transform: rotate(90deg) translate(-420px,-420px);*/
+}
+
+.contentContainer{
+    display: flex;
+    flex-flow: column;
+    height:100%;
+    width:100%;
+}
+
+.header {
+    flex: 0 0 14.8%;
+}
+
+.filterHeader{
+    flex-grow: 0 ;
+	flex-shrink:0;
+	flex-basis:3.5%;
+    font-size:25pt;
+    color:white;
+	display: flex;
+	flex-direction:column;
+    justify-content:center;
+	padding-left:10px;
+}
+
+/deep/ app-plan .header{
+    font-size:22pt;
+}
+
+.state{
+    font-size:30pt;
+    color:#FFFFFF;
+    margin-top:200px;
+    margin-left:380px;
+}
+
+.plans {
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column;
+  height:100%;
+  width:100%;
+}
+
+.plan { 
+    padding-top:10px;
+	flex: 1 0 0;
+    overflow:hidden;
+}
+
+.spacer{
+    margin-bottom:5px;
+}
+.footer {
+  flex: 0 1 auto;
+  background-color:#AAFFFF;
+  padding:8px;
+}

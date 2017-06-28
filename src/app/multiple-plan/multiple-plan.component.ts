@@ -23,6 +23,10 @@ export class MultiplePlanComponent implements OnInit, OnChanges {
 
   curSlideshow = null
 
+  state: string
+
+  footer: any
+
   constructor(private _appService: AppService) {
   }
 
@@ -33,6 +37,8 @@ export class MultiplePlanComponent implements OnInit, OnChanges {
     console.log(this.db);
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plans = data.slice(this.firstIndex);
+      this.state = this.plans[0]["Stand"]["Inhalt"]
+      this.footer = this.plans[0]["Footer"]
     })
     this.setupSlide()
   }

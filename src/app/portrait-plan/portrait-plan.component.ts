@@ -23,6 +23,10 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
 
   plan: object
 
+  state: string
+
+  footer: any
+
   constructor(private _appService: AppService) {
   }
 
@@ -32,6 +36,8 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
   ngOnChanges() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plan = data[this.index];
+      this.state = this.plan["Stand"]["Inhalt"]
+      this.footer = this.plan["Footer"]
     })
     this.setupSlide()
   }

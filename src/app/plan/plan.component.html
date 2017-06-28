@@ -1,70 +1,54 @@
-<div class="plan container" *ngIf="plan">
-  <div class="plan header">
+<div class="container" *ngIf="plan">
+
+  <div class="header">
     {{ plan['Titel']['Inhalt']}}
   </div>
 
-  <div class="plan absents" *ngIf="plan['Abwesenheiten'] && plan['Abwesenheiten'].length>0">
+  <div class="absents" *ngIf="plan['Abwesenheiten'] && plan['Abwesenheiten'].length>0">
     <b>Abwesenheiten</b><br/>
     <span *ngFor="let absent of plan['Abwesenheiten'] ; let i = index ; let last = last"> 
       {{absent['Kuerzel']}}{{absent['Anmerkung']==="" ? "" : " "+absent['Anmerkung']}}{{last ? '' : ', '}}
     </span>
   </div>
-  <!--
 
-  <div class="plan exchanges scrollable" id="scroll1">
-    <div class="scrollContainer">
-      <div class="scrollClones">
-        <div class="scrollContent">-->
-  <table class="table" cellspacing="0">
-    <tr class="headline">
-      <td class="rowStunde">Stunde</td>
-      <td class="rowKlasse">Klasse</td>
-      <td class="rowFach">Fach</td>
-      <td class="rowLeher">Lehrer</td>
-      <td class="rowVertretung">Vertretung </td>
-      <td class="rowRaum">Raum</td>
-      <td class="rowAnmerkung">Anmerkung</td>
-    </tr>
-    <tr *ngFor="let exch of plan['Vertretungen']; let i = index" [style.backgroundColor]="exch[ 'Style']['backgroundcolor'] | JSONColToCSS:(i%2==1)">
-      <td class="rowStunde ">{{exch['StundeNeu']}}</td>
-      <td class="rowKlasse ">{{exch['KlasseNeu']}}</td>
-      <td class="rowFach ">{{exch['FachNeu']}}</td>
-      <td class="rowLehrer ">{{exch['LehrerNeu']}}</td>
-      <td class="rowVertretung ">{{exch['VertretungNeu']}}</td>
-      <td class="rowRaum ">{{exch['RaumNeu']}}</td>
-      <td class="rowAnmerkung ">{{exch['AnmerkungNeu']}}</td>
-    </tr>
+  <div class="scrollContainer" appAutoScroll>
+    <table class="exchangeTable" cellspacing="0">
+      <tr class="headline">
+        <td class="rowStunde">Stunde</td>
+        <td class="rowKlasse">Klasse</td>
+        <td class="rowFach">Fach</td>
+        <td class="rowLehrer">Lehrer</td>
+        <td class="rowVertretung">Vertretung </td>
+        <td class="rowRaum">Raum</td>
+        <td class="rowAnmerkung">Anmerkung</td>
+      </tr>
 
-    <tr *ngIf="!plan[ 'Vertretungen'] || plan[ 'Vertretungen'].length==0 ">
-      <td class="rowStunde ">-</td>
-      <td class="rowKlasse ">-</td>
-      <td class="rowFach ">-</td>
-      <td class="rowLeher ">-</td>
-      <td class="rowVertretung ">-</td>
-      <td class="rowRaum ">-</td>
-      <td class="rowAnmerkung ">-</td>
-    </tr>
+      <tr *ngFor="let exch of plan['Vertretungen']; let i = index" [style.backgroundColor]="exch[ 'Style']['backgroundcolor'] | JSONColToCSS:(i%2==1)">
+        <td class="rowStunde ">{{exch['StundeNeu']}}</td>
+        <td class="rowKlasse ">{{exch['KlasseNeu']}}</td>
+        <td class="rowFach ">{{exch['FachNeu']}}</td>
+        <td class="rowLehrer ">{{exch['LehrerNeu']}}</td>
+        <td class="rowVertretung ">{{exch['VertretungNeu']}}</td>
+        <td class="rowRaum ">{{exch['RaumNeu']}}</td>
+        <td class="rowAnmerkung ">{{exch['AnmerkungNeu']}}</td>
+      </tr>
 
-    <!-- add emty row-->
-    <!--<tr style="height:0px; ">
-              <td class="rowStunde "></td>
-              <td class="rowKlasse "></td>
-              <td class="rowFach "></td>
-              <td class="rowLeher "></td>
-              <td class="rowVertretung "></td>
-              <td class="rowRaum "></td>
-              <td class="rowAnmerkung "></td>
-            </tr>-->
-  </table>
-  <!--
-        </div>
-      </div>
-    </div>
-  </div>-->
+      <tr *ngIf="!plan[ 'Vertretungen'] || plan[ 'Vertretungen'].length==0 ">
+        <td class="rowStunde ">-</td>
+        <td class="rowKlasse ">-</td>
+        <td class="rowFach ">-</td>
+        <td class="rowLeher ">-</td>
+        <td class="rowVertretung ">-</td>
+        <td class="rowRaum ">-</td>
+        <td class="rowAnmerkung ">-</td>
+      </tr>
+    </table>
+  </div>
 
-  <div class="plan annot " *ngIf="plan['PlanZusatz'] && plan['PlanZusatz'].length>0 ">
-    <p class="annot element " *ngFor="let annot of plan['PlanZusatz']; let i = index" [style.backgroundColor]="annot[ 'Style']['backgroundcolor'] | JSONColToCSS:(i%2==1)">
+  <div class="annotation" *ngIf="plan['PlanZusatz'] && plan['PlanZusatz'].length>0 ">
+    <p class="annotationElement" *ngFor="let annot of plan['PlanZusatz']; let i = index" [style.backgroundColor]="annot[ 'Style']['backgroundcolor'] | JSONColToCSS:(i%2==1)">
       {{annot['Inhalt']}}
     </p>
   </div>
+
 </div>

@@ -1,6 +1,6 @@
 import { Component, OnInit, OnChanges, Input } from '@angular/core';
 
-@Component({//TODO: scrollable
+@Component({
   selector: 'app-plan',
   templateUrl: './plan.component.html',
   styleUrls: ['./plan.component.css']
