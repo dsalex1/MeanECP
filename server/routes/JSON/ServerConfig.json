@@ -1,3 +1,4 @@
 {
-    "defaultTimeout": 5000
+    "defaultTimeout": "5000",
+    "pollInterval": 5000
 }

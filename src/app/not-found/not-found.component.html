@@ -6,7 +6,7 @@
       <br/> If this error persists, please contact the system administrator.
       <br/>
       <br/> Additional information:
-      <br/> BASE_DIRECTIVE_ERROR - No base directive found for type: '{{data.type}}', check client configuration:
+      <br/> BASE_DIRECTIVE_ERROR - No base directive found for type: '{{data?.type}}', check client configuration:
       <br/> {{data|json}}
     </p>
   </ng-container>
@@ -17,7 +17,7 @@
       <br/> If this error persists, please contact the system administrator.
       <br/>
       <br/> Additional information:
-      <br/> INDEX_NOT_FOUND - No directive associated with keyCode {{data.index}}, check keyCode configuration.
+      <br/> INDEX_NOT_FOUND - No directive associated with keyCode {{data?.index}}, check keyCode configuration.
     </p>
   </ng-container>
 
@@ -27,7 +27,7 @@
       <br/> If this error persists, please contact the system administrator.
       <br/>
       <br/> Additional information:
-      <br/> KEYPRESS_DIRECTIVE_ERROR - No keypress directive found for type: '{{data.type}}', check client configuration:
+      <br/> KEYPRESS_DIRECTIVE_ERROR - No keypress directive found for type: '{{data?.type}}', check client configuration:
       <br/> {{data|json}}
     </p>
   </ng-container>
@@ -38,7 +38,7 @@
       <br/> If this error persists, please contact the system administrator.
       <br/>
       <br/> Additional information:
-      <br/> IMAGE_NOT_FOUND_ERROR - couldnt find image '{{data.file}}' on server, check client configuration.
+      <br/> IMAGE_NOT_FOUND_ERROR - couldnt find image '{{data?.file}}' on server, check client configuration.
     </p>
   </ng-container>
 

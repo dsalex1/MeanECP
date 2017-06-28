@@ -31,7 +31,6 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.setupSlide()
   }
 
   ngOnChanges() {
@@ -40,6 +39,7 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
       this.state = this.plan["Stand"]["Inhalt"]
       this.footer = this.plan["Footer"]
     })
+    this.setupSlide()
   }
 
   slideComp() {

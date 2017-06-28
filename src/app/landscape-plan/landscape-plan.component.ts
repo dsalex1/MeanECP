@@ -36,7 +36,6 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.setupSlide()
   }
 
   ngOnChanges() {
@@ -46,6 +45,7 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
       this.state = this.leftPlan["Stand"]["Inhalt"]
       this.footer = this.leftPlan["Footer"]
     })
+    this.setupSlide()
   }
 
   slideComp() {
@@ -53,11 +53,25 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
     this.setupSlide();
   }
 
+  SlidTimer: number
   setupSlide() {
-    if (this.slideshow) {
+    var begin = this.slideshow.timeStart ? Date.parse(this.slideshow.timeStart) : null
+    var end = this.slideshow.timeEnd ? Date.parse(this.slideshow.timeEnd) : null
+    console.log("slid")
+    console.log(this.slideshow)
+    console.log((!begin || begin < Date.now()))
+    console.log((!end || end > Date.now()))
+    if (this.slideshow && (!begin || begin < Date.now()) && (!end || end > Date.now())) {
       setTimeout(() => {
         this.curSlideshow = this.slideshow.params
       }, this.slideshow.interval)
+    } else {
+      console.log("not in time")
+      if (begin && begin > Date.now()) {
+        console.log("start timer " + (begin - Date.now()))
+        clearTimeout(this.SlidTimer)
+        this.SlidTimer = setTimeout(this.setupSlide(), begin - Date.now())
+      } //TODO: test time start/end
     }
   }
 

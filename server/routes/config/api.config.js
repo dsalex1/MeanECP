@@ -5,18 +5,43 @@ const http = require('http');
 var fs = require('fs');
 
 /* GET api listing. */
-router.post('/ClientConfig', (req, res) => {
+router.post('/Client', (req, res) => {
   var change = req.body;
-  var config = JSON.parse(JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/ServerConfig.json'), 'utf8')));
-  res.send("change: " + JSON.stringify(change) + " config:" + JSON.stringify(change))
+  var config = JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), 'utf8'));
+  Object.assign(config, change)
+  res.send(JSON.stringify(change) + "<br/> => <br/>" + JSON.stringify(config))
+  fs.writeFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), JSON.stringify(config))
 });
 
-router.get('/ServerConfig', (req, res) => {
-  res.sendFile(path.join(__dirname, 'ServerConfig.json'));
+router.post('/Server', (req, res) => {
+  var change = req.body;
+  var config = JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/ServerConfig.json'), 'utf8'));
+  Object.assign(config, change)
+  res.send(JSON.stringify(config))
+  fs.writeFileSync(path.join(__dirname, '../JSON/ServerConfig.json'), JSON.stringify(config))
 });
 
-router.get('/KeyCodeConfig', (req, res) => {
-  res.sendFile(path.join(__dirname, 'KeyCodeConfig.json'));
+router.post('/KeyCode', (req, res) => {
+  var change = req.body;
+  var config = JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/KeyCodeConfig.json'), 'utf8'));
+  Object.assign(config, change)
+  res.send(JSON.stringify(config))
+  fs.writeFileSync(path.join(__dirname, '../JSON/KeycodeConfig.json'), JSON.stringify(config))
+});
+
+router.post('/Presentation', (req, res) => {
+  try {
+    var CN = req.body["CN"];
+    var slid = req.body["slideshow"];
+    var config = JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), 'utf8'));
+    console.log(config)
+    console.log(CN)
+    config[CN].params.slideshow = slid
+    res.send(JSON.stringify(config))
+    fs.writeFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), JSON.stringify(config))
+  } catch (err) { //REFACTOR: errorhandling
+    res.sendStatus(404)
+  }
 });
 
 module.exports = router;
