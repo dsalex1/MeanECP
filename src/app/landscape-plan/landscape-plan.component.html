@@ -9,10 +9,10 @@
   <ng-container *ngIf="!curSlideshow && !keypress">
     <div class="contentContainer">
       <div class="header">
-				<div class="state">
-					{{state}}
-				</div>
-			</div>
+        <div class="state">
+          {{state}}
+        </div>
+      </div>
 
       <div class="plans">
         <app-plan class="leftPlan" [plan]="leftPlan"></app-plan>
@@ -20,8 +20,8 @@
       </div>
 
       <div class="footer" *ngIf="footer && footer.length>0">
-				{{footer}}
-			</div>
+        {{footer}}
+      </div>
     </div>
   </ng-container>
 

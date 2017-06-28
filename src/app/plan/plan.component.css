@@ -8,26 +8,23 @@
 }
 
 .header{
-	flex-shrink: 0;
-	flex-basis:5.0%;
+	flex-grow: 0 ;
+	flex-shrink:0;
 	display: flex;
-	align-items: center;
-	font-size:20pt;
-	color:#FFFFFF;
+	flex-direction:column;
+    justify-content:center;
 	padding-left:10px;
-	padding-top:5px;
 }
 
 .absents{
+	flex: 0 1 auto;
 	padding: 10px;
 }
 
-.exchanges{
-	flex: 1 0 auto;
-}
 .scrollContainer{
-	max-height: 100%;
+	flex: 1 1 auto;
 }
+
 .exchangeTable{
 	margin:0px;
 	margin-right:5px;
@@ -35,7 +32,11 @@
 	width:100%;
 }
 
-.rowStunde, .rowKlasse, .rowFach, .rowLeher, .rowRaum, .rowVertretung, .rowAnmerkung{
+.rowKlasse{
+	max-width: 100px
+}
+
+.rowStunde, .rowKlasse, .rowFach, .rowLehrer, .rowRaum, .rowVertretung, .rowAnmerkung{
 	padding-left:8px;
 	padding-right:8px;
 	padding-top:3px;
@@ -43,10 +44,13 @@
 }
 
 .annotation{
+	flex: 0 1 auto;
 	padding-top: 10px;
 }
 
-.annotation.element{
+.annotationElement{
 	padding-left:10px;
 	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
 }

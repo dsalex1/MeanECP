@@ -28,9 +28,9 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
 
   curSlideshow = null
 
-  state:string
+  state: string
 
-  footer:any
+  footer: any
 
   constructor(private _appService: AppService) {
   }

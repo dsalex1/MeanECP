@@ -14,7 +14,13 @@ body{
 }
 
 .header {
-    flex: 0 0 18.9%;
+    flex: 0 0 19%;
+    color:#FFFFFF;
+}
+
+/deep/ app-plan .header{
+	flex-basis:5.6%;
+    font-size:20pt;
 }
 
 .state{

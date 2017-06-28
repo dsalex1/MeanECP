@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, AfterViewInit } from '@angular/core';
+import { Directive, ElementRef, Input, AfterViewInit, OnChanges } from '@angular/core';
 
 declare var $: any
 
@@ -15,13 +15,23 @@ export class AutoScrollDirective implements AfterViewInit {
         var container = this.el.nativeElement
 
         var contentHeight = scroller.offsetHeight
+
+        container.style.flexGrow = '1';
+        scroller.style.display = 'none';
+
         var targetHeight = container.offsetHeight
 
+        container.style.flexGrow = '0';
+        scroller.style.display = 'table';
+
+        console.log(contentHeight + "  " + targetHeight)
         if (contentHeight > targetHeight) {
-            $(container).before($(scroller).find('.headline').clone());
-            
+            var newHeadline = $(scroller).find('.headline').clone();
+            var newTable = $(scroller).clone().empty()
+            $(newTable).append(newHeadline)
+            $(container).before(newTable)
             $(scroller).find('.headline').find('td').each(function (index, width) {
-                console.log("" + index + " " + $(this).width()+" "+$(container).parent().find('tr').children().eq(index).width());
+                console.log("" + index + " " + $(this).width() + " " + $(container).parent().find('tr').children().eq(index).width());
                 $(container).parent().find('tr').children().eq(index).width($(this).width())
                 $(this).css("color", "rgba(255,255,255,0.0)");
             });
@@ -41,6 +51,8 @@ export class AutoScrollDirective implements AfterViewInit {
                 loop(height, obj);
             });
         }
+
+
     }
 
 }

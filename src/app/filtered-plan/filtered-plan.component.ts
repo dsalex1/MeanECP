@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnChanges, Input } from '@angular/core';
 import { AppService } from '../app.service'
 
 @Component({
@@ -6,7 +6,7 @@ import { AppService } from '../app.service'
   templateUrl: './filtered-plan.component.html',
   styleUrls: ['./filtered-plan.component.css']
 })
-export class FilteredPlanComponent implements OnInit {
+export class FilteredPlanComponent implements OnChanges {
   @Input()
   db: any
 
@@ -18,14 +18,18 @@ export class FilteredPlanComponent implements OnInit {
 
   plans: any
 
+  state: string
+
+  footer: any
+
   constructor(private _appService: AppService) {
   }
-
-  ngOnInit() { }
 
   ngOnChanges() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plans = data.slice(this.firstIndex);
+      this.state = this.plans[0]["Stand"]["Inhalt"]
+      this.footer = this.plans[0]["Footer"]
     })
   }
 

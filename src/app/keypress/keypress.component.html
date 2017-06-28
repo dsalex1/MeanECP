@@ -1,6 +1,11 @@
 <ng-container [ngSwitch]="data.type">
+
   <app-filtered-plan *ngSwitchCase="'FilteredPlan'" [db]="data.params.db" [firstIndex]="data.params.index1" [filter]="data.params.filter"></app-filtered-plan>
   <app-png *ngSwitchCase="'Png'" [file]="data.params.file"></app-png>
-  <app-not-found *ngSwitchCase="'INDEX_NOT_FOUND'" [data]="data" [type]="'INDEX_NOT_FOUND'"></app-not-found>
-  <app-not-found *ngSwitchDefault [data]="data" [type]="'KEYPRESS_DIRECTIVE_ERROR'"></app-not-found>
+
+  <div class="notFound">
+    <app-not-found *ngSwitchCase="'INDEX_NOT_FOUND'" [data]="data" [type]="'INDEX_NOT_FOUND'"></app-not-found>
+    <app-not-found *ngSwitchDefault [data]="data" [type]="'KEYPRESS_DIRECTIVE_ERROR'"></app-not-found>
+  </div>
+
 </ng-container>

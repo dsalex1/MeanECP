@@ -9,7 +9,21 @@
     <app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
 
     <ng-container *ngIf="!curSlideshow && !keypress">
-      <app-plan *ngFor="let plan of plans" [plan]="plan" [filter]="filter"></app-plan>
+      <div class="contentContainer">
+        <div class="header">
+          <div class="state">
+            {{state}}
+          </div>
+        </div>
+
+        <div class="plans">
+          <app-plan class="plan" [class.spacer]="!last" *ngFor="let plan of plans; let last=last" [plan]="plan" [filter]="filter"></app-plan>
+        </div>
+
+        <div class="footer" *ngIf="footer && footer.length>0">
+          {{footer}}
+        </div>
+      </div>
     </ng-container>
 
   </div>

@@ -42,7 +42,7 @@ export class KeypressComponent implements OnInit, OnChanges {
     clearTimeout(this.timer);
     this.timer = setTimeout(() => {
       this.completed.emit();
-    }, this.data.params.timeout)
+    }, 100000)//this.data.params.timeout)
   }
 
 }
