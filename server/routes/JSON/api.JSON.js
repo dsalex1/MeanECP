@@ -12,7 +12,7 @@ router.get('/ClientConfig', (req, res) => {
     certSubj = req.connection.getPeerCertificate().subject
     res.send(data[certSubj.CN]);
   } catch (err) {
-    res.send(data["ClientTest1"]);//res.sendStatus(404); //REFACTOR: errorhandling
+    res.send(data["ClientTest1"]);
   }
 });
 
@@ -25,21 +25,14 @@ router.get('/KeyCodeConfig', (req, res) => {
 });
 
 router.get(/\/(Lehrer|Schueler)Plan/, function (req, res) {
-  // AUTHORIZED 
-  //if (req.client.authorized) {
   var externalReq = http.request({
     hostname: "www.plaene.iks.bullencode.de",
     path: req.url == '/LehrerPlan' ? '/json/lehrerPlan.json'
       : (req.url == '/SchuelerPlan' ? '/json/schuelerPlan.json'
-        : ''), //REFACTOR: errorhandling
+        : ''),
   }, function (externalRes) {
     externalRes.pipe(res);
   });
   externalReq.end();
-
-  // NOT AUTHORIZED
-  //} else {
-  //  res.send(CLIENT_CERT_UNTRUSTED_ERR());
-  //}
 });
 module.exports = router;

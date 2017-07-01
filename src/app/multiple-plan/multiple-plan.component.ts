@@ -19,7 +19,7 @@ export class MultiplePlanComponent implements OnInit, OnChanges {
 
   plans: any
 
-  keypress: KeyboardEvent = null
+  keypress: KeyboardEvent
 
   curSlideshow = null
 
@@ -34,7 +34,6 @@ export class MultiplePlanComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges() {
-    console.log(this.db);
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plans = data.slice(this.firstIndex);
       this.state = this.plans[0]["Stand"]["Inhalt"]

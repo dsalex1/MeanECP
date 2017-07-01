@@ -19,8 +19,8 @@ export class KeypressComponent implements OnInit, OnChanges {
 
   timer: any
 
-  data: any
-  params: any
+  data: any = {}
+  params: any = {}
   constructor(private _appservice: AppService) { }
 
   ngOnInit() { }
@@ -37,12 +37,12 @@ export class KeypressComponent implements OnInit, OnChanges {
           index: this.keyCode
         }
       }
-    })
 
-    clearTimeout(this.timer);
-    this.timer = setTimeout(() => {
-      this.completed.emit();
-    }, 100000)//this.data.params.timeout)
+      clearTimeout(this.timer);
+      this.timer = setTimeout(() => {
+        this.completed.emit();
+      }, this.data.params.timeout)
+    })
   }
 
 }

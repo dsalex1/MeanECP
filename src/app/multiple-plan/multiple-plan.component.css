@@ -20,6 +20,7 @@ body{
 
 /deep/ app-plan .header{
     font-size:22pt;
+    color:#000000;
 }
 
 .state{

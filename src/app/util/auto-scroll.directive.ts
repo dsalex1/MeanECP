@@ -10,7 +10,7 @@ export class AutoScrollDirective implements AfterViewInit {
     constructor(private el: ElementRef) {
     }
 
-    ngAfterViewInit() {
+    ngAfterViewInit() { //FIXME: react on changes on host
         var scroller = this.el.nativeElement.children[0]
         var container = this.el.nativeElement
 
@@ -24,7 +24,6 @@ export class AutoScrollDirective implements AfterViewInit {
         container.style.flexGrow = '0';
         scroller.style.display = 'table';
 
-        console.log(contentHeight + "  " + targetHeight)
         if (contentHeight > targetHeight) {
             var newHeadline = $(scroller).find('.headline').clone();
             var newTable = $(scroller).clone().empty()

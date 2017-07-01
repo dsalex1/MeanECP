@@ -17,7 +17,6 @@ export class AppService {
         Observable.timer(0, data["pollInterval"])
           .switchMap(() => this.http.get('/api/JSON/ClientConfig')
             .map(res => res.json()))
-          .map(res => { console.log(res); return res })
           .distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
       );
   }

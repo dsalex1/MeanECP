@@ -23,7 +23,6 @@ export class PlanComponent implements OnInit, OnChanges {
       var regex = new RegExp("\\b" + this.filter + "\\b")
       for (var key in exchg) {
         var prop = exchg[key]
-        //console.log(prop)
         if (regex.test(prop))
           return true;
       }

@@ -37,7 +37,7 @@ router.post('/Presentation', (req, res) => {
     config[CN].params.slideshow = slid
     res.send(JSON.stringify(config))
     fs.writeFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), JSON.stringify(config))
-  } catch (err) { //REFACTOR: errorhandling
+  } catch (err) {
     res.sendStatus(404)
   }
 });

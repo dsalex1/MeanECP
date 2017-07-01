@@ -32,7 +32,7 @@ export class SlideshowComponent implements OnInit, OnChanges {
   ngOnInit() {
     setTimeout(() => {
       this.completed.emit();
-    }, 5000)
+    }, 5000) //TODO: presentation end detection
 
     /*setTimeout(() => {
       this.watchIterations()
@@ -43,7 +43,7 @@ export class SlideshowComponent implements OnInit, OnChanges {
 
   iterationsPass: number = 0
   watchIterations() {
-    eval('console.log("start watching")')//FIXME: observing does work in browser console but not as script...idk why
+    eval('console.log("start watching")')//FIXMe: observing does work in browser console but not as script...idk why
     eval(`
     var target = document.getElementById('slideshow').contentWindow.document.getElementsByClassName('punch-viewer-nav-v2')[0].getElementsByTagName("div")[0];
     var observer = new MutationObserver((mutation) => { console.warn(mutation) })
@@ -68,7 +68,7 @@ export class SlideshowComponent implements OnInit, OnChanges {
     try {
       var observer = new MutationObserver((mutation) => {
         console.warn(mutation)
-        if (mutation.length == 4) { //FIXME: observed behavior, 4 mutations on target are made once the presentation has finished - replace by more stable approach
+        if (mutation.length == 4) { //FIXMe: observed behavior, 4 mutations on target are made once the presentation has finished - replace by more stable approach
           this.iterationsPass = this.iterationsPass + 1;
           console.log(this.iterationsPass + " out of " + this.iterations)
           //if (this.iterations == this.iterationsPass) {
