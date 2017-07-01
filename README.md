@@ -1,3 +1,4 @@
+
 # MeanECP
 
 A reimplementation of the school internal substitution system using the MEAN-stack  
@@ -27,6 +28,7 @@ All paths accept only valid JSON.
         "params": [params]
         }
    }`
+   |---|---|---|
    |[CN]|string|CommonName the client which config shall be altered uses in its certificate|
    |[type]|string| a member of TypeDefinition, see below|
    |[params]|object| an object of type Params, see below|
