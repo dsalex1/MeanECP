@@ -20,7 +20,7 @@ Run `node server`  to start the deployment server. Make sure having build the pr
 The deployment server has 4 routes for configuring it. The access to these has to authorized by using a client certificate trusted by '/cert/ClientRootCA.crt'
 All paths only accept valid JSON.
 
-### /Client
+### /api/config/Client
 
 This path is used to configure which client shall get which content  
 Useage:
@@ -67,7 +67,7 @@ example:
 }
  ```
 
-### /Server
+### /api/config/Server
 
 This path is used to configure all settings that affect globally all clients.
 Useage:
@@ -91,7 +91,7 @@ example:
 }
  ```
 
-### /KeyCode
+### /api/config/KeyCode
 
 This path is used to configure what shall be displayed on a keypress.
 Useage:
@@ -125,7 +125,7 @@ example:
 }
  ```
  
- ###  /Presentation
+ ###  /api/config/Presentation
 
 This path is a shortcut to set an presentation for a certain client.
 Useage:
