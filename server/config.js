@@ -3,6 +3,6 @@ config = {
     "ServerPrivateKey": './certs/ServerCert.key',   //private key corresponding to the cert
     "ServerCert": './certs/ServerCert.crt',        //server certificate
     "RootCA": './certs/ClientRootCA.crt',         //CA to check incoming client certs against
-    "EnableAuthetification": false                //enable reqesting client cert and reject unauth  
+    "EnableAuthetification": true                //enable reqesting client cert and reject unauth  
 }
 module.exports = config;

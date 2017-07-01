@@ -27,7 +27,6 @@ router.get('/KeyCodeConfig', (req, res) => {
 router.get(/\/(Lehrer|Schueler)Plan/, function (req, res) {
   // AUTHORIZED 
   //if (req.client.authorized) {
-  console.log()
   var externalReq = http.request({
     hostname: "www.plaene.iks.bullencode.de",
     path: req.url == '/LehrerPlan' ? '/json/lehrerPlan.json'

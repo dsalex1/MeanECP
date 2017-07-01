@@ -34,8 +34,6 @@ router.post('/Presentation', (req, res) => {
     var CN = req.body["CN"];
     var slid = req.body["slideshow"];
     var config = JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), 'utf8'));
-    console.log(config)
-    console.log(CN)
     config[CN].params.slideshow = slid
     res.send(JSON.stringify(config))
     fs.writeFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), JSON.stringify(config))

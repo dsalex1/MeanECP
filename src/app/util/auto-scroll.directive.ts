@@ -31,7 +31,6 @@ export class AutoScrollDirective implements AfterViewInit {
             $(newTable).append(newHeadline)
             $(container).before(newTable)
             $(scroller).find('.headline').find('td').each(function (index, width) {
-                console.log("" + index + " " + $(this).width() + " " + $(container).parent().find('tr').children().eq(index).width());
                 $(container).parent().find('tr').children().eq(index).width($(this).width())
                 $(this).css("color", "rgba(255,255,255,0.0)");
             });

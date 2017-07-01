@@ -8,10 +8,9 @@ import { Router } from '@angular/router';
 
 @Injectable()
 export class AppService {
-  
+
   constructor(private http: Http) { }
 
-  ClientLastDate = ""
   getInitialData(): Observable<any> {
     return this.getConfigData()
       .flatMap((data) =>
