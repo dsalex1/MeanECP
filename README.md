@@ -1,4 +1,3 @@
-
 # MeanECP
 
 A reimplementation of the school internal substitution system using the MEAN-stack  
@@ -17,12 +16,12 @@ Run `node server`  to start the deployment server. Make sure having build the pr
 
 ## Deployment server config API
 
-The deployment server has 4 routes for configuring it. The access to these has to authorized by using a client certificate trusted by '/cert/ClientRootCA.crt'
+The deployment server has 4 routes for configuring it. The access to these has to be authorized by using a client certificate trusted by '/cert/ClientRootCA.crt'
 All paths only accept valid JSON.
 
 ### /api/config/Client
 
-This path is used to configure which client shall get which content  
+This path is used to configure which client shall get which content.  
 Useage:
 ```
 {
