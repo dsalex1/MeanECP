@@ -198,33 +198,7 @@ an object containing the following Properties, which are optional if not used.
 |"slideshow"|Slideshow| and Shlidshow object that shall be attached to aview |any BaseTypes|
 |"filter"|string|filter to be applied on a filteredPlan page|FilteredPlan|
 |"file"|string|file to be shown, must be an png|Png|
-|"timeout"|integer|timeout in ms until switching from a keypress|FilteredPlan,png|
+|"timeout"|integer|timeout in ms until switching from a keypress|FilteredPlan,Png|
 |"id"|string|id of te presentation to be shown|Slideshow|
 |"iterations"|integer|how many times the presentation shall be iterated through|Slideshow|
 |"delay"|integer|time in ms a slide shall be shown before switching to the next one|Slideshow|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
