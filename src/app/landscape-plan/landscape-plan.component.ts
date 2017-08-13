@@ -20,11 +20,12 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
   @Input()
   slideshow: any
 
+  @Input()
+  keypress: string = null
+
   leftPlan: object
 
   rightPlan: object
-
-  keypress: KeyboardEvent = null
 
   curSlideshow = null
 
@@ -55,29 +56,26 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
 
   SlidTimer: number
   setupSlide() {
-    var begin = this.slideshow.timeStart ? Date.parse(this.slideshow.timeStart) : null
-    var end = this.slideshow.timeEnd ? Date.parse(this.slideshow.timeEnd) : null
-    //console.log("slid")
-    //console.log(this.slideshow)
-    //console.log((!begin || begin < Date.now()))
-    //console.log((!end || end > Date.now()))
-    if (this.slideshow && (!begin || begin < Date.now()) && (!end || end > Date.now())) {
-      setTimeout(() => {
-        this.curSlideshow = this.slideshow.params
-      }, this.slideshow.interval)
-    } else {
-      //console.log("not in time")
-      if (begin && begin > Date.now()) {
-        //console.log("start timer " + (begin - Date.now()))
-        clearTimeout(this.SlidTimer)
-        this.SlidTimer = setTimeout(this.setupSlide(), begin - Date.now())
-      } //FIXME: time start/end
+    if (this.slideshow) {
+      var begin = this.slideshow.timeStart ? Date.parse(this.slideshow.timeStart) : null
+      var end = this.slideshow.timeEnd ? Date.parse(this.slideshow.timeEnd) : null
+      //console.log("slid")
+      //console.log(this.slideshow)
+      //console.log((!begin || begin < Date.now()))
+      //console.log((!end || end > Date.now()))
+      if (this.slideshow && (!begin || begin < Date.now()) && (!end || end > Date.now())) {
+        setTimeout(() => {
+          this.curSlideshow = this.slideshow.params
+        }, this.slideshow.interval)
+      } else {
+        //console.log("not in time")
+        if (begin && begin > Date.now()) {
+          //console.log("start timer " + (begin - Date.now()))
+          clearTimeout(this.SlidTimer)
+          this.SlidTimer = setTimeout(this.setupSlide(), begin - Date.now())
+        } //FIXME: time start/end
+      }
     }
-  }
-
-  @HostListener('window:keyup', ['$event'])
-  onKeyUp(ev: KeyboardEvent) {
-    this.keypress = ev;
   }
 
   keypressComp() {

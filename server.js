@@ -36,6 +36,7 @@ app.use('/api', api);
 app.get('(/static)?/presentation/*', function (req, res) {
   // AUTHORIZED 
   //if (req.client.authorized) {
+	  console.log("goodle pres")
   var externalReq = https.request({
     hostname: "docs.google.com",
     path: req.url
@@ -43,7 +44,7 @@ app.get('(/static)?/presentation/*', function (req, res) {
     externalRes.pipe(res);
   });
   externalReq.end();
-
+ console.log("goodle pres - end")
   // NOT AUTHORIZED
   //} else {
   //  res.send(CLIENT_CERT_UNTRUSTED_ERR());

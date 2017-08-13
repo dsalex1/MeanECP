@@ -17,7 +17,6 @@ import { FilteredPlanComponent } from './filtered-plan/filtered-plan.component';
 import { KeypressComponent } from './keypress/keypress.component';
 
 import { JSONColToCSSPipe } from './util/JSONColToCSS.pipe';
-import { AutoScrollDirective } from './util/auto-scroll.directive'
 
 @NgModule({
   declarations: [
@@ -32,7 +31,6 @@ import { AutoScrollDirective } from './util/auto-scroll.directive'
     FilteredPlanComponent,
     KeypressComponent,
     JSONColToCSSPipe,
-    AutoScrollDirective
   ],
   imports: [
     BrowserModule,

@@ -17,9 +17,10 @@ export class MultiplePlanComponent implements OnInit, OnChanges {
   @Input()
   slideshow: any
 
-  plans: any
+  @Input()
+  keypress: string
 
-  keypress: KeyboardEvent
+  plans: any
 
   curSlideshow = null
 
@@ -53,11 +54,6 @@ export class MultiplePlanComponent implements OnInit, OnChanges {
         this.curSlideshow = this.slideshow.params
       }, this.slideshow.interval)
     }
-  }
-
-  @HostListener('window:keyup', ['$event'])
-  onKeyUp(ev: KeyboardEvent) {
-    this.keypress = ev;
   }
 
   keypressComp() {

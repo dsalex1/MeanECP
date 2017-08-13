@@ -2,7 +2,7 @@
 
   <ng-container *ngSwitchCase="'BASE_DIRECTIVE_ERROR'">
     <p>
-      <b>403.10 - invalid configuration</b>
+      <b>500.19 - Invalid Configuration</b>
       <br/> If this error persists, please contact the system administrator.
       <br/>
       <br/> Additional information:
@@ -11,19 +11,19 @@
     </p>
   </ng-container>
 
-  <ng-container *ngSwitchCase="'INDEX_NOT_FOUND'">
+  <ng-container *ngSwitchCase="'CMD_NOT_FOUND'">
     <p>
-      <b>403.10 - invalid configuration</b>
+      <b>422 - Unprocessable Entity</b>
       <br/> If this error persists, please contact the system administrator.
       <br/>
       <br/> Additional information:
-      <br/> INDEX_NOT_FOUND - No directive associated with keyCode {{data?.index}}, check keyCode configuration.
+      <br/> INDEX_NOT_FOUND - No Command associated with shortcut {{data?.cmd}}, check Input and/or Input configuration.
     </p>
   </ng-container>
 
   <ng-container *ngSwitchCase="'KEYPRESS_DIRECTIVE_ERROR'">
     <p>
-      <b>403.10 - invalid configuration</b>
+      <b>500.19 - Invalid Configuration</b>
       <br/> If this error persists, please contact the system administrator.
       <br/>
       <br/> Additional information:
@@ -34,7 +34,7 @@
 
   <ng-container *ngSwitchCase="'IMAGE_NOT_FOUND_ERROR'">
     <p>
-      <b>404 - not found</b>
+      <b>404 - Not Found</b>
       <br/> If this error persists, please contact the system administrator.
       <br/>
       <br/> Additional information:
@@ -44,7 +44,7 @@
 
   <ng-container *ngSwitchDefault>
     <p>
-      <b>403.10 - invalid configuration</b>
+      <b>500.19 - Invalid Configuration</b>
       <br/> If this error persists, please contact the system administrator.
       <br/>
       <br/> Additional information:

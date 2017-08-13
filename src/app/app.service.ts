@@ -15,10 +15,11 @@ export class AppService {
     return this.getConfigData()
       .flatMap((data) =>
         Observable.timer(0, data["pollInterval"])
-          .switchMap(() => this.http.get('/api/JSON/ClientConfig')
-            .map(res => res.json()))
-          .distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
-      );
+          .switchMapTo(this.http.get('/api/JSON/ClientConfig')
+            .map(res => res.json())
+            .retryWhen(err => Observable.timer(data["pollInterval"]))
+          ).distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
+      )
   }
 
 
@@ -31,21 +32,21 @@ export class AppService {
     return this.getConfigData()
       .flatMap((data) =>
         Observable.timer(0, data["pollInterval"])
-          .switchMap(() => this.http.get(file)
-            .map(res => res.json()))
-          .distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
-      );
+          .switchMapTo(this.http.get(file)
+            .map(res => res.json())
+            .retryWhen(err => Observable.timer(data["pollInterval"]))
+          ).distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
+      )
   }
+  /*this.getConfigData()
+  .flatMap((data) =>
+    Observable.timer(0, data["pollInterval"])
+      .switchMapTo(this.http.get(file)
+        .map(res => res.json())
+        .retryWhen(err => Observable.timer(data["pollInterval"]))
+      ).distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
+  )*/
 
-  getKeyCodeData() {
-    return this.getConfigData()
-      .flatMap((data) =>
-        Observable.timer(0, data["pollInterval"])
-          .switchMap(() => this.http.get('/api/JSON/KeyCodeConfig')
-            .map(res => res.json()))
-          .distinctUntilChanged((a, b) => JSON.stringify(a) == JSON.stringify(b))
-      );
-  }
 
   data: any
   setRoutingData(data: any) {

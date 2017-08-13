@@ -9,7 +9,7 @@ import { AppService } from '../app.service';
 export class KeypressComponent implements OnInit, OnChanges {
 
   @Input()
-  keyevt: KeyboardEvent
+  keyevt: String
 
   @Output()
   completed = new EventEmitter();
@@ -26,23 +26,41 @@ export class KeypressComponent implements OnInit, OnChanges {
   ngOnInit() { }
 
   ngOnChanges() {
-    this.keyCode = this.keyevt.keyCode;
+    console.log("CHARS ARRIVED: " + this.keyevt)
+    var cmd = this.keyevt.split('|')[0]
+    var param = this.keyevt.split('|')[1]
 
-    this._appservice.getKeyCodeData().subscribe((data) => {
-      this.data = data[this.keyCode]
-      if (this.data == null) {
-        this.data = {
-          params: { timeout: 5000 },
-          type: "INDEX_NOT_FOUND",
-          index: this.keyCode
+    if (cmd == "f" || cmd == "F") {
+      this.data = {
+        "type": "FilteredPlan",
+        "params": {
+          "db": "./api/JSON/LehrerPlan",
+          "index1": 0,
+          "filter": param,
+          "timeout": 5000
         }
       }
+    }
+    else if (cmd == "p" || cmd == "P") {
+      this.data = {
+        "type": "Png",
+        "params": {
+          "file": "./assets/images/" + param,
+          "timeout": 5000
+        }
+      }
+    } else {
+      this.data = {
+        params: { timeout: 5000 },
+        type: "CMD_NOT_FOUND",
+        index: this.keyCode
+      }
+    }
 
-      clearTimeout(this.timer);
-      this.timer = setTimeout(() => {
-        this.completed.emit();
-      }, this.data.params.timeout)
-    })
+    clearTimeout(this.timer);
+    this.timer = setTimeout(() => {
+      this.completed.emit();
+    }, this.data.params.timeout)
   }
 
 }

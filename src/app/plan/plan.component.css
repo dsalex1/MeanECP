@@ -21,8 +21,16 @@
 	padding: 10px;
 }
 
+.exchangeContainer{
+	flex: 0 1 auto;
+	display: flex;
+    flex-direction:column;
+	overflow: hidden;
+}
+
 .scrollContainer{
 	flex: 1 1 auto;
+	overflow: hidden;
 }
 
 .exchangeTable{
@@ -44,7 +52,7 @@
 }
 
 .annotation{
-	flex: 0 1 auto;
+	flex: 1 1 auto;
 	padding-top: 10px;
 }
 

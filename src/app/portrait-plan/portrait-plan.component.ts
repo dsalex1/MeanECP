@@ -17,7 +17,8 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
   @Input()
   slideshow: any
 
-  keypress: KeyboardEvent = null
+  @Input()
+  keypress: string
 
   curSlideshow = null
 
@@ -53,11 +54,6 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
         this.curSlideshow = this.slideshow.params
       }, this.slideshow.interval)
     }
-  }
-
-  @HostListener('window:keyup', ['$event'])
-  onKeyUp(ev: KeyboardEvent) {
-    this.keypress = ev;
   }
 
   keypressComp() {
