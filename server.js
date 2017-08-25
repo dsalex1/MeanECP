@@ -1,16 +1,29 @@
-// Get dependencies 
-const express = require('express');
-const path = require('path');
-const https = require('https');
-const bodyParser = require('body-parser');
-var fs = require('fs'); //to supply files certificate files 
+/**
+ * this is the main server file
+ * it sets up the https server using the config provided in 'config',
+ * sets up the route for presentation data, which are proxied to 'docs.google.com',
+ * delegates the API management to './server/routes/api'
+ * and sets the default route to index.html
+ *
+ * @summary   main server file
+ *
+ */
+
+// Get dependencies
+const express = require('express'); //basic framework
+const path = require('path'); //for path from string methods
+const https = require('https'); //basic server module
+const bodyParser = require('body-parser'); //for json parsing
+var fs = require('fs'); //to supply certificate files 
+
 // Load configuration file
 const config = require('./server/config');
+
 // Get our API routes
 const api = require('./server/routes/api');
 
 /**
- * Create HTTP server.
+ * set up https server using configuration in 'config'
  */
 var options = {
   key: fs.readFileSync(config["ServerPrivateKey"]),
@@ -18,11 +31,12 @@ var options = {
   ca: fs.readFileSync(config["RootCA"]),
   requestCert: config["EnableAuthetification"],
   rejectUnauthorized: config["EnableAuthetification"]
-};//set up https server with client certification required and rejected invalid
+};
 const app = express();
 const server = https.createServer(options, app)
 
-// Parsers for POST data
+
+// declare Parsers for POST data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -34,9 +48,6 @@ app.use('/api', api);
 
 // Proxy plan data and presentatations thru our server to bypass same origin policy
 app.get('(/static)?/presentation/*', function (req, res) {
-  // AUTHORIZED 
-  //if (req.client.authorized) {
-	  console.log("goodle pres")
   var externalReq = https.request({
     hostname: "docs.google.com",
     path: req.url
@@ -44,22 +55,20 @@ app.get('(/static)?/presentation/*', function (req, res) {
     externalRes.pipe(res);
   });
   externalReq.end();
- console.log("goodle pres - end")
-  // NOT AUTHORIZED
-  //} else {
-  //  res.send(CLIENT_CERT_UNTRUSTED_ERR());
-  //}
 });
+
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
+
 /**
- * Get port from environment and store in Express.
+ * Get port from config and store in Express.
  */
-const port = process.env.PORT || '8080';
+const port = config["ServerPort"] || '3000';
 app.set('port', port);
+
 
 /**
  * Listen on provided port, on all network interfaces.
