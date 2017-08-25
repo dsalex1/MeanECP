@@ -58,11 +58,6 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
     this.skeduleAdHeig();
   }
 
-  @HostListener('window:keypress', ['$event'])
-  onKeyPress(ev: KeyboardEvent) {
-    console.log("keyPRESS !!!!!")
-    this.adjustHeights()
-  }
 
   skeduleAdHeig() {
     setTimeout(() => {

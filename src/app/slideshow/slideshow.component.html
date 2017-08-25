@@ -2,7 +2,7 @@
   slideshow works! id:{{id}} iterations:{{iterations}} delay:{{delay}} url:{{url}}
 </p>-->
 <div id="slideContainer">
-  <iframe id="slideshow" [src]="_DomSanitizer.bypassSecurityTrustResourceUrl(url)" frameborder="0" width="100%" height="100%"
-    allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+  <iframe id="slideshow" [src]="url" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true"
+    webkitallowfullscreen="true">
   </iframe>
 </div>

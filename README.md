@@ -14,9 +14,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `node server`  to start the deployment server. Make sure having build the project in advance using `ng build`
 
-## Deployment server config API
+## Deployment Server Config API
 
-The deployment server has 4 routes for configuring it. The access to these has to be authorized by using a client certificate trusted by '/cert/ClientRootCA.crt'
+The deployment server has 3 routes for configuring it. The access to these has to be authorized by using a client certificate trusted by '/cert/ClientRootCA.crt'
 All paths only accept valid JSON.
 
 ### /api/config/Client
@@ -53,8 +53,8 @@ example:
             "index2": 1,
             "slideshow": {
                 "interval": "5000",
-                "timeStart": "2017-6-19T20:10:00",
-                "timeEnd": "2017-6-20T20:10:00",
+                "timeStart": "2017-6-19 20:10:00",
+                "timeEnd": "2017-6-20 20:10:00",
                 "params": {
                     "id": "1DOeyOhWo9hjwJDhcMJLW8Kb2kA9SEHAGcuSOLNV9sKU",
                     "iterations": 2,
@@ -90,7 +90,8 @@ example:
 }
  ```
 
-### /api/config/KeyCode
+### ~~/api/config/KeyCode~~
+<img src="http://fs5.directupload.net/images/170825/w2s4zndm.png" />
 
 This path is used to configure what shall be displayed on a keypress.
 Useage:
@@ -146,8 +147,8 @@ example:
     "CN": "testClient1",
     "slideshow": {
         "interval": "5000",
-        "timeStart": "2017-6-19T20:10:00",
-        "timeEnd": "2017-6-20T20:10:00",
+        "timeStart": "2017-6-19 20:10:00",
+        "timeEnd": "2017-6-20 20:10:00",
         "params": {
             "id": "1DOeyOhWo9hjwJDhcMJLW8Kb2kA9SEHAGcuSOLNV9sKU",
             "iterations": 2,
@@ -182,7 +183,7 @@ an object containing the following Properties:
 |"db"|string|database used to obtain the plan data from|
 |"interval"|integer|time in ms after which the presentation shall be shown|
 |"timeStart"|string|ISO formatted time to beginn showing the presentation at all|
-|"timeEnd"|string|SO formatted time to end showing the presentation at all|
+|"timeEnd"|string|ISO formatted time to end showing the presentation at all|
 |"params"|Params|object of type Params, see below|
 
 #### Params
