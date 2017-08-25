@@ -91,9 +91,8 @@ example:
  ```
 
 ### ~~/api/config/KeyCode~~
-<span style="color:red"> Depreciated</span>
-**Depreciated** 
-This Feature is depreciated since V.0.1 and could be removed without annotation in any future release.
+<img src="http://fs5.directupload.net/images/170825/w2s4zndm.png" />
+
 This path is used to configure what shall be displayed on a keypress.
 Useage:
 ```
