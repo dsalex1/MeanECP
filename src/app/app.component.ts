@@ -27,6 +27,7 @@ export class AppComponent implements OnInit {
         window.location.reload();
         console.log("RELOAD!")
       }
+      console.log("change from initialdata")
       this.data = data;
       this.type = this.data.type;
       this.params = this.data.params

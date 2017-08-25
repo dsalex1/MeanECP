@@ -20,19 +20,22 @@ export class SlideshowComponent implements OnInit, OnChanges {
   @Output()
   completed = new EventEmitter();
 
-  url: string
+  url: any
 
   constructor(public _DomSanitizer: DomSanitizer) { }
 
   ngOnChanges() {
+    console.log("changes")
     //this.url = "./presentation/d/" + this.id + "/embed?start=true&loop=true&delayms=" + this.delay;
-    this.url = "./presentation/d/" + this.id + "/embed?start=true&loop=true&delayms=" + this.delay;
+    this.url = this._DomSanitizer.bypassSecurityTrustResourceUrl(
+      "./presentation/d/" + this.id + "/embed?start=true&loop=true&delayms=" + this.delay
+    );
   }
 
   ngOnInit() {
     setTimeout(() => {
       this.completed.emit();
-    }, 5000) //TODO: presentation end detection
+    }, this.iterations * this.delay) //TODO: presentation end detection
 
     /*setTimeout(() => {
       this.watchIterations()
@@ -41,7 +44,7 @@ export class SlideshowComponent implements OnInit, OnChanges {
 
 
 
-  iterationsPass: number = 0
+  /*iterationsPass: number = 0
   watchIterations() {
     eval('console.log("start watching")')//FIXMe: observing does work in browser console but not as script...idk why
     eval(`
@@ -88,7 +91,7 @@ export class SlideshowComponent implements OnInit, OnChanges {
       console.warn(err)
     }*/
 
-  }
+  //}
 
 
 }

@@ -49,33 +49,60 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
     this.setupSlide()
   }
 
-  slideComp() {
-    this.curSlideshow = null;
-    this.setupSlide();
-  }
+  FirstRunTimer: any
+  StopTimer: any
 
-  SlidTimer: number
   setupSlide() {
+    clearTimeout(this.FirstRunTimer);
+    clearTimeout(this.StopTimer);
+
     if (this.slideshow) {
       var begin = this.slideshow.timeStart ? Date.parse(this.slideshow.timeStart) : null
       var end = this.slideshow.timeEnd ? Date.parse(this.slideshow.timeEnd) : null
-      //console.log("slid")
-      //console.log(this.slideshow)
-      //console.log((!begin || begin < Date.now()))
-      //console.log((!end || end > Date.now()))
-      if (this.slideshow && (!begin || begin < Date.now()) && (!end || end > Date.now())) {
-        setTimeout(() => {
-          this.curSlideshow = this.slideshow.params
-        }, this.slideshow.interval)
-      } else {
-        //console.log("not in time")
-        if (begin && begin > Date.now()) {
-          //console.log("start timer " + (begin - Date.now()))
-          clearTimeout(this.SlidTimer)
-          this.SlidTimer = setTimeout(this.setupSlide(), begin - Date.now())
-        } //FIXME: time start/end
+
+      var timeToBegin = begin ? (begin - Date.now()) : null
+      var timeToEnd = end ? (end - Date.now()) : null
+
+      console.log(timeToBegin + "  " + timeToEnd)
+      console.log((end == null) + " " + (timeToEnd > 0))
+      if (end == null || timeToEnd > 0) {
+        this.FirstRunTimer = setTimeout(() => {
+          this.startSlideshow()
+        }, timeToBegin)
+        console.log("next pres in " + timeToBegin)
       }
+
+      if (end != null) {
+        this.StopTimer = setTimeout(() => {
+          this.stopSlideshow()
+        }, timeToEnd)
+        console.log("stop pres in " + timeToEnd)
+      }
+
+    } else {
+      this.stopSlideshow();
     }
+  }
+
+  ReRunTimer: number
+  startSlideshow() {
+    clearTimeout(this.ReRunTimer)
+    if (this.slideshow) {
+      this.curSlideshow = this.slideshow.params;
+    }
+  }
+
+  stopSlideshow() {
+    clearTimeout(this.ReRunTimer)
+    this.curSlideshow = null
+  }
+
+  slideComp() {
+    this.curSlideshow = null
+    console.log("next pres in" + this.slideshow.interval)
+    this.ReRunTimer = setTimeout(() => {
+      this.startSlideshow()
+    }, this.slideshow.interval)
   }
 
   keypressComp() {
