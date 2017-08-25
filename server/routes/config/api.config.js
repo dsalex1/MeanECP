@@ -58,9 +58,7 @@ router.post('/KeyCode', (req, res) => {
  * path used to only reset the presentation config for a specific client in 'ClientConfig.json'.
  * the new config shall be provided as 'Content-Type: application/json' in a POST request to this path
  *
- * @deprecated
  */
-rout
 router.post('/Presentation', (req, res) => {
   try {
     var CN = req.body["CN"]; // common name and...
