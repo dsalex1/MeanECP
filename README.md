@@ -91,7 +91,7 @@ example:
  ```
 
 ### ~~/api/config/KeyCode~~
-<img src="http://fs5.directupload.net/images/170825/w2s4zndm.png" />
+<img src="http://i.imgur.com/JEqRxPv.png" />
 
 This path is used to configure what shall be displayed on a keypress.
 Useage:
