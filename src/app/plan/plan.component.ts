@@ -60,10 +60,10 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
 
 
   skeduleAdHeig() {
+    this.isScrolling = false
+    this.scrollingCopies = [0]
     setTimeout(() => {
       try {
-        this.isScrolling = false
-        this.scrollingCopies = [0]
         $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
         $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity("stop");
         this.adjustHeights();
@@ -98,6 +98,6 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
     $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
     $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity({
       "margin-top": "-=" + this.scrollHeight + "px",
-    }, 20 * this.scrollHeight, 'linear', this.loop.bind(this));
+    }, 2 * this.scrollHeight, 'linear', this.loop.bind(this));
   }
 }

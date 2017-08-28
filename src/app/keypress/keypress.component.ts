@@ -37,7 +37,7 @@ export class KeypressComponent implements OnInit, OnChanges {
           "db": "./api/JSON/LehrerPlan",
           "index1": 0,
           "filter": param,
-          "timeout": 5000
+          "timeout": 15000
         }
       }
     }
@@ -46,7 +46,7 @@ export class KeypressComponent implements OnInit, OnChanges {
         "type": "Png",
         "params": {
           "file": "./assets/images/" + param,
-          "timeout": 5000
+          "timeout": 15000
         }
       }
     } else {
