@@ -61,12 +61,17 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
 
   skeduleAdHeig() {
     setTimeout(() => {
-      this.isScrolling = false
-      this.scrollingCopies = [0]
-      $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
-      $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity("stop");
-      this.adjustHeights();
-    }, 0);
+      try {
+        this.isScrolling = false
+        this.scrollingCopies = [0]
+        $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
+        $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity("stop");
+        this.adjustHeights();
+      }
+      catch (e) {
+        this.skeduleAdHeig();
+      }
+    }, 50);
   }
 
   adjustHeights() {
