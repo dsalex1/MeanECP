@@ -1,18 +1,25 @@
+/**
+ * this is the API management file
+ * it delegates the implementation for '/JSON' further to 'JSONApi'
+ * and delegates the implementation for '/config' further to 'ConfigApi'.
+ * On root path a message is shown that the API works
+ *
+ * @summary   API management
+ *
+ */
+
+//basic imports
 const express = require('express');
 const router = express.Router();
-const path = require('path');
-const http = require('http');
-var fs = require('fs');
 
 const JSONApi = require('./JSON/api.JSON');
 const ConfigApi = require('./config/api.config');
 
-// Set our JSON routes
 router.use('/JSON', JSONApi);
 router.use('/config', ConfigApi);
 
 router.get('/', (req, res) => {
-  res.send('api works');
+  res.send('API works <br/>204 - No Content');
 });
 
 module.exports = router;
