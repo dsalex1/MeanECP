@@ -61,19 +61,23 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
 
   skeduleAdHeig() {
     setTimeout(() => {
-      this.isScrolling = false
-      this.scrollingCopies = [0]
-      $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
-      $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity("stop");
-      this.adjustHeights();
-    }, 0);
+      try {
+        this.isScrolling = false
+        this.scrollingCopies = [0]
+        $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
+        $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity("stop");
+        this.adjustHeights();
+      }
+      catch (e) {
+        this.skeduleAdHeig();
+      }
+    }, 50);
   }
 
   adjustHeights() {
     //console.log(this.ScrCont.nativeElement.offsetHeight + " " + this.ExcCont.nativeElement.offsetHeight)
 
     if (this.ScrCont.nativeElement.offsetHeight > this.ExcCont.nativeElement.offsetHeight) {
-      //FIXME: Headline disapears when switching from isScrolling==true to isScrolling==false
       this.scrollHeight = this.ScrCont.nativeElement.offsetHeight
       console.log("scrollheight,ad.Hei.:" + this.scrollHeight)
       this.isScrolling = true
