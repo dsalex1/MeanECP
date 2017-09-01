@@ -42,7 +42,7 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
   }
 
   ngOnChanges() {
-    /*if (this.plan && this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
+   if (this.plan && this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
       var regex = new RegExp("\\b" + this.filter + "\\b")
       for (var key in exchg) {
         var prop = exchg[key]
@@ -51,6 +51,7 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
       } 
       return false;
     });
+    /*
     if (this.plan && this.sorting) this.sorting.forEach(column => {
         this.plan['Vertretungen'] = this.stableSort(this.plan['Vertretungen'],(n1,n2) => {
              //console.log(n1[column]+" "+n2[column]+" "+(n1[column] > n2[column])+"  "+column)
@@ -65,33 +66,29 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
         });
     });*/
     if (this.ExcCont && this.ScrCont) {
-      console.log("AdHiegth 3")
       this.skeduleAdHeig();
     }
   }
 
   ngAfterViewInit() {
-    console.log("AdHiegth 2")
     this.skeduleAdHeig();
   }
 
   setheighttimer:any
   skeduleAdHeig() {
-    console.log("AdHiegth !!!!!!!!!!!!!!!!!!!!!!!!!!!!!1")
     clearTimeout(this.setheighttimer)
     this.setheighttimer=setTimeout(() => {
-      //try {
+      try {
         this.isScrolling = false
         this.scrollingCopies = [0]
         $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
         $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity("stop");
         this.adjustHeights();
-      //}
-      /*catch (e) {
-        console.log("AdHiegth 1")
+      }
+      catch (e) {
         this.skeduleAdHeig();
-      }*/
-    }, 500);
+      }
+    }, 50);
   }
 
   adjustHeights() {
@@ -139,5 +136,5 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
     return arrOfWrapper.map(function(wrapper){
         return wrapper.elem;
     });
-}
+  }
 }
