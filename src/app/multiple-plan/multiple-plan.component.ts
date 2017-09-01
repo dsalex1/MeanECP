@@ -37,9 +37,9 @@ export class MultiplePlanComponent implements OnInit, OnChanges {
   ngOnChanges() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plans = data.slice(this.firstIndex);
-      this.plans.forEach(plan => {
+      /*this.plans.forEach(plan => {
         plan["Abwesenheiten"]=[]
-      });
+      });*/
       this.state = this.plans[0]["Stand"]["Inhalt"]
       this.footer = this.plans[0]["Footer"]
     })
