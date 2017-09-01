@@ -102,4 +102,5 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
   keypressComp() {
     this.keypress = null;
   }
+  
 }

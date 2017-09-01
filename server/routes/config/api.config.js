@@ -20,11 +20,15 @@ var fs = require('fs'); //used for interaction with files
  * 
  */
 router.post('/Client', (req, res) => {
-  var change = req.body; // save new configuration 
-  var config = JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), 'utf8')); // load all configuration 
-  Object.assign(config, change) // apply the new configuration 
-  res.send(JSON.stringify(change) + "<br/> => <br/>" + JSON.stringify(config)) //send the change made as response
-  fs.writeFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), JSON.stringify(config)) //save the resulting config
+  try {
+    var change = req.body; // save new configuration 
+    var config = JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), 'utf8')); // load all configuration 
+    Object.assign(config, change) // apply the new configuration 
+    res.send(JSON.stringify(change) + "<br/> => <br/>" + JSON.stringify(config)) //send the change made as response
+    fs.writeFileSync(path.join(__dirname, '../JSON/ClientConfig.json'), JSON.stringify(config)) //save the resulting config
+  } catch (err) { //if any error occures an error code is sent
+    res.sendStatus(422)
+  }
 });
 
 /*
@@ -33,11 +37,15 @@ router.post('/Client', (req, res) => {
  * 
  */
 router.post('/Server', (req, res) => {
-  var change = req.body;         // look above for more detailed commentary
-  var config = JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/ServerConfig.json'), 'utf8'));
-  Object.assign(config, change)
-  res.send(JSON.stringify(config))
-  fs.writeFileSync(path.join(__dirname, '../JSON/ServerConfig.json'), JSON.stringify(config))
+  try {
+    var change = req.body;         // look above for more detailed commentary
+    var config = JSON.parse(fs.readFileSync(path.join(__dirname, '../JSON/ServerConfig.json'), 'utf8'));
+    Object.assign(config, change)
+    res.send(JSON.stringify(config))
+    fs.writeFileSync(path.join(__dirname, '../JSON/ServerConfig.json'), JSON.stringify(config))
+  } catch (err) { //if any error occures an error code is sent
+    res.sendStatus(422)
+  }
 });
 
 /*

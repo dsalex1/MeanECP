@@ -15,8 +15,8 @@
       </div>
 
       <div class="plans">
-        <app-plan class="leftPlan" [plan]="leftPlan"></app-plan>
-        <app-plan class="rightPlan" [plan]="rightPlan"></app-plan>
+        <app-plan class="leftPlan" [plan]="leftPlan" [sorting]="['StundeNeu','KlasseNeu']"></app-plan>
+        <app-plan class="rightPlan" [plan]="rightPlan" [sorting]="['StundeNeu','KlasseNeu']"></app-plan>
       </div>
 
       <div class="footer" *ngIf="footer && footer.length>0">

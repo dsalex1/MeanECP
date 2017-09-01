@@ -8,8 +8,8 @@
  */
 config = {
     "ServerPort": 3000,                              //port to listen on
-    "ServerPrivateKey": './certs/ServerCert.key',   //private key corresponding to the cert
-    "ServerCert": './certs/ServerCert.crt',        //server certificate
+    "ServerPrivateKey": './certs/Client_LZ_1/privkey.pem',   //private key corresponding to the cert
+    "ServerCert": './certs/Client_LZ_1/cert.pem',        //server certificate
     "RootCA": './certs/ClientRootCA.crt',         //CA to check incoming client certs against
     "EnableAuthetification": true                //enable reqesting client cert and reject unauth  
 }

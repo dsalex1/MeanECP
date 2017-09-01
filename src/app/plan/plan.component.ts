@@ -16,6 +16,9 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
   @Input()
   filter: string
 
+  @Input()
+  sorting: Array<string>
+
   @ViewChild('ExcCont')
   ExcCont: ElementRef
 
@@ -39,39 +42,56 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
   }
 
   ngOnChanges() {
-    if (this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
+    /*if (this.plan && this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
       var regex = new RegExp("\\b" + this.filter + "\\b")
       for (var key in exchg) {
         var prop = exchg[key]
         if (regex.test(prop))
           return true;
-      }
+      } 
       return false;
     });
-
+    if (this.plan && this.sorting) this.sorting.forEach(column => {
+        this.plan['Vertretungen'] = this.stableSort(this.plan['Vertretungen'],(n1,n2) => {
+             //console.log(n1[column]+" "+n2[column]+" "+(n1[column] > n2[column])+"  "+column)
+              //console.log(n1)
+             if (n1[column] > n2[column]) {
+                return 1;
+            }
+            if (n1[column] < n2[column]) {
+                return -1;
+            }
+            return 0;
+        });
+    });*/
     if (this.ExcCont && this.ScrCont) {
+      console.log("AdHiegth 3")
       this.skeduleAdHeig();
     }
   }
 
   ngAfterViewInit() {
+    console.log("AdHiegth 2")
     this.skeduleAdHeig();
   }
 
-
+  setheighttimer:any
   skeduleAdHeig() {
-    this.isScrolling = false
-    this.scrollingCopies = [0]
-    setTimeout(() => {
-      try {
+    console.log("AdHiegth !!!!!!!!!!!!!!!!!!!!!!!!!!!!!1")
+    clearTimeout(this.setheighttimer)
+    this.setheighttimer=setTimeout(() => {
+      //try {
+        this.isScrolling = false
+        this.scrollingCopies = [0]
         $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
         $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity("stop");
         this.adjustHeights();
-      }
-      catch (e) {
+      //}
+      /*catch (e) {
+        console.log("AdHiegth 1")
         this.skeduleAdHeig();
-      }
-    }, 50);
+      }*/
+    }, 500);
   }
 
   adjustHeights() {
@@ -98,6 +118,26 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
     $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
     $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity({
       "margin-top": "-=" + this.scrollHeight + "px",
-    }, 2 * this.scrollHeight, 'linear', this.loop.bind(this));
+    }, 23 * this.scrollHeight, 'linear', this.loop.bind(this));
   }
+
+  stableSort(arr, cmpFunc) {
+    //wrap the arr elements in wrapper objects, so we can associate them with their origional starting index position
+    var arrOfWrapper = arr.map(function(elem, idx){
+        return {elem: elem, idx: idx};
+    });
+
+    //sort the wrappers, breaking sorting ties by using their elements orig index position
+    arrOfWrapper.sort(function(wrapperA, wrapperB){
+        var cmpDiff = cmpFunc(wrapperA.elem, wrapperB.elem);
+        return cmpDiff === 0 
+             ? wrapperA.idx - wrapperB.idx
+             : cmpDiff;
+    });
+
+    //unwrap and return the elements
+    return arrOfWrapper.map(function(wrapper){
+        return wrapper.elem;
+    });
+}
 }
