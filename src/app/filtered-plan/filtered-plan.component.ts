@@ -27,7 +27,11 @@ export class FilteredPlanComponent implements OnChanges {
 
   ngOnChanges() {
     this._appService.getJsonData(this.db).subscribe((data) => {
-      this.plans = data.slice(this.firstIndex);
+      var tmpPlans = JSON.parse(JSON.stringify(data.slice(this.firstIndex)));
+      tmpPlans.forEach(plan => {
+        plan["Abwesenheiten"]=[]
+      });
+      this.plans=tmpPlans;
       this.state = this.plans[0]["Stand"]["Inhalt"]
       this.footer = this.plans[0]["Footer"]
     })

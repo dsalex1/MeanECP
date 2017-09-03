@@ -42,6 +42,7 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
   }
 
   ngOnChanges() {
+   this.plan=JSON.parse(JSON.stringify(this.plan))
    if (this.plan && this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
       var regex = new RegExp("\\b" + this.filter + "\\b")
       for (var key in exchg) {
@@ -51,7 +52,7 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
       } 
       return false;
     });
-    /*
+    console.log("start sorting")
     if (this.plan && this.sorting) this.sorting.forEach(column => {
         this.plan['Vertretungen'] = this.stableSort(this.plan['Vertretungen'],(n1,n2) => {
              //console.log(n1[column]+" "+n2[column]+" "+(n1[column] > n2[column])+"  "+column)
@@ -64,7 +65,8 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
             }
             return 0;
         });
-    });*/
+    });
+    console.log("sorting done")
     if (this.ExcCont && this.ScrCont) {
       this.skeduleAdHeig();
     }
@@ -115,7 +117,7 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
     $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
     $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity({
       "margin-top": "-=" + this.scrollHeight + "px",
-    }, 23 * this.scrollHeight, 'linear', this.loop.bind(this));
+    }, 3*23 * this.scrollHeight, 'linear', this.loop.bind(this));
   }
 
   stableSort(arr, cmpFunc) {
