@@ -37,15 +37,15 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-  }
-
-  ngOnChanges() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.leftPlan = data[this.index1];
       this.rightPlan = data[this.index2];
       this.state = this.leftPlan["Stand"]["Inhalt"]
       this.footer = this.leftPlan["Footer"]
     })
+  }
+
+  ngOnChanges() {
     this.setupSlide()
   }
 

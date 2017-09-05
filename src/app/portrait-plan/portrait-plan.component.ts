@@ -32,14 +32,14 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-  }
-
-  ngOnChanges() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plan = data[this.index];
       this.state = this.plan["Stand"]["Inhalt"]
       this.footer = this.plan["Footer"]
     })
+  }
+
+  ngOnChanges() {
     this.setupSlide()
   }
 
@@ -102,5 +102,5 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
   keypressComp() {
     this.keypress = null;
   }
-  
+
 }

@@ -42,29 +42,29 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
   }
 
   ngOnChanges() {
-   this.plan=JSON.parse(JSON.stringify(this.plan))
-   if (this.plan && this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
+    this.plan = { ...this.plan }
+    if (this.plan && this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
       var regex = new RegExp("\\b" + this.filter + "\\b")
       for (var key in exchg) {
         var prop = exchg[key]
         if (regex.test(prop))
           return true;
-      } 
+      }
       return false;
     });
     console.log("start sorting")
     if (this.plan && this.sorting) this.sorting.forEach(column => {
-        this.plan['Vertretungen'] = this.stableSort(this.plan['Vertretungen'],(n1,n2) => {
-             //console.log(n1[column]+" "+n2[column]+" "+(n1[column] > n2[column])+"  "+column)
-              //console.log(n1)
-             if (n1[column] > n2[column]) {
-                return 1;
-            }
-            if (n1[column] < n2[column]) {
-                return -1;
-            }
-            return 0;
-        });
+      this.plan['Vertretungen'] = this.stableSort(this.plan['Vertretungen'], (n1, n2) => {
+        //console.log(n1[column]+" "+n2[column]+" "+(n1[column] > n2[column])+"  "+column)
+        //console.log(n1)
+        if (n1[column] > n2[column]) {
+          return 1;
+        }
+        if (n1[column] < n2[column]) {
+          return -1;
+        }
+        return 0;
+      });
     });
     console.log("sorting done")
     if (this.ExcCont && this.ScrCont) {
@@ -76,10 +76,10 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
     this.skeduleAdHeig();
   }
 
-  setheighttimer:any
+  setheighttimer: any
   skeduleAdHeig() {
     clearTimeout(this.setheighttimer)
-    this.setheighttimer=setTimeout(() => {
+    this.setheighttimer = setTimeout(() => {
       try {
         this.isScrolling = false
         this.scrollingCopies = [0]
@@ -117,26 +117,26 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
     $(this.ScrCont.nativeElement).find(".exchangeTable").first().css({ "margin-top": "0px" });
     $(this.ScrCont.nativeElement).find(".exchangeTable").first().velocity({
       "margin-top": "-=" + this.scrollHeight + "px",
-    }, 3*23 * this.scrollHeight, 'linear', this.loop.bind(this));
+    }, 30 * this.scrollHeight, 'linear', this.loop.bind(this));
   }
 
   stableSort(arr, cmpFunc) {
     //wrap the arr elements in wrapper objects, so we can associate them with their origional starting index position
-    var arrOfWrapper = arr.map(function(elem, idx){
-        return {elem: elem, idx: idx};
+    var arrOfWrapper = arr.map(function (elem, idx) {
+      return { elem: elem, idx: idx };
     });
 
     //sort the wrappers, breaking sorting ties by using their elements orig index position
-    arrOfWrapper.sort(function(wrapperA, wrapperB){
-        var cmpDiff = cmpFunc(wrapperA.elem, wrapperB.elem);
-        return cmpDiff === 0 
-             ? wrapperA.idx - wrapperB.idx
-             : cmpDiff;
+    arrOfWrapper.sort(function (wrapperA, wrapperB) {
+      var cmpDiff = cmpFunc(wrapperA.elem, wrapperB.elem);
+      return cmpDiff === 0
+        ? wrapperA.idx - wrapperB.idx
+        : cmpDiff;
     });
 
     //unwrap and return the elements
-    return arrOfWrapper.map(function(wrapper){
-        return wrapper.elem;
+    return arrOfWrapper.map(function (wrapper) {
+      return wrapper.elem;
     });
   }
 }
