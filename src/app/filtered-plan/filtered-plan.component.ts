@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, Input } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
 import { AppService } from '../app.service'
 
 @Component({
@@ -6,7 +6,7 @@ import { AppService } from '../app.service'
   templateUrl: './filtered-plan.component.html',
   styleUrls: ['./filtered-plan.component.css']
 })
-export class FilteredPlanComponent implements OnInit {
+export class FilteredPlanComponent implements AfterViewInit {
   @Input()
   db: any
 
@@ -24,7 +24,7 @@ export class FilteredPlanComponent implements OnInit {
 
   constructor(private _appService: AppService) {
   }
-  ngOnInit() {
+  ngAfterViewInit() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plans = data.slice(this.firstIndex);
       this.state = this.plans[0]["Stand"]["Inhalt"]

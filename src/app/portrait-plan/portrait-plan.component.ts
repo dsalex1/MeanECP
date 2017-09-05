@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, Input, HostListener } from '@angular/core';
+import { Component, AfterViewInit, OnChanges, Input, HostListener } from '@angular/core';
 import { AppService } from '../app.service'
 @Component({
   selector: 'app-portrait-plan',
@@ -6,7 +6,7 @@ import { AppService } from '../app.service'
   styleUrls: ['./portrait-plan.component.css']
 })
 
-export class PortraitPlanComponent implements OnInit, OnChanges {
+export class PortraitPlanComponent implements AfterViewInit, OnChanges {
 
   @Input()
   db: any
@@ -31,7 +31,7 @@ export class PortraitPlanComponent implements OnInit, OnChanges {
   constructor(private _appService: AppService) {
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plan = data[this.index];
       this.state = this.plan["Stand"]["Inhalt"]

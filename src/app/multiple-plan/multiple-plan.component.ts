@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, Input, HostListener } from '@angular/core';
+import { Component, AfterViewInit, OnChanges, Input, HostListener } from '@angular/core';
 import { AppService } from '../app.service'
 
 @Component({
@@ -6,7 +6,7 @@ import { AppService } from '../app.service'
   templateUrl: './multiple-plan.component.html',
   styleUrls: ['./multiple-plan.component.css']
 })
-export class MultiplePlanComponent implements OnInit, OnChanges {
+export class MultiplePlanComponent implements AfterViewInit, OnChanges {
 
   @Input()
   db: any
@@ -31,7 +31,7 @@ export class MultiplePlanComponent implements OnInit, OnChanges {
   constructor(private _appService: AppService) {
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.plans = data.slice(this.firstIndex);
       this.state = this.plans[0]["Stand"]["Inhalt"]
