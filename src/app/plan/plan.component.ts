@@ -42,7 +42,10 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
   }
 
   ngOnChanges() {
-    this.plan = { ...this.plan }
+    console.log(this.plan)
+    if (this.plan)
+      this.plan = Object.assign({}, this.plan);
+    console.log(this.plan)
     if (this.plan && this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
       var regex = new RegExp("\\b" + this.filter + "\\b")
       for (var key in exchg) {
@@ -52,8 +55,9 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
       }
       return false;
     });
-    console.log("start sorting")
+
     if (this.plan && this.sorting) this.sorting.forEach(column => {
+      console.log("start sorting")
       this.plan['Vertretungen'] = this.stableSort(this.plan['Vertretungen'], (n1, n2) => {
         //console.log(n1[column]+" "+n2[column]+" "+(n1[column] > n2[column])+"  "+column)
         //console.log(n1)
@@ -65,8 +69,9 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
         }
         return 0;
       });
+      console.log("sorting done")
     });
-    console.log("sorting done")
+
     if (this.ExcCont && this.ScrCont) {
       this.skeduleAdHeig();
     }
