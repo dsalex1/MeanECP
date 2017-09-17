@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, Input, HostListener } from '@angular/core';
+import { Component, AfterViewInit, OnChanges, Input, HostListener } from '@angular/core';
 import { AppService } from '../app.service'
 
 @Component({
@@ -6,7 +6,7 @@ import { AppService } from '../app.service'
   templateUrl: './landscape-plan.component.html',
   styleUrls: ['./landscape-plan.component.css']
 })
-export class LandscapePlanComponent implements OnInit, OnChanges {
+export class LandscapePlanComponent implements AfterViewInit {
 
   @Input()
   db: any
@@ -36,7 +36,7 @@ export class LandscapePlanComponent implements OnInit, OnChanges {
   constructor(private _appService: AppService) {
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     this._appService.getJsonData(this.db).subscribe((data) => {
       this.leftPlan = data[this.index1];
       this.rightPlan = data[this.index2];
