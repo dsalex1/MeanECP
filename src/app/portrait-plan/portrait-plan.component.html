@@ -4,7 +4,7 @@
     (completed)="slideComp()">
   </app-slideshow>
 
-  <app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
+  <app-keypress [hidden]="!keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
 
   <ng-container *ngIf="!curSlideshow && !keypress">
     <div class="contentContainer">

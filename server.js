@@ -55,6 +55,10 @@ app.get('(/static)?/presentation/*', function (req, res) {
     externalRes.pipe(res);
   });
   externalReq.end();
+  externalReq.on('error', function (e) {  // catch ENETUNREACH or ECONNREFUSED,...
+    console.error(e);
+    console.error("Continuing Execution...");
+  });
 });
 
 // Catch all other routes and return the index file
