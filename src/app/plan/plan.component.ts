@@ -47,7 +47,7 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
       this.plan = Object.assign({}, this.plan);
     console.log(this.plan)
     if (this.plan && this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
-      var regex = new RegExp("\\b" + this.filter + "\\b")
+      var regex = new RegExp("(^|[^a-zA-ZäöüßÄÖÜ])" + this.filter + "(?![a-zA-ZäöüßÄÖÜ])") // \b matches before and behind 'ö'
       for (var key in exchg) {
         var prop = exchg[key]
         if (regex.test(prop))
