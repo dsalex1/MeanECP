@@ -4,7 +4,7 @@
     {{ plan['Titel']['Inhalt']}}
   </div>
 
-  <div class="absents" *ngIf="plan['Abwesenheiten'] && plan['Abwesenheiten'].length>0">
+  <div class="absents" *ngIf="plan['Abwesenheiten'] && plan['Abwesenheiten'].length>0 && !(hideAnnot==true)">
     <b>Abwesenheiten</b><br/>
     <span *ngFor="let absent of plan['Abwesenheiten'] ; let i = index ; let last = last"> 
       {{absent['Kuerzel']}}{{absent['Anmerkung']==="" ? "" : " "+absent['Anmerkung']}}{{last ? '' : ', '}}
@@ -55,7 +55,7 @@
       </table>
     </div>
   </div>
-  <div class="annotation " *ngIf="plan[ 'PlanZusatz'] && plan[ 'PlanZusatz'].length>0 ">
+  <div class="annotation " *ngIf="plan[ 'PlanZusatz'] && plan[ 'PlanZusatz'].length>0 && !(hideAnnot==true)">
     <p class="annotationElement" *ngFor="let annot of plan['PlanZusatz']; let i = index" [style.backgroundColor]="annot[ 'Style']['backgroundcolor'] | JSONColToCSS:(i%2==1)">
       {{annot['Inhalt']}}
     </p>

@@ -19,6 +19,9 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
   @Input()
   sorting: Array<string>
 
+  @Input()
+  hideAnnot: Boolean
+
   @ViewChild('ExcCont')
   ExcCont: ElementRef
 
@@ -40,7 +43,6 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
 
   ngOnInit() {
   }
-
   ngOnChanges() {
     console.log(this.plan)
     if (this.plan)

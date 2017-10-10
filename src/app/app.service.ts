@@ -36,10 +36,13 @@ export class AppService {
             .map(res => res.json())
             .retryWhen(err => Observable.timer(data["pollInterval"]))
           ).distinctUntilChanged((a, b) => {
-              console.log("compare: "+(JSON.stringify(a) == JSON.stringify(b)));
-              return JSON.stringify(a) == JSON.stringify(b)
+            console.log("compare: " + (JSON.stringify(a) == JSON.stringify(b)));
+            if (!(JSON.stringify(a) == JSON.stringify(b))) {
+              window.location.reload()
             }
-          ) 
+            return JSON.stringify(a) == JSON.stringify(b)
+          }
+          )
       )
   }
   /*this.getConfigData()
