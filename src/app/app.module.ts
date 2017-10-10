@@ -17,6 +17,7 @@ import { FilteredPlanComponent } from './filtered-plan/filtered-plan.component';
 import { KeypressComponent } from './keypress/keypress.component';
 
 import { JSONColToCSSPipe } from './util/JSONColToCSS.pipe';
+import { TimeOverlayComponent } from './time-overlay/time-overlay.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { JSONColToCSSPipe } from './util/JSONColToCSS.pipe';
     FilteredPlanComponent,
     KeypressComponent,
     JSONColToCSSPipe,
+    TimeOverlayComponent,
   ],
   imports: [
     BrowserModule,
