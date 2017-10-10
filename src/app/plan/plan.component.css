@@ -42,7 +42,7 @@
 }
 
 .rowKlasse{
-	max-width: 100px
+	max-width: 120px
 }
 
 .rowStunde, .rowKlasse, .rowFach, .rowLehrer, .rowRaum, .rowVertretung, .rowAnmerkung{
