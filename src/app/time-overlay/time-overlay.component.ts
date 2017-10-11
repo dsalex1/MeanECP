@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, NgZone, Renderer2, ElementRef } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-time-overlay',
@@ -7,16 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeOverlayComponent implements OnInit {
 
-  constructor() { }
+  constructor(private zone: NgZone, private renderer: Renderer2, private datePipe: DatePipe) { }
+
+  @ViewChild('dateElem')
+  public dateElem: ElementRef;
 
   dateTime = null
 
   ngOnInit() {
-    this.dateTime = Date.now()
+    this.zone.runOutsideAngular(() => {
 
-    setInterval(() => {
-      this.dateTime = Date.now()
-    }, 1000)
+      setInterval(() => {
+
+        this.dateTime = Date.now()
+
+        this.renderer.setProperty(this.dateElem.nativeElement, 'innerHTML',
+          this.datePipe.transform(this.dateTime, 'HH:mm:ss') +
+          "<br/>" +
+          this.datePipe.transform(this.dateTime, 'dd.MM.y'));
+
+      }, 1000);
+
+    });
+
   }
 
 }

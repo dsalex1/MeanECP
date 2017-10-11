@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -39,7 +40,7 @@ import { TimeOverlayComponent } from './time-overlay/time-overlay.component';
     FormsModule,
     HttpModule,
   ],
-  providers: [AppService],
+  providers: [DatePipe, AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
