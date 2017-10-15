@@ -2,6 +2,11 @@
 
 A reimplementation of the school internal substitution system using the MEAN-stack  
 
+
+link to animation: https://gyazo.com/c754c716a77e20ca53071efe663987c8
+![alt text](https://i.gyazo.com/4d48684c6007aac26322dc36b71e57c6.png " ")
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
