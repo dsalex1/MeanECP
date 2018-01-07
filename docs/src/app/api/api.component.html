@@ -1,0 +1,370 @@
+<div class="content">
+  
+  <h2>Config API</h2>
+  <p>The deployment server has 3 routes for configuring it. The access to these has to be authorized by using a client certificate
+    trusted by '/cert/ClientRootCA.crt' All paths only accept valid JSON.</p>
+  <h3>/api/config/Client</h3>
+  <p>This path is used to configure which client shall get which content.<br> Useage:
+  </p>
+  <pre><code>{{ '{' }}
+    [CN]: {{ '{' }}
+        "type": [baseType],
+        "params": [params]
+    {{ '}' }}
+    (,[CN]: {{ '{' }}
+        "type": [baseType],
+        "params": [params]
+    {{ '}' }})
+{{ '}' }}
+</code></pre>
+  <table>
+    <thead>
+      <tr>
+        <th>placeholder</th>
+        <th>type</th>
+        <th>explaination</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>[CN]</td>
+        <td>string</td>
+        <td>the CommonName of the client to be configured, used in its certificate</td>
+      </tr>
+      <tr>
+        <td>[baseType]</td>
+        <td>string</td>
+        <td>a member of BaseType, see below</td>
+      </tr>
+      <tr>
+        <td>[params]</td>
+        <td>object</td>
+        <td>an object of type Params, see below</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>example:</p>
+  <div >
+    <pre>{{ '{' }}
+    "ClientTest1": {{ '{' }}
+        "type": "LandscapePlan",
+        "params": {{ '{' }}
+            "db": "./api/JSON/LehrerPlan",
+            "index1": 0,
+            "index2": 1,
+            "slideshow": {{ '{' }}
+                "interval": "5000",
+                "timeStart": "2017-6-19 20:10:00",
+                "timeEnd": "2017-6-20 20:10:00",
+                "params": {{ '{' }}
+                    "id": "1DOeyOhWo9hjwJDhcMJLW8Kb2kA9SEHAGcuSOLNV9sKU",
+                    "iterations": 2,
+                    "delay": 1000
+                {{ '}' }}
+            {{ '}' }}
+        {{ '}' }}
+    {{ '}' }}
+{{ '}' }}</pre>
+  </div>
+  <h3>/api/config/Server</h3>
+  <p>This path is used to configure all settings that affect globally all clients. Useage:
+  </p>
+  <pre><code>{{ '{' }}
+    [setting]: [value]
+    (,[setting]: [value])
+{{ '}' }}
+</code></pre>
+  <table>
+    <thead>
+      <tr>
+        <th>placeholder</th>
+        <th>type</th>
+        <th>explaination</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>[setting]</td>
+        <td>string</td>
+        <td>setting to be set or modified</td>
+      </tr>
+      <tr>
+        <td>[value]</td>
+        <td>any</td>
+        <td>value to be set</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>example:</p>
+  <div >
+    <pre>{{ '{' }}
+    "defaultTimeout": "5000",
+    "pollInterval": 5000
+{{ '}' }}</pre>
+  </div>
+  <h3>
+    <del>/api/config/KeyCode</del>
+  </h3>
+  <p>This path is used to configure what shall be displayed on a keypress. Useage:
+  </p>
+  <pre><code>{{ '{' }}
+    [keyCode]: {{ '{' }}
+        "type": [type],
+        "params": [params]
+    {{ '}' }}
+{{ '}' }}
+</code></pre>
+  <table>
+    <thead>
+      <tr>
+        <th>placeholder</th>
+        <th>type</th>
+        <th>explaination</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>[keyCpde]</td>
+        <td>integer</td>
+        <td>keyCode to be configured</td>
+      </tr>
+      <tr>
+        <td>[type]</td>
+        <td>string</td>
+        <td>a member of Type, see below</td>
+      </tr>
+      <tr>
+        <td>[params]</td>
+        <td>object</td>
+        <td>an object of type Params, see below</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>example:</p>
+  <div >
+    <pre>{{ '{' }}
+    "32": {{ '{' }}
+        "type": "FilteredPlan",
+        "params": {{ '{' }}
+            "db": "./api/JSON/LehrerPlan",
+            "index1": 0,
+            "filter": "And",
+            "timeout": 5000
+        {{ '}' }}
+    {{ '}' }}
+{{ '}' }}</pre>
+  </div>
+  <h3>/api/config/Presentation</h3>
+  <p>This path is a shortcut to set an presentation for a certain client. Useage:
+  </p>
+  <pre><code>{{ '{' }}
+    "CN": [CN],
+    "slideshow":[slideshow]
+{{ '}' }}
+</code></pre>
+  <table>
+    <thead>
+      <tr>
+        <th>placeholder</th>
+        <th>type</th>
+        <th>explaination</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>[CN]</td>
+        <td>string</td>
+        <td>CommonName of the client the presentation shall be asigned to</td>
+      </tr>
+      <tr>
+        <td>[slideshow]</td>
+        <td>string</td>
+        <td>an object of type Slideshow, see below</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>example:</p>
+  <div >
+    <pre>{{ '{' }}
+    "CN": "testClient1",
+    "slideshow": {{ '{' }}
+        "interval": "5000",
+        "timeStart": "2017-6-19 20:10:00",
+        "timeEnd": "2017-6-20 20:10:00",
+        "params": {{ '{' }}
+            "id": "1DOeyOhWo9hjwJDhcMJLW8Kb2kA9SEHAGcuSOLNV9sKU",
+            "iterations": 2,
+            "delay": 1000
+        {{ '}' }}
+    {{ '}' }}
+{{ '}' }}</pre>
+  </div>
+  <h4>BaseType</h4>
+  <p>one of the following:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>value</th>
+        <th>explaination</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>"LandscapePlan"</td>
+        <td>View which displays 2 plans in landscape orientation</td>
+      </tr>
+      <tr>
+        <td>"PortraitPlan"</td>
+        <td>View which displays 1 plan in portrait orientation</td>
+      </tr>
+      <tr>
+        <td>"MultiplePlan"</td>
+        <td>View which displays multiple plans in portrait orientation</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>Type</h4>
+  <p>one of the following:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>value</th>
+        <th>explaination</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>any BaseType</td>
+        <td>/</td>
+      </tr>
+      <tr>
+        <td>"FilteredPlan"</td>
+        <td>View which displays multiple plans in portrait orientation with a filter applied</td>
+      </tr>
+      <tr>
+        <td>"Png"</td>
+        <td>View which displays a png</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>Slideshow</h4>
+  <p>an object containing the following Properties:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>property</th>
+        <th>type</th>
+        <th>explaination</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>"db"</td>
+        <td>string</td>
+        <td>database used to obtain the plan data from</td>
+      </tr>
+      <tr>
+        <td>"interval"</td>
+        <td>integer</td>
+        <td>time in ms after which the presentation shall be shown</td>
+      </tr>
+      <tr>
+        <td>"timeStart"</td>
+        <td>string</td>
+        <td>ISO formatted time to beginn showing the presentation at all</td>
+      </tr>
+      <tr>
+        <td>"timeEnd"</td>
+        <td>string</td>
+        <td>ISO formatted time to end showing the presentation at all</td>
+      </tr>
+      <tr>
+        <td>"params"</td>
+        <td>Params</td>
+        <td>object of type Params, see below</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>Params</h4>
+  <p>an object containing the following Properties, which are optional if not used.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>property</th>
+        <th>type</th>
+        <th>explaination</th>
+        <th>used in</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>"db"</td>
+        <td>string</td>
+        <td>database used to obtain the plan data from</td>
+        <td>any</td>
+      </tr>
+      <tr>
+        <td>"index1"</td>
+        <td>integer</td>
+        <td>index in db of the first plan which shall be displayed</td>
+        <td>LandscapePlan, PortraitPlan</td>
+      </tr>
+      <tr>
+        <td>"index2"</td>
+        <td>integer</td>
+        <td>index in db of the second plan which shall be displayed</td>
+        <td>PortraitPlan</td>
+      </tr>
+      <tr>
+        <td>"firstIndex"</td>
+        <td>integer</td>
+        <td>the first index of all plans that shall be displayed</td>
+        <td>MultiplePlan</td>
+      </tr>
+      <tr>
+        <td>"slideshow"</td>
+        <td>Slideshow</td>
+        <td>and Shlidshow object that shall be attached to aview</td>
+        <td>any BaseTypes</td>
+      </tr>
+      <tr>
+        <td>"filter"</td>
+        <td>string</td>
+        <td>filter to be applied on a filteredPlan page</td>
+        <td>FilteredPlan</td>
+      </tr>
+      <tr>
+        <td>"file"</td>
+        <td>string</td>
+        <td>file to be shown, must be an png</td>
+        <td>Png</td>
+      </tr>
+      <tr>
+        <td>"timeout"</td>
+        <td>integer</td>
+        <td>timeout in ms until switching from a keypress</td>
+        <td>FilteredPlan,Png</td>
+      </tr>
+      <tr>
+        <td>"id"</td>
+        <td>string</td>
+        <td>id of te presentation to be shown</td>
+        <td>Slideshow</td>
+      </tr>
+      <tr>
+        <td>"iterations"</td>
+        <td>integer</td>
+        <td>how many times the presentation shall be iterated through</td>
+        <td>Slideshow</td>
+      </tr>
+      <tr>
+        <td>"delay"</td>
+        <td>integer</td>
+        <td>time in ms a slide shall be shown before switching to the next one</td>
+        <td>Slideshow</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
