@@ -1,6 +1,6 @@
 # MeanECP
 
-A reimplementation of the school internal substitution system using the MEAN-stack  
+A reimplementation of the school internal substitution system using the MEAN-stack.  
 
 
 link to animation: https://gyazo.com/c754c716a77e20ca53071efe663987c8
