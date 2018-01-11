@@ -344,7 +344,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"main\">\n  <div class=\"left\">\n    <img class=\"logo\" src=\"assets/logoWhite.svg\" />\n  </div>\n\n  <div class=\"middle\">\n  E-Mail: <a href=\"mailto:dsalex1@ymail.com\">dsalex1@ymail.com</a><br/>\n  <br/>\n  Mühlenhof 55<br/>\n  24534 Neumünster<br/>\n  Germany<br/>\n  <br/>\n  <a href=\"/Disclaimer\">Disclaimer</a>  |  <a href=\"/Impressum\">Impressum</a>  |  <a href=\"/Datenschutz\">Datenschutz</a>\n  </div>\n\n  <div class=\"right\">\n    <br/><br/><br/><br/><br/><br/> \n    Copyright © 2018 Alexander Seidler\n  </div>\n</div>"
+module.exports = "<div id=\"main\">\n  <div class=\"left\">\n    <img class=\"logo\" src=\"assets/logoWhite.svg\" />\n  </div>\n\n  <div class=\"middle\">\n  E-Mail: <a href=\"mailto:dsalex1@ymail.com\">dsalex1@ymail.com</a><br/>\n  <br/>\n  Mühlenhof 55<br/>\n  24534 Neumünster<br/>\n  Germany<br/>\n  <br/>\n  <a href=\"Disclaimer\">Disclaimer</a>  |  <a href=\"Impressum\">Impressum</a>  |  <a href=\"Datenschutz\">Datenschutz</a>\n  </div>\n\n  <div class=\"right\">\n    <br/><br/><br/><br/><br/><br/> \n    Copyright © 2018 Alexander Seidler\n  </div>\n</div>"
 
 /***/ }),
 
@@ -539,7 +539,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>   \n    <div class=\"logo\">\n            <img  src=\"assets/logoBlackSmall.png\" />\n    </div>\n    \n    <nav>\n      <ul id=\"mainNav\">\n        <li ><a href=\"/\">Home</a></li>\n        <li ><a href=\"/API\">API</a></li>\n      </ul>\n    </nav>\n</header>"
+module.exports = "<header>   \n    <div class=\"logo\">\n            <img  src=\"assets/logoBlackSmall.png\" />\n    </div>\n    \n    <nav>\n      <ul id=\"mainNav\">\n        <li ><a href=\"\">Home</a></li>\n        <li ><a href=\"API\">API</a></li>\n      </ul>\n    </nav>\n</header>"
 
 /***/ }),
 
