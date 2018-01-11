@@ -1,0 +1,13 @@
+1. logo based on http://www.gideaonline.com/wp-content/uploads/2015/11/logo-mean2.png http://lerjen.me/wp-content/uploads/2015/05/maxresdefault-825x510.jpg
+https://d21ii91i3y6o6h.cloudfront.net/gallery_images/from_proof/6120/large/1435723400/mean-stack-die-cut.png
+2. header
+3. navbar 
+4. footer https://www.bourncreative.com/a-website-footer-more-than-a-copyright-notice/ http://www.projektnetschool.de/presse/
+5. datenschutz: http://www.projektnetschool.de/datenschutz/
+6. disclaimer:http://www.amplifiedbc.com/docs/Disclaimer.pdf
+7. impressum:https://www.juraforum.de/impressum-generator/
+8. logo makeover 
+9. API page added based on https://github.com/dsalex1/MeanECP
+10. styling makeover
+11. add content to main page https://www.webpagefx.com/web-design/html-ipsum/
+12. added transition on background
