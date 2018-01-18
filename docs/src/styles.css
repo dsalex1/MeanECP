@@ -1,10 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+Author: dsalex1
+Author URI: https://github.com/dsalex1/MeanECP/tree/master/docs
+Description: Global styles 
+*/
+
+/*remove all default offsets...much styling issues otherwise*/
 *{
     margin:0;
     padding:0;
     font-family: Arial
 }
 
+
+/*set primary color, darkblue, to all header and text tags, and custom size/offsets for a clearer layout*/
 h1{
     margin-top:0;
     padding-top:0;
@@ -37,6 +45,8 @@ p{
     line-height:1.8em;
     margin-bottom:1.6em
 }
+
+/*remove links color highlighting*/
 a{
     color:#444;
 }

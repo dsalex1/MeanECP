@@ -1,3 +1,9 @@
+/*
+Author: dsalex1
+Author URI: https://github.com/dsalex1/MeanECP/tree/master/docs
+Description: Referrence file for all components, and routing
+*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,6 +17,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 import { APIComponent } from './api/api.component';
 
+/*define routing, which path leads to which component*/ 
 const appRoutes: Routes = [
   { path: 'Impressum', component: ImpressumComponent },
   { path: 'Disclaimer',      component: DisclaimerComponent },
@@ -20,6 +27,7 @@ const appRoutes: Routes = [
   { path: '**', redirectTo: '/'},
 ];
 
+/*declare components*/ 
 @NgModule({
   declarations: [
     AppComponent,

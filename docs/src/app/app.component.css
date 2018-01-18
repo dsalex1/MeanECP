@@ -1,3 +1,10 @@
+/*
+Author: dsalex1
+Author URI: https://github.com/dsalex1/MeanECP/tree/master/docs
+Description: deep styling for children
+*/
+
+/*make the content of child pages smaller so it looks more clear*/
 ::ng-deep .content{
     margin:110px auto 70px auto;
     width:70%;

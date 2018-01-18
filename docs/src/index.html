@@ -1,10 +1,20 @@
 <!doctype html>
+<!--
+Author: dsalex1
+Author URI: https://github.com/dsalex1/MeanECP/tree/master/docs
+Description: html entry point
+-->
+
 <html lang="en">
 <head>
+
+  <!--import jquery for slide effect on main page-->
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+
+  <!--js code for google analytics-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112004460-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,14 +24,21 @@
     gtag('config', 'UA-112004460-1');
   </script>
 
+  <!--standard tags-->
   <meta charset="utf-8">
   <title>MeanECPWebsite</title>
+
+  <!--set base url so image/source/html files are referred to correctly, while we are not on domain root-->
   <base href="https://dsalex1.github.io/MeanECP/">
 
+  <!-- i have no clue...angular cli created this-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
 </head>
 <body>
+  <!-- set entry point for the webapp-->
   <app-root></app-root>
 </body>
 </html>
