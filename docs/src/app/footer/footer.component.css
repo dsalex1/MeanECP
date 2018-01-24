@@ -1,3 +1,10 @@
+/*
+Author: dsalex1
+Author URI: https://github.com/dsalex1/MeanECP/tree/master/docs
+Description: Footer styling, alignment and link normalizing
+*/
+
+/*overall footer style*/
 #main{
     width:100%;
     background-color:#222;
@@ -5,6 +12,7 @@
     display:flex;
 }
 
+/*positioning inside the footer*/
 .left{
     flex: 1;
     text-align: left;
@@ -32,6 +40,8 @@
     text-align: right;
     margin:30px;
 }
+
+/*make links unspecial*/
 a{
     color:white
 }

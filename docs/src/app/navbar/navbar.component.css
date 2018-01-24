@@ -1,3 +1,10 @@
+/*
+Author: dsalex1
+Author URI: https://github.com/dsalex1/MeanECP/tree/master/docs
+Description: Navbar styling, general appearence and tab links styling 
+*/
+
+/* set the header fixed at top and on top of everything else*/
 header{
     position:fixed;
     top:0;
@@ -8,6 +15,7 @@ header{
     background-Color:rgba(240,240,240,.9);
 }
 
+
 .logo{
     padding:2px;
     float:left
@@ -16,6 +24,7 @@ header{
     height:66px;
 }
 
+/*make the tab links look nice*/
 #mainNav{
     list-style-type:none;
     padding:23px 0px 5px 0px;
