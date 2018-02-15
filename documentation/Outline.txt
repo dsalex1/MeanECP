@@ -1,0 +1,14 @@
+entwicklung eines anzeigesystems
+    einbettung (haben sie ergänzt können sie das erläutern?)
+    vorraussetzungen (datenschutz)
+    einleitung
+    version 1.0 -> intention von V.2.0
+    sprache und framework - typescript, angular, node, express,...
+    architektur - client/server
+        sicherheit und ssl
+    spezifische probleme
+        Angular.js => Angular 4
+        scrolling performance
+        bugs
+            ...
+    weiterentwicklung und persistenz
