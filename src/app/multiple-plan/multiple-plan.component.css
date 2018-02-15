@@ -4,7 +4,7 @@ body{
     background-size:cover;
     width:1080px;
     height:1920px;
-   /* transform: rotate(90deg) translate(-420px,-420px);*/
+    transform: rotate(90deg) translate(-420px,-420px);/**/
 }
 
 .contentContainer{

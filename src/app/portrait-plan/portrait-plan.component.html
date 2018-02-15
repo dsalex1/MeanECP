@@ -4,7 +4,7 @@
     (completed)="slideComp()">
   </app-slideshow>
 
-  <app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
+  <app-keypress [hidden]="!keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
 
   <ng-container *ngIf="!curSlideshow && !keypress">
     <div class="contentContainer">
@@ -15,7 +15,7 @@
       </div>
 
       <div class="plans">
-        <app-plan class="plan" [plan]="plan"></app-plan>
+        <app-plan class="plan" [plan]="plan" [sorting]="['LehrerNeu','VertretungNeu']"></app-plan>
       </div>
 
       <div class="footer" *ngIf="footer && footer.length>0">

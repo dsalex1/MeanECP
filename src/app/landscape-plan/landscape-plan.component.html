@@ -4,9 +4,12 @@
     (completed)="slideComp()">
   </app-slideshow>
 
-  <app-keypress *ngIf="keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
+  <app-keypress [hidden]="!keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
 
   <ng-container *ngIf="!curSlideshow && !keypress">
+
+    <app-time-overlay class="timeOverlay"></app-time-overlay>
+
     <div class="contentContainer">
       <div class="header">
         <div class="state">
@@ -15,8 +18,8 @@
       </div>
 
       <div class="plans">
-        <app-plan class="leftPlan" [plan]="leftPlan"></app-plan>
-        <app-plan class="rightPlan" [plan]="rightPlan"></app-plan>
+        <app-plan class="leftPlan" [plan]="leftPlan" [sorting]="['StundeNeu','KlasseNeu']"></app-plan>
+        <app-plan class="rightPlan" [plan]="rightPlan" [sorting]="['StundeNeu','KlasseNeu']"></app-plan>
       </div>
 
       <div class="footer" *ngIf="footer && footer.length>0">

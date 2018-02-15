@@ -23,10 +23,17 @@ export class KeypressComponent implements OnInit, OnChanges {
   params: any = {}
   constructor(private _appservice: AppService) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    console.log("has inited and 10 counts left to reload")
+  }
+
+  MemCounter = 10
 
   ngOnChanges() {
+    this.MemCounter = this.MemCounter - 1
+    console.log("" + this.MemCounter + " counts left to reload")
     console.log("CHARS ARRIVED: " + this.keyevt)
+
     var cmd = this.keyevt.split('|')[0]
     var param = this.keyevt.split('|')[1]
 
@@ -59,6 +66,8 @@ export class KeypressComponent implements OnInit, OnChanges {
 
     clearTimeout(this.timer);
     this.timer = setTimeout(() => {
+      if (this.MemCounter < 1)
+        window.location.reload()
       this.completed.emit();
     }, this.data.params.timeout)
   }

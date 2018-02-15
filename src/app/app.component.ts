@@ -47,6 +47,7 @@ export class AppComponent implements OnInit {
       this.keySubmit = this.keyInput
       this.keyInput = ""
     } else {
+      this.keySubmit = ""
       this.keyInput = this.keyInput + String.fromCharCode(ev.which)
     }
   }

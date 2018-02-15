@@ -70,6 +70,10 @@ router.get(/\/(Lehrer|Schueler)Plan/, function (req, res) {
       externalRes.pipe(res); //...and the result is piped to the client
     });
     externalReq.end();
+    externalReq.on('error', function (e) {  // catch ENETUNREACH or ECONNREFUSED,...
+      console.error(e);
+      console.error("Continuing Execution...");
+    });
   } catch (err) {
     res.status(504); //send error code
     res.end()
