@@ -6,6 +6,12 @@ body{
     height:1080px;
 }
 
+.timeOverlay{
+    position: fixed; 
+    top: 0; 
+    right: 0;
+}
+
 .contentContainer{
     display: flex;
     flex-flow: column;
@@ -27,7 +33,7 @@ body{
     font-size:40pt;
     color:#FFFFFF;
     margin-top:75px;
-    margin-left:1080px;
+    margin-left:1030px;
 }
 
 .plans {

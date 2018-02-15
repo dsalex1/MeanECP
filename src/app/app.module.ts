@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -17,6 +18,7 @@ import { FilteredPlanComponent } from './filtered-plan/filtered-plan.component';
 import { KeypressComponent } from './keypress/keypress.component';
 
 import { JSONColToCSSPipe } from './util/JSONColToCSS.pipe';
+import { TimeOverlayComponent } from './time-overlay/time-overlay.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +33,14 @@ import { JSONColToCSSPipe } from './util/JSONColToCSS.pipe';
     FilteredPlanComponent,
     KeypressComponent,
     JSONColToCSSPipe,
+    TimeOverlayComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
   ],
-  providers: [AppService],
+  providers: [DatePipe, AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

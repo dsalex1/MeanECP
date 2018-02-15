@@ -7,6 +7,9 @@
   <app-keypress [hidden]="!keypress" [keyevt]="keypress" (completed)="keypressComp()"></app-keypress>
 
   <ng-container *ngIf="!curSlideshow && !keypress">
+
+    <app-time-overlay class="timeOverlay"></app-time-overlay>
+
     <div class="contentContainer">
       <div class="header">
         <div class="state">

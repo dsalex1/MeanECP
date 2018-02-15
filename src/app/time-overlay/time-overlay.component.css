@@ -1,0 +1,15 @@
+.overlay {
+    font-size: 25pt;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding-left: 17px;
+    padding-bottom: 7px;
+    padding-top: 20px;
+    padding-right: 25px;
+    margin: -10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -2px 2px 20px 0px rgba(0,0,0,0.8);
+    line-height: 110%;
+}
