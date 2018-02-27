@@ -30,6 +30,7 @@ export class KeypressComponent implements OnInit, OnChanges {
   MemCounter = 10
 
   ngOnChanges() {
+    if (!this.keyevt) return;
     this.MemCounter = this.MemCounter - 1
     console.log("" + this.MemCounter + " counts left to reload")
     console.log("CHARS ARRIVED: " + this.keyevt)
