@@ -60,7 +60,9 @@ router.get('/KeyCodeConfig', (req, res) => {
  * if it catches an error it responses with an error code
  */
 router.get(/\/(Lehrer|Schueler)Plan/, function (req, res) {
-  try {
+    //TODO: DEV OVERRIDE
+  res.sendFile(path.join(__dirname, 'PlanData_DEV.json'));
+  /*try {
     var externalReq = http.request({ //params for the request to bullencode.de are set and the request is made...
       hostname: "www.plaene.iks.bullencode.de",
       path: req.url == '/LehrerPlan' ? '/json/lehrerPlan.json'
@@ -77,6 +79,6 @@ router.get(/\/(Lehrer|Schueler)Plan/, function (req, res) {
   } catch (err) {
     res.status(504); //send error code
     res.end()
-  }
+  }*/
 });
 module.exports = router;
