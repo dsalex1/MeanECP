@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="plans">
-                    <app-plan class="plan" [class.spacer]="!last" *ngFor="let plan of plans; let last=last" [plan]="plan" [filter]="filter" [sorting]="StundeNeu"
+                    <app-plan class="plan" [type]="'lehrer'" [class.spacer]="!last" *ngFor="let plan of plans; let last=last" [plan]="plan" [filter]="filter" [sorting]="StundeNeu"
                         [hideAnnot]="true"></app-plan>
                 </div>
 

@@ -14,13 +14,8 @@
 	flex-direction:column;
     justify-content:center;
 	padding-left:10px;
-	padding-bottom:5px;
 }
 
-.absents{
-	flex: 0 1 auto;
-	padding: 10px;
-}
 
 .exchangeContainer{
 	flex: 0 1 auto;
@@ -52,9 +47,13 @@
 	padding-bottom:3px;
 }
 
-.annotation{
+.bordered{
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px;
+}
+.annotationContainer{
 	flex: 1 1 auto;
-	padding-top: 10px;
 }
 
 .annotationElement{

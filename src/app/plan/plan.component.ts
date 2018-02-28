@@ -17,6 +17,9 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
   filter: string
 
   @Input()
+  type: string
+
+  @Input()
   sorting: Array<string>
 
   @Input()
