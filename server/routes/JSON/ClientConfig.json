@@ -1,8 +1,8 @@
 {
     "Config": {
-        "type": "LandscapePlan",
+        "type": "PortraitPlan",
         "params": {
-            "db": "./api/JSON/LehrerPlan",
+            "db": "./api/JSON/SchuelerPlan",
             "index1": 0,
             "index2": 1,
             "slideshow": {

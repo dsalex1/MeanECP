@@ -22,6 +22,8 @@ export class PortraitPlanComponent implements AfterViewInit, OnChanges {
 
   curSlideshow = null
 
+  type: string
+
   plan: object
 
   state: string
@@ -33,6 +35,7 @@ export class PortraitPlanComponent implements AfterViewInit, OnChanges {
 
   ngAfterViewInit() {
     this._appService.getJsonData(this.db).subscribe((data) => {
+      this.type = this.db.includes("Lehrer") ? "lehrer" : "schueler";
       this.plan = data[this.index];
       this.state = this.plan["Stand"]["Inhalt"]
       this.footer = this.plan["Footer"]
