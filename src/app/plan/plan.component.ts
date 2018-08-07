@@ -38,6 +38,10 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
 
   isScrolling = true
 
+  hasNotices = false;
+
+  sortedVerts = [];
+
   scrollingCopies = [0];
 
   scrollHeight = 0
@@ -47,36 +51,47 @@ export class PlanComponent implements OnInit, OnChanges, AfterViewInit {
   ngOnInit() {
   }
   ngOnChanges() {
-    console.log(this.plan)
-    if (this.plan)
+    if (this.plan) {
       this.plan = Object.assign({}, this.plan);
-    console.log(this.plan)
-    if (this.plan && this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
-      var regex = new RegExp("(^|[^a-zA-ZäöüßÄÖÜ])" + this.filter + "(?![a-zA-ZäöüßÄÖÜ])") // \b matches before and behind 'ö'
-      for (var key in exchg) {
-        var prop = exchg[key]
-        if (regex.test(prop))
-          return true;
-      }
-      return false;
-    });
-
-    if (this.plan && this.sorting) this.sorting.forEach(column => {
-      console.log("start sorting")
-      this.plan['Vertretungen'] = this.stableSort(this.plan['Vertretungen'], (n1, n2) => {
-        //console.log(n1[column]+" "+n2[column]+" "+(n1[column] > n2[column])+"  "+column)
-        //console.log(n1)
-        if (n1[column] > n2[column]) {
-          return 1;
+      if (this.filter) this.plan['Vertretungen'] = this.plan['Vertretungen'].filter((exchg) => {
+        var regex = new RegExp("(^|[^a-zA-ZäöüßÄÖÜ])" + this.filter + "(?![a-zA-ZäöüßÄÖÜ])") // \b matches before and behind 'ö'
+        for (var key in exchg) {
+          var prop = exchg[key]
+          if (regex.test(prop))
+            return true;
         }
-        if (n1[column] < n2[column]) {
-          return -1;
-        }
-        return 0;
+        return false;
       });
-      console.log("sorting done")
-    });
 
+      if (this.sorting) this.sorting.forEach(column => {
+        console.log("start sorting")
+        this.plan['Vertretungen'] = this.stableSort(this.plan['Vertretungen'], (n1, n2) => {
+          //console.log(n1[column]+" "+n2[column]+" "+(n1[column] > n2[column])+"  "+column)
+          //console.log(n1)
+          if (n1[column] > n2[column]) {
+            return 1;
+          }
+          if (n1[column] < n2[column]) {
+            return -1;
+          }
+          return 0;
+        });
+        console.log("sorting done")
+      });
+
+      for (var name in this.plan["Nachrichten"]) {
+        if (this.plan["Nachrichten"].hasOwnProperty(name)) {
+          this.hasNotices = true
+        }
+      }
+      this.sortedVerts = this.plan["Nachrichten"]['BetroffeneLehrer'].map(
+        Lehrer => Object.assign({}, Lehrer, {
+          entries: this.plan['Vertretungen'].filter((Vert) =>
+            RegExp("(^|[^a-zA-ZäöüßÄÖÜ])" + Lehrer.Kuerzel + "(?![a-zA-ZäöüßÄÖÜ])").test(Vert['VertretungNeu'])
+          )
+        })
+      )
+    }
     if (this.ExcCont && this.ScrCont) {
       this.skeduleAdHeig();
     }

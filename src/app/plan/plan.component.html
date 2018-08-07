@@ -5,42 +5,46 @@
   </div>
 
   <div class="annotationContainer" *ngIf="!(hideAnnot==true)">
-    <div *ngIf="plan[ 'PlanZusatz'] && plan[ 'PlanZusatz'].length>0 && !(hideAnnot==true)">
-      <p class="annotationElement" *ngFor="let annot of plan['PlanZusatz']; let i = index" [style.backgroundColor]="annot[ 'Style']['backgroundcolor'] | JSONColToCSS:(i%2==1)">
-        {{annot['Inhalt']}}
+    <div *ngIf="plan[ 'PlanZusatz'] && plan[ 'PlanZusatz'].length>0 ">
+      <p class="annotationElement" *ngFor="let annot of plan['PlanZusatz']; let i = index" [style.backgroundColor]="annot[ 'Style']['backgroundcolor'] | JSONColToCSS:(false)"
+        [innerHTML]="
+      annot[ 'Inhalt'] 
+      ">
       </p>
     </div>
 
-    <div class="bordered" *ngIf="(plan[ 'PlanZusatz'] && plan[ 'PlanZusatz'].length>0)
-                              || (plan[ 'BetroffeneLehrer'] && plan[ 'BetroffeneLehrer'].length>0)
-                              || (plan[ 'BlockierteRaume'] && plan[ 'BlockierteRaume'].length>0)
-                              || (plan[ 'BetroffeneKlassen'] && plan[ 'BetroffeneKlassen'].length>0)">
+    <div class="bordered " *ngIf="hasNotices">
 
-      <div class="absents" *ngIf="plan['Abwesenheiten'] && plan['Abwesenheiten'].length>0 && !(hideAnnot==true)">
-        <b>Abwesenheiten: </b><br/>
-        <span *ngFor="let absent of plan['Abwesenheiten'] ; let i = index ; let last = last"> 
-        {{absent['Kuerzel']}}{{absent['Anmerkung']==="" ? "" : " "+absent['Anmerkung']}}{{last ? '' : ', '}}
-      </span>
-      </div>
-
-      <div class="blockedRooms" *ngIf="plan[ 'BlockierteRaume'] && plan[ 'BlockierteRaume'].length>0 && !(hideAnnot==true)">
-        <b>Blockierte Raume: </b>
-        <span class="blockedRoomsElement" *ngFor="let elem of plan['BlockierteRaume']; let i = index; let last = last">
-          {{elem}}{{last ? '' : ', '}}
-          </span>
-      </div>
-
-      <div class="affectedTeacher" *ngIf="plan[ 'BetroffeneLehrer'] && plan[ 'BetroffeneLehrer'].length>0 && !(hideAnnot==true)">
-        <b>Betroffene Lehrer: </b>
-        <span class="affectedTeacherElement" *ngFor="let elem of plan['BetroffeneLehrer']; let i = index; let last = last">
-          {{elem['Kuerzel']}}{{last ? '' : ', '}}
+      <div class="absents flex" *ngIf="plan['Nachrichten']['AbwesendeLehrer']">
+        <b class="noShrink">Abwesende Lehrer: </b>
+        <span [innerHtml]="
+          plan['Nachrichten']['AbwesendeLehrer']['inhalt']
+          ">
         </span>
       </div>
 
-      <div class="affectedClass" *ngIf="plan[ 'BetroffeneKlassen'] && plan[ 'BetroffeneKlassen'].length>0 && !(hideAnnot==true)">
-        <b>Betroffene Klassen: </b>
-        <span class="affectedClassElement" *ngFor="let elem of plan['BetroffeneKlassen']; let i = index; let last = last">
-          {{elem}}{{last ? '' : ', '}}
+      <div class="blockedRooms flex" *ngIf="plan['Nachrichten'][ 'BlockierteRaume']">
+        <b class="noShrink">Blockierte Raume: </b>
+        <span class="blockedRoomsElement" [innerHtml]="
+          plan['Nachrichten']['BlockierteRaume']['inhalt']
+          ">
+        </span>
+      </div>
+
+      <div class="affectedTeacher flex" *ngIf="plan['Nachrichten'][ 'BetroffeneLehrer'] && plan['Nachrichten'][ 'BetroffeneLehrer'].length>0">
+        <b class="noShrink">Betroffene Lehrer: </b>
+        <span>
+          <span class="affectedTeacherElement" *ngFor="let elem of plan['Nachrichten']['BetroffeneLehrer']; let i = index; let last = last">
+            {{elem['Kuerzel']}}{{last ? '' : ', '}}
+          </span>
+        </span>
+      </div>
+
+      <div class="affectedClass flex" *ngIf="plan['Nachrichten'][ 'BetroffeneKlassen']">
+        <b class="noShrink">Betroffene Klassen: </b>
+        <span class="affectedClassElement" [innerHtml]="
+          plan['Nachrichten']['BetroffeneKlassen']['inhalt']
+          ">
         </span>
       </div>
     </div>
@@ -72,16 +76,26 @@
         <!--TODO: for each in plan['betroffeneLehrer']->'kuerzel' -->
         <!-- print [abr] [name] with intendet overflow on rowKlasse-->
         <!-- add to work log 27.2.2018 from 1:15-2:30 -->
-        <ng-container>
-          <tr *ngFor=" let exch of plan[ 'Vertretungen']; let i=index " [style.backgroundColor]="exch[ 'Style'][
-          'backgroundcolor'] | JSONColToCSS:(i%2==1) ">
-            <td class="rowKlasse ">{{exch['KlasseNeu']}}</td>
-            <td class="rowStunde ">{{exch['StundeNeu']}}</td>
-            <td class="rowVertretung ">{{exch['VertretungNeu']}}</td>
-            <td class="rowLehrer ">{{exch['LehrerNeu']}}</td>
-            <td class="rowFach ">{{exch['FachNeu']}}</td>
-            <td class="rowRaum ">{{exch['RaumNeu']}}</td>
-            <td class="rowAnmerkung ">{{exch['AnmerkungNeu']}}</td>
+        <ng-container *ngFor=" let Lehrer of sortedVerts">
+          <tr>
+            <td class="rowKlasse " [innerHTML]="'<b>'+Lehrer.Kuerzel+'&nbsp;'+Lehrer.Name+'</b>'"></td>
+            <td class=" rowStunde "></td>
+            <td class="rowVertretung "></td>
+            <td class="rowLehrer "></td>
+            <td class="rowFach "></td>
+            <td class="rowRaum "></td>
+            <td class="rowAnmerkung "></td>
+          </tr>
+
+          <tr *ngFor=" let exch of Lehrer.entries; let i=index" [style.backgroundColor]="exch[ 'Style'][
+                  'backgroundcolor'] | JSONColToCSS:(i%2==1) ">
+            <td class="rowKlasse " [innerHTML]="exch['KlasseNeu']"></td>
+            <td class=" rowStunde " [innerHTML]="exch[ 'StundeNeu']"></td>
+            <td class="rowVertretung " [innerHTML]="exch['VertretungNeu']"></td>
+            <td class="rowLehrer " [innerHTML]="exch['LehrerNeu']"></td>
+            <td class="rowFach " [innerHTML]="exch['FachNeu']"></td>
+            <td class="rowRaum " [innerHTML]="exch['RaumNeu']"></td>
+            <td class="rowAnmerkung " [innerHTML]="exch['AnmerkungNeu']"></td>
           </tr>
         </ng-container>
 
@@ -104,6 +118,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="container" *ngIf="plan && type!='lehrer'">
 
   <div class="header">
@@ -111,18 +138,21 @@
   </div>
 
   <div class="annotationContainer" *ngIf="!(hideAnnot==true)">
-    <div *ngIf="plan[ 'PlanZusatz'] && plan[ 'PlanZusatz'].length>0 && !(hideAnnot==true)">
-      <p class="annotationElement" *ngFor="let annot of plan['PlanZusatz']; let i = index" [style.backgroundColor]="annot[ 'Style']['backgroundcolor'] | JSONColToCSS:(i%2==1)">
-        {{annot['Inhalt']}}
+    <div *ngIf="plan[ 'PlanZusatz'] && plan[ 'PlanZusatz'].length>0">
+      <p class="annotationElement" *ngFor="let annot of plan['PlanZusatz']; let i = index" [style.backgroundColor]="annot[ 'Style']['backgroundcolor'] | JSONColToCSS:(false)"
+        [innerHTML]="
+         annot['Inhalt']
+      ">
       </p>
     </div>
 
-    <div class="bordered" *ngIf="(plan[ 'BetroffeneKlassen'] && plan[ 'BetroffeneKlassen'].length>0)">
+    <div class="bordered" *ngIf="hasNotices">
 
-      <div class="affectedClass" *ngIf="plan[ 'BetroffeneKlassen'] && plan[ 'BetroffeneKlassen'].length>0 && !(hideAnnot==true)">
-        <b>Betroffene Klassen: </b>
-        <span class="affectedClassElement" *ngFor="let elem of plan['BetroffeneKlassen']; let i = index; let last = last">
-          {{elem}}{{last ? '' : ', '}}
+      <div class="affectedClass flex">
+        <b class="noShrink">Betroffene Klassen: </b>
+        <span class="affectedClassElement" [innerHTML]="
+          plan['Nachrichten']['BetroffeneKlassen']['inhalt']
+          ">
         </span>
       </div>
     </div>
@@ -135,7 +165,7 @@
       <td class="rowStunde">Stunde</td>
       <td class="rowFach">Fach</td>
       <td class="rowLehrer">Art der Vert.</td>
-      <td class="rowVertretung">Vert.</td>
+      <td class="rowVertretung">Vert. Lehrer</td>
       <td class="rowRaum">Raum</td>
       <td class="rowAnmerkung">Zusätzliche Informationen</td>
     </tr>
@@ -146,20 +176,21 @@
           <td class="rowStunde">Stunde</td>
           <td class="rowFach">Fach</td>
           <td class="rowLehrer">Art der Vert.</td>
-          <td class="rowVertretung">Vert.</td>
+          <td class="rowVertretung">Vert. Lehrer</td>
           <td class="rowRaum">Raum</td>
           <td class="rowAnmerkung">Zusätzliche Informationen</td>
         </tr>
 
+
         <tr *ngFor=" let exch of plan[ 'Vertretungen']; let i=index " [style.backgroundColor]="exch[ 'Style'][
         'backgroundcolor'] | JSONColToCSS:(i%2==1) ">
-          <td class="rowKlasse ">{{exch['KlasseNeu']}}</td>
-          <td class="rowStunde ">{{exch['StundeNeu']}}</td>
-          <td class="rowFach ">{{exch['FachNeu']}}</td>
-          <td class="rowLehrer ">{{exch['LehrerNeu']}}</td>
-          <td class="rowVertretung ">{{exch['VertretungNeu']}}</td>
-          <td class="rowRaum ">{{exch['RaumNeu']}}</td>
-          <td class="rowAnmerkung ">{{exch['AnmerkungNeu']}}</td>
+          <td class="rowKlasse " [innerHTML]="exch['KlasseNeu']"></td>
+          <td class="rowStunde " [innerHTML]="exch[ 'StundeNeu']"></td>
+          <td class="rowFach " [innerHTML]="exch['FachNeu']"></td>
+          <td class="rowLehrer " [innerHTML]="exch['ArtNeu']"></td>
+          <td class="rowVertretung " [innerHTML]="exch['VertretungNeu']"></td>
+          <td class="rowRaum " [innerHTML]="exch['RaumNeu']"></td>
+          <td class="rowAnmerkung " [innerHTML]="exch['AnmerkungNeu']"></td>
         </tr>
 
         <tr *ngIf="!plan[ 'Vertretungen'] || plan[ 'Vertretungen'].length==0 ">

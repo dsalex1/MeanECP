@@ -2,7 +2,7 @@
     "Config": {
         "type": "PortraitPlan",
         "params": {
-            "db": "./api/JSON/SchuelerPlan",
+            "db": "./api/JSON/LehrerPlan",
             "index1": 0,
             "index2": 1,
             "slideshow": {

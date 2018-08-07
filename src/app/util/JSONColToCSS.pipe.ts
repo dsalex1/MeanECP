@@ -13,11 +13,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class JSONColToCSSPipe implements PipeTransform {
     transform(input, highlight) {
         if (!highlight) {
-            if (input === 'transparent')
+            if (!input || input === 'transparent')
                 return 'rgba(0, 0, 0, 0)';
             return input;
         }
-        if (input === 'transparent')
+        if (!input || input === 'transparent')
             return 'rgba(0,0,0,0.078)';
         var m = input.match(/^#([0-9a-f]{6})$/i)[1];
         var r = Math.round(parseInt(m.substr(0, 2), 16) * (1 - 0.078));

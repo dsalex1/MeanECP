@@ -16,6 +16,15 @@
 	padding-left:10px;
 }
 
+.flex{
+	display:flex;
+	margin: 5px;
+}
+
+.noShrink{
+	flex-shrink: 0;
+	width:235px
+}
 
 .exchangeContainer{
 	flex: 0 1 auto;
@@ -50,7 +59,6 @@
 .bordered{
 	border: 1px solid black;
 	margin: 5px;
-	padding: 5px;
 }
 .annotationContainer{
 	flex: 1 1 auto;

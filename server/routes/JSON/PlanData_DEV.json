@@ -1,7 +1,7 @@
-[
-    {
+{
+    "0": {
         "Titel": {
-            "Inhalt": "Vertretungsplan fÃ¼r Dienstag, den 27.02.2018 HBS",
+            "Inhalt": "Vertretungsplan f\u00fcr den 28.3.2018 Mittwoch",
             "Style": {
                 "fontsize": 0,
                 "fontcolor": "#000000",
@@ -9,7 +9,7 @@
             }
         },
         "UnterTitel2": {
-            "Inhalt": "Immanuel-Kant-Schule, D-24534 NeumÃ¼nster",
+            "Inhalt": "Hans-B\u00f6ckler-Schule D-24537 Neum\u00fcnster",
             "Style": {
                 "fontsize": 0,
                 "fontcolor": "#000000",
@@ -17,52 +17,165 @@
             }
         },
         "Stand": {
-            "Inhalt": "Stand: 27.02.2018 07:05",
+            "Inhalt": "Stand: 29.8.2016, 12:37:14",
             "Style": {
                 "fontsize": 0,
                 "fontcolor": "#000000",
                 "backgroundcolor": "transparent"
             }
         },
-        "BlockierteRaume": [
-            "C01",
-            "D02",
-            "Mensa",
-            "E01"
-        ],
-        "BetroffeneLehrer": [
-            {
-                "Kuerzel": "Me",
-                "Name": "Meurer"
+        "Nachrichten": {
+            "AbwesendeLehrer": {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "transparent"
+                },
+                "inhalt": "Bl, El (1-4), Fm, Ga, Ja, Js, Ki (0-4), Lg, Lo (1-4), Mat, Mat (1-2), No (1-4), Sa, Sie (1-4), Sm, Sno, Ste, Wen, Wg, W\u00f6 (1-4)"
             },
-            {
-                "Kuerzel": "Sh",
-                "Name": "Idk"
+            "AbwesendeKlassen": {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "transparent"
+                },
+                "inhalt": "1a (0-4), 2a (1-4), 3a (1-4), 3b (1-4), 4a (1-4), 5b (1-2), 7a, 9a, 9b, 9c, 10a, Flex"
             },
-            {
-                "Kuerzel": "Tg",
-                "Name": "Tietgen"
+            "BlockierteRaeume": {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "transparent"
+                },
+                "inhalt": "Turnhalle2 (0-4)"
             },
-            {
-                "Kuerzel": "Lz",
-                "Name": "Lorenzen"
+            "BetroffeneLehrer": [
+                {
+                    "Kuerzel": "A.M\u00fcl",
+                    "Name": "A.M\u00fclerschmitt"
+                },
+                {
+                    "Kuerzel": "Be",
+                    "Name": "Beerschmitt"
+                },
+                {
+                    "Kuerzel": "Bi",
+                    "Name": "Bierschmitt"
+                },
+                {
+                    "Kuerzel": "Bor",
+                    "Name": "Borerschmitt"
+                },
+                {
+                    "Kuerzel": "Br\u00fc",
+                    "Name": "Br\u00fcerschmitt"
+                },
+                {
+                    "Kuerzel": "Eg",
+                    "Name": "Egerschmitt"
+                },
+                {
+                    "Kuerzel": "El",
+                    "Name": "Elerschmitt"
+                },
+                {
+                    "Kuerzel": "Fm",
+                    "Name": "Fmerschmitt"
+                },
+                {
+                    "Kuerzel": "Gb",
+                    "Name": "Gberschmitt"
+                },
+                {
+                    "Kuerzel": "He",
+                    "Name": "Heerschmitt"
+                },
+                {
+                    "Kuerzel": "Ho",
+                    "Name": "Hoerschmitt"
+                },
+                {
+                    "Kuerzel": "Ki",
+                    "Name": "Kierschmitt"
+                },
+                {
+                    "Kuerzel": "Mat",
+                    "Name": "Materschmitt"
+                },
+                {
+                    "Kuerzel": "Pe",
+                    "Name": "Peerschmitt"
+                },
+                {
+                    "Kuerzel": "Pu",
+                    "Name": "Puerschmitt"
+                },
+                {
+                    "Kuerzel": "Re",
+                    "Name": "Reerschmitt"
+                },
+                {
+                    "Kuerzel": "Schu",
+                    "Name": "Schuerschmitt"
+                },
+                {
+                    "Kuerzel": "Sie",
+                    "Name": "Sieerschmitt"
+                },
+                {
+                    "Kuerzel": "Sno",
+                    "Name": "Snoerschmitt"
+                },
+                {
+                    "Kuerzel": "Sz",
+                    "Name": "Szerschmitt"
+                },
+                {
+                    "Kuerzel": "Vie",
+                    "Name": "Vieerschmitt"
+                },
+                {
+                    "Kuerzel": "Weh",
+                    "Name": "Weherschmitt"
+                },
+                {
+                    "Kuerzel": "Wen",
+                    "Name": "Wenerschmitt"
+                },
+                {
+                    "Kuerzel": "Wg",
+                    "Name": "Wgerschmitt"
+                },
+                {
+                    "Kuerzel": "Wil",
+                    "Name": "Wilerschmitt"
+                }
+            ],
+            "BetroffeneKlassen": {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "transparent"
+                },
+                "inhalt": "4a, 5a, 5b, 5c, 6a, 6c, 7b, 7c, 8a, 8b, 8c"
+            },
+            "BetroffeneRaeume": {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "transparent"
+                },
+                "inhalt": "Turnhalle1, 4a Klassenraum, 5a Klassenraum, 5b Klassenraum, 5c Klassenraum, 6a Klassenraum, 7a Klassenraum, 6c Klassenraum, 7b Klassenraum, 7c Klassenraum, 8b Klassenraum, 8c Klassenraum"
             }
-        ],
-        "BetroffeneKlassen": [
-            "Q2a",
-            "6e",
-            "Eb",
-            "Q2c"
-        ],
-        "Abwesenheiten": [
+        },
+        "PlanZusatz": [
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
                     "backgroundcolor": "transparent"
                 },
-                "Kuerzel": "Bm",
-                "Anmerkung": ""
+                "Inhalt": "Die Lehrkr\u00e4fte, die beim Fr\u00fchlingsturnier eingesetzt werden und nicht in der Turnierleitung t\u00e4tig sind, f\u00fchren bitte die Aufsicht von den SuS aus Ihrer Klasse (in der Regel der Klassenlehrer - ansonsten der eingesetzte Fachleher).  <br>  <br>9a -  Sa  <br>9b -  Lg  <br>9c - Ja  <br>10 - Wen  <br>"
             },
             {
                 "Style": {
@@ -70,98 +183,7 @@
                     "fontcolor": "#000000",
                     "backgroundcolor": "transparent"
                 },
-                "Kuerzel": "Cs",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Ft",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Gh",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Gr",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Rk",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Rm",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "StÃ¶",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Sz",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05a",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05b",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05c",
-                "Anmerkung": ""
+                "Inhalt": "Heute ist von der 1. bis zur 4.Std. regul\u00e4r  Unterricht nach Plan. In der der 5. Stunde findet das Sch\u00fcler Lehrerspiel in der KSV - Halle statt.  <br>Alle Klassen kommen zum Anfeuern (der Lehrer) mit Ihren Fachlehrern in die KSV - Halle...  <br>Nach der 5. Std. endet dann der Unterricht f\u00fcr alle an der KSV-Halle!  <br>  <br>Wir w\u00fcschen Ihnen\/Euch eine sch\u00f6ne Ferienzeit!"
             }
         ],
         "Vertretungen": [
@@ -169,4351 +191,842 @@
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Ste",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Kleine Forscher",
-                "FachNeu": "Kl. Forscher",
-                "RaumNeu": "Bio1",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "Q2a",
-                "FachNeu": "D",
-                "RaumNeu": "C12",
-                "AnmerkungNeu": "Stillarbeit Aufg. Ft"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05a",
-                "FachNeu": "E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Me",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05a",
-                "FachNeu": "M",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "",
-                "StundeNeu": "3",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "Phil",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "",
-                "StundeNeu": "3",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "Rel",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rei",
-                "VertretungNeu": "",
-                "StundeNeu": "3",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "Phil",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "",
-                "StundeNeu": "3",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "Rel",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "",
-                "StundeNeu": "4",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "Phil",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "",
-                "StundeNeu": "4",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "Rel",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rei",
-                "VertretungNeu": "",
-                "StundeNeu": "4",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "Phil",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "",
-                "StundeNeu": "4",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "Rel",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "EFÃ¶",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "DFÃ¶",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "EFÃ¶",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Gn",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "DFÃ¶",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Pe",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "MFÃ¶",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "DFÃ¶",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Wi",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b 05c",
-                "FachNeu": "DaZFÃ¶",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "",
-                "StundeNeu": "7",
-                "KlasseNeu": "06a 06b 06c 06d",
-                "FachNeu": "LRS",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus Aufg. Sz"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Bs",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05b",
-                "FachNeu": "Bio",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05b",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ste",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05c",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ma",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05c",
-                "FachNeu": "E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "Lz",
-                "StundeNeu": "5",
-                "KlasseNeu": "06a",
-                "FachNeu": "M statt D",
-                "RaumNeu": "C03",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "Pe",
-                "StundeNeu": "3",
-                "KlasseNeu": "06a 06b",
-                "FachNeu": "M statt Mu",
-                "RaumNeu": "C05",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "Km",
-                "StundeNeu": "4",
-                "KlasseNeu": "06a 06b",
-                "FachNeu": "M statt Mu",
-                "RaumNeu": "C05",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "Dw",
+                "LehrerNeu": "<s>Schu<\/s>",
+                "VertretungNeu": "<s>Schu<\/s>",
                 "StundeNeu": "1",
-                "KlasseNeu": "06a 06c",
-                "FachNeu": "Rel",
-                "RaumNeu": "C03",
-                "AnmerkungNeu": "Aufg. bei Dkl abholen "
+                "KlasseNeu": "<s>9a<\/s>",
+                "FachNeu": "DeF",
+                "RaumNeu": "<s>R9a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "Hh",
+                "LehrerNeu": "<s>Ga<\/s>",
+                "VertretungNeu": "<s>Ga<\/s>",
+                "StundeNeu": "1",
+                "KlasseNeu": "6c",
+                "FachNeu": "<s>NaWi<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Js<\/s>?Bi",
+                "VertretungNeu": "<s>Js<\/s>?Bi",
+                "StundeNeu": "1",
+                "KlasseNeu": "8b",
+                "FachNeu": "Che",
+                "RaumNeu": "&nbsp;",
+                "AnmerkungNeu": "Vertretung (B)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Sno<\/s>",
+                "VertretungNeu": "<s>Sno<\/s>",
+                "StundeNeu": "1",
+                "KlasseNeu": "5c",
+                "FachNeu": "<s>Ku<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Wen<\/s>",
+                "VertretungNeu": "<s>Wen<\/s>",
+                "StundeNeu": "1",
+                "KlasseNeu": "<s>7a, 7b, 7c<\/s>?7b, 7c",
+                "FachNeu": "<s>WPU7<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>A.M\u00c3\u00bcl<\/s>",
+                "VertretungNeu": "<s>A.M\u00c3\u00bcl<\/s>",
+                "StundeNeu": "1",
+                "KlasseNeu": "<s>2a<\/s>",
+                "FachNeu": "MaD",
+                "RaumNeu": "<s>R2a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>He<\/s>",
+                "VertretungNeu": "<s>He<\/s>",
                 "StundeNeu": "2",
-                "KlasseNeu": "06a 06c",
-                "FachNeu": "Rel",
-                "RaumNeu": "C03",
-                "AnmerkungNeu": ""
+                "KlasseNeu": "<s>10a<\/s>",
+                "FachNeu": "WiPo",
+                "RaumNeu": "<s>R10a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Bs",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "07a",
-                "FachNeu": "Bio statt Geo",
-                "RaumNeu": "Bio1",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
+                "LehrerNeu": "<s>Bi<\/s>",
+                "VertretungNeu": "<s>Bi<\/s>",
+                "StundeNeu": "2",
+                "KlasseNeu": "<s>9a<\/s>",
+                "FachNeu": "CheD",
+                "RaumNeu": "<s>NaWi<\/s>",
+                "AnmerkungNeu": "Freisetzung"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
+                    "backgroundcolor": "#FF8080"
                 },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "Gn",
-                "StundeNeu": "6",
-                "KlasseNeu": "07a",
-                "FachNeu": "D",
-                "RaumNeu": "B04",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Sh",
-                "StundeNeu": "3",
-                "KlasseNeu": "07b",
-                "FachNeu": "Ku statt Geo",
-                "RaumNeu": "Ku 2 Zeichnen",
-                "AnmerkungNeu": "statt 8. "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Sh",
-                "StundeNeu": "4",
-                "KlasseNeu": "07b",
-                "FachNeu": "L statt Geo",
-                "RaumNeu": "Ku 2 Zeichnen",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Sh",
-                "VertretungNeu": "",
-                "StundeNeu": "8",
-                "KlasseNeu": "07b",
+                "LehrerNeu": "<s>Sno<\/s>?Bi",
+                "VertretungNeu": "<s>Sno<\/s>?Bi",
+                "StundeNeu": "2",
+                "KlasseNeu": "5c",
                 "FachNeu": "Ku",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus, vorg. auf 3."
+                "RaumNeu": "R5c",
+                "AnmerkungNeu": "Vertretung (S)"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Me",
-                "StundeNeu": "5",
-                "KlasseNeu": "07c",
-                "FachNeu": "M statt Geo",
-                "RaumNeu": "B08",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Ts",
-                "StundeNeu": "6",
-                "KlasseNeu": "07c",
-                "FachNeu": "D statt Geo",
-                "RaumNeu": "B08",
-                "AnmerkungNeu": "statt 9. "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ts",
-                "VertretungNeu": "",
-                "StundeNeu": "9",
-                "KlasseNeu": "07c",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus, vorg. auf 6."
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "Dkl",
-                "StundeNeu": "1",
-                "KlasseNeu": "08c",
-                "FachNeu": "E",
-                "RaumNeu": "B03",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "Wi",
+                "LehrerNeu": "<s>Wen<\/s>",
+                "VertretungNeu": "<s>Wen<\/s>",
                 "StundeNeu": "2",
-                "KlasseNeu": "08c",
-                "FachNeu": "F statt E",
-                "RaumNeu": "B03",
-                "AnmerkungNeu": "statt Fr 6. "
+                "KlasseNeu": "<s>7a, 7b, 7c<\/s>?7b, 7c",
+                "FachNeu": "---",
+                "RaumNeu": "<s>Th2<\/s>?---",
+                "AnmerkungNeu": "f\u00e4llt aus"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Bm",
+                "LehrerNeu": "<s>Ho<\/s>",
+                "VertretungNeu": "<s>Ho<\/s>",
+                "StundeNeu": "2",
+                "KlasseNeu": "<s>1a<\/s>",
+                "FachNeu": "DeF",
+                "RaumNeu": "<s>R1a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Pu<\/s>",
+                "VertretungNeu": "<s>Pu<\/s>",
+                "StundeNeu": "2",
+                "KlasseNeu": "<s>5b<\/s>",
+                "FachNeu": "WKF",
+                "RaumNeu": "<s>R5b<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Ja<\/s>?Schu",
+                "VertretungNeu": "<s>Ja<\/s>?Schu",
+                "StundeNeu": "2",
+                "KlasseNeu": "8b",
+                "FachNeu": "En",
+                "RaumNeu": "R8b",
+                "AnmerkungNeu": "Vertretung (B)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Sm<\/s>?He",
+                "VertretungNeu": "<s>Sm<\/s>?He",
+                "StundeNeu": "2",
+                "KlasseNeu": "6c",
+                "FachNeu": "<s>Ma<\/s>?De",
+                "RaumNeu": "R6c",
+                "AnmerkungNeu": "Vertretung (S)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#0080FF"
+                },
+                "LehrerNeu": "<s>Lg<\/s>?Eg",
+                "VertretungNeu": "<s>Lg<\/s>?Eg",
+                "StundeNeu": "2\/\/3",
+                "KlasseNeu": "&nbsp;",
+                "FachNeu": "&nbsp;",
+                "RaumNeu": "Hof1",
+                "AnmerkungNeu": "Pausenaufsicht"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#0080FF"
+                },
+                "LehrerNeu": "<s>Mat<\/s>?Be",
+                "VertretungNeu": "<s>Mat<\/s>?Be",
+                "StundeNeu": "2\/\/3",
+                "KlasseNeu": "&nbsp;",
+                "FachNeu": "&nbsp;",
+                "RaumNeu": "Haus",
+                "AnmerkungNeu": "Pausenaufsicht"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": ""
+                },
+                "LehrerNeu": "Ki",
                 "VertretungNeu": "Ki",
-                "StundeNeu": "5",
-                "KlasseNeu": "08c",
-                "FachNeu": "M statt Mu",
-                "RaumNeu": "PhÃœ1",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
+                "StundeNeu": "2\/\/3",
+                "KlasseNeu": "&nbsp;",
+                "FachNeu": "&nbsp;",
+                "RaumNeu": "Hof2",
+                "AnmerkungNeu": "Trotz Absenz"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
+                    "backgroundcolor": "#0080FF"
                 },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "Wi",
-                "StundeNeu": "6",
-                "KlasseNeu": "08c",
-                "FachNeu": "KL statt Mu",
-                "RaumNeu": "B03",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
+                "LehrerNeu": "<s>Ga<\/s>?Sz",
+                "VertretungNeu": "<s>Ga<\/s>?Sz",
+                "StundeNeu": "2\/\/3",
+                "KlasseNeu": "&nbsp;",
+                "FachNeu": "&nbsp;",
+                "RaumNeu": "Pavillion",
+                "AnmerkungNeu": "Pausenaufsicht"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "Rad",
+                "LehrerNeu": "<s>Pe<\/s>",
+                "VertretungNeu": "<s>Pe<\/s>",
                 "StundeNeu": "3",
-                "KlasseNeu": "09a 09c",
-                "FachNeu": "F L",
-                "RaumNeu": "B11",
-                "AnmerkungNeu": ""
+                "KlasseNeu": "<s>9a, 9b, 9c<\/s>",
+                "FachNeu": "MaMo",
+                "RaumNeu": "<s>R9a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "Tg",
-                "StundeNeu": "4",
-                "KlasseNeu": "09a 09c",
-                "FachNeu": "F L",
-                "RaumNeu": "B11",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "Dkl",
+                "LehrerNeu": "<s>Re<\/s>",
+                "VertretungNeu": "<s>Re<\/s>",
                 "StundeNeu": "3",
-                "KlasseNeu": "09b",
-                "FachNeu": "M statt Geo",
-                "RaumNeu": "B12",
-                "AnmerkungNeu": "statt 6. "
+                "KlasseNeu": "<s>9a, 9b, 9c<\/s>",
+                "FachNeu": "MaMo",
+                "RaumNeu": "<s>R9c<\/s>",
+                "AnmerkungNeu": "Freisetzung"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FF8080"
                 },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "Hk",
-                "StundeNeu": "4",
-                "KlasseNeu": "09b",
-                "FachNeu": "D statt Geo",
-                "RaumNeu": "B12",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Dkl",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "09b",
-                "FachNeu": "M",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus, vorg. auf 3."
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Dw",
-                "VertretungNeu": "Dw",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "Q1a",
-                "FachNeu": "M",
-                "RaumNeu": "PhÃœ2",
-                "AnmerkungNeu": "geÃ¤nd. Raum! Klausur"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "Q1a",
-                "FachNeu": "D",
-                "RaumNeu": "C04",
-                "AnmerkungNeu": "Stillarbeit Aufg. bei Dkl abholen"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Q1b",
-                "FachNeu": "Geo",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. vorhanden"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "Eb",
-                "FachNeu": "E",
-                "RaumNeu": "D02",
-                "AnmerkungNeu": "Stillarbeit Aufg. bei Dkl abholen"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rad",
-                "VertretungNeu": "Rad",
-                "StundeNeu": "FrÃ¼h",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "FrÃ¼h",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Hk",
-                "VertretungNeu": "Hk",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ho",
-                "VertretungNeu": "Ho",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Jd",
-                "VertretungNeu": "Jd",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "Ma",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Wf",
-                "VertretungNeu": "Wf",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bs",
-                "VertretungNeu": "Bs",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Kr",
-                "VertretungNeu": "Kr",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "Rb",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rei",
-                "VertretungNeu": "Rei",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Sa",
-                "VertretungNeu": "Sa",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gn",
-                "VertretungNeu": "Gn",
-                "StundeNeu": "MP 2.1",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Sh",
-                "VertretungNeu": "Sh",
-                "StundeNeu": "MP 2.2",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            }
-        ],
-        "PlanZusatz": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "Inhalt": "Q2c (Le): MÃ¼llsammeldienst SchulgelÃ¤nde (26.02.18 - 02.03.18)"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#2D8ACA"
-                },
-                "Inhalt": "5. Klassen: Klassenfahrt (26.02.18 - 02.03.18)"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "Inhalt": "Mathecoach (9. Std.) in C06 mit Pe"
-            }
-        ]
-    },
-    {
-        "Titel": {
-            "Inhalt": "Vertretungsplan fÃ¼r Mittwoch, den 28.02.2018",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "UnterTitel2": {
-            "Inhalt": "Immanuel-Kant-Schule, D-24534 NeumÃ¼nster",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Stand": {
-            "Inhalt": "Stand: 27.02.2018 07:05",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Abwesenheiten": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Cs",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Ft",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Gh",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Gr",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Pp",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Rk",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Rm",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Sz",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05a",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05b",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05c",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Bm (1. Stunde)",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Dkl (1. Stunde)",
-                "Anmerkung": ""
-            }
-        ],
-        "Vertretungen": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "Bre",
-                "StundeNeu": "2",
-                "KlasseNeu": "DaZ",
-                "FachNeu": "DaZ(Sp)",
-                "RaumNeu": "TurnhB",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "Le",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "DaZ",
-                "FachNeu": "DaZ",
-                "RaumNeu": "B06",
-                "AnmerkungNeu": "Zusammenlegung "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "Q2a",
-                "FachNeu": "E",
-                "RaumNeu": "C12",
-                "AnmerkungNeu": "Stillarbeit Aufg. bei Dkl abholen"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "Rei",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Q2a Q2b Q2c",
-                "FachNeu": "Phil statt Rel",
-                "RaumNeu": "C15",
-                "AnmerkungNeu": "Zusammenlegung Klausur"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Rei",
-                "VertretungNeu": "Rei",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Q2a Q2b Q2c",
-                "FachNeu": "Phil",
-                "RaumNeu": "C15",
-                "AnmerkungNeu": "geÃ¤nd. Raum! Klausur"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#2D8ACA"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "StÃ¶",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Q2a Q2b Q2c",
-                "FachNeu": "Rel statt Phil",
-                "RaumNeu": "Geo1",
-                "AnmerkungNeu": "Zusammenlegung Klausur"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#2D8ACA"
-                },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "StÃ¶",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Q2a Q2b Q2c",
-                "FachNeu": "Rel",
-                "RaumNeu": "Geo1",
-                "AnmerkungNeu": "geÃ¤nd. Raum! Klausur"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "1",
-                "KlasseNeu": "05a",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "",
-                "StundeNeu": "1",
-                "KlasseNeu": "05a",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "2",
-                "KlasseNeu": "05a",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "",
-                "StundeNeu": "2",
-                "KlasseNeu": "05a",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Hom",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "05a",
-                "FachNeu": "Bio",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05a",
-                "FachNeu": "KL",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Bru",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a",
-                "FachNeu": "Sp",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Bre",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05b",
-                "FachNeu": "Ku",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "",
+                "LehrerNeu": "<s>Ga<\/s>?Wil",
+                "VertretungNeu": "<s>Ga<\/s>?Wil",
                 "StundeNeu": "3",
-                "KlasseNeu": "05b",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
+                "KlasseNeu": "5a",
+                "FachNeu": "DeD",
+                "RaumNeu": "R5a",
+                "AnmerkungNeu": "Vertretung (B)"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
+                    "backgroundcolor": "#FF8080"
                 },
-                "ArtNeu": "JÃ¶",
-                "VertretungNeu": "",
+                "LehrerNeu": "<s>Sa<\/s>?Vie",
+                "VertretungNeu": "<s>Sa<\/s>?Vie",
                 "StundeNeu": "3",
-                "KlasseNeu": "05b",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
+                "KlasseNeu": "6a",
+                "FachNeu": "De",
+                "RaumNeu": "R6a",
+                "AnmerkungNeu": "Vertretung (S)"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
+                    "backgroundcolor": "#FF8080"
                 },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "",
-                "StundeNeu": "4",
-                "KlasseNeu": "05b",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
+                "LehrerNeu": "<s>Js<\/s>?Bor",
+                "VertretungNeu": "<s>Js<\/s>?Bor",
+                "StundeNeu": "3",
+                "KlasseNeu": "7b",
+                "FachNeu": "<s>Spo<\/s>?Ma",
+                "RaumNeu": "<s>Th2<\/s>?R7b",
+                "AnmerkungNeu": "Vertretung (S)"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "JÃ¶",
-                "VertretungNeu": "",
-                "StundeNeu": "4",
-                "KlasseNeu": "05b",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
+                "LehrerNeu": "<s>Mat<\/s>",
+                "VertretungNeu": "<s>Mat<\/s>",
+                "StundeNeu": "3",
+                "KlasseNeu": "5b",
+                "FachNeu": "<s>Stam<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
+                    "backgroundcolor": "#FF8080"
                 },
-                "ArtNeu": "Bre",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05b",
-                "FachNeu": "Sp",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
+                "LehrerNeu": "<s>Wg<\/s>?Re",
+                "VertretungNeu": "<s>Wg<\/s>?Re",
+                "StundeNeu": "3",
+                "KlasseNeu": "8c",
+                "FachNeu": "Ma",
+                "RaumNeu": "R8c",
+                "AnmerkungNeu": "Vertretung (S)"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
+                    "backgroundcolor": "#FF8080"
                 },
-                "ArtNeu": "Ba",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05b",
-                "FachNeu": "M",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
+                "LehrerNeu": "<s>Sno<\/s>?Br\u00fc",
+                "VertretungNeu": "<s>Sno<\/s>?Br\u00fc",
+                "StundeNeu": "3",
+                "KlasseNeu": "5c",
+                "FachNeu": "<s>Spo<\/s>?De",
+                "RaumNeu": "Th1",
+                "AnmerkungNeu": "Vertretung (S)"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Ste",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05c",
-                "FachNeu": "Bio",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
+                "LehrerNeu": "<s>Br\u00c3\u00bc<\/s>",
+                "VertretungNeu": "<s>Br\u00c3\u00bc<\/s>",
+                "StundeNeu": "3",
+                "KlasseNeu": "<s>7a<\/s>",
+                "FachNeu": "De",
+                "RaumNeu": "<s>R7a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Ma",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "05c",
-                "FachNeu": "E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05c",
-                "FachNeu": "Swi",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Le",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05c",
-                "FachNeu": "Swi",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05c",
-                "FachNeu": "Swi",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Pm",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "06b",
-                "FachNeu": "G statt Geo",
-                "RaumNeu": "C02",
-                "AnmerkungNeu": "statt Do 8. + 9. "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "Bre",
-                "StundeNeu": "5",
-                "KlasseNeu": "07a 07b 07c",
-                "FachNeu": "Phil",
-                "RaumNeu": "B04",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "Bru",
-                "StundeNeu": "6",
-                "KlasseNeu": "07a 07b 07c",
-                "FachNeu": "Phil",
-                "RaumNeu": "B04",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "Dkl",
-                "StundeNeu": "1",
-                "KlasseNeu": "07b",
-                "FachNeu": "D",
-                "RaumNeu": "B07",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "Hk",
-                "StundeNeu": "2",
-                "KlasseNeu": "07b",
-                "FachNeu": "D",
-                "RaumNeu": "B07",
-                "AnmerkungNeu": "Aufg. vorhanden "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Maz",
-                "VertretungNeu": "Maz",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "07c",
-                "FachNeu": "M",
-                "RaumNeu": "Comp2",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Bs",
-                "StundeNeu": "5",
-                "KlasseNeu": "08a",
-                "FachNeu": "Bio",
-                "RaumNeu": "Bio3",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Ste",
-                "StundeNeu": "6",
-                "KlasseNeu": "08a",
-                "FachNeu": "Bio",
-                "RaumNeu": "Bio3",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pp",
-                "VertretungNeu": "Bm",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "08b",
-                "FachNeu": "Mu statt G",
-                "RaumNeu": "D03",
-                "AnmerkungNeu": "statt 8. + 9. "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "",
-                "StundeNeu": "8. + 9.",
-                "KlasseNeu": "08b",
+                "LehrerNeu": "<s>Bor<\/s>",
+                "VertretungNeu": "<s>Bor<\/s>",
+                "StundeNeu": "3",
+                "KlasseNeu": "<s>1a<\/s>",
                 "FachNeu": "Mu",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus, vorg. auf 1. + 2."
+                "RaumNeu": "<s>R1a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "Le",
+                "LehrerNeu": "<s>A.M\u00c3\u00bcl<\/s>",
+                "VertretungNeu": "<s>A.M\u00c3\u00bcl<\/s>",
+                "StundeNeu": "3",
+                "KlasseNeu": "<s>1a<\/s>",
+                "FachNeu": "MuD",
+                "RaumNeu": "<s>R1a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Ki<\/s>?Schu",
+                "VertretungNeu": "<s>Ki<\/s>?Schu",
+                "StundeNeu": "3",
+                "KlasseNeu": "8b",
+                "FachNeu": "Ma",
+                "RaumNeu": "R8b",
+                "AnmerkungNeu": "Vertretung (B)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Vie<\/s>",
+                "VertretungNeu": "<s>Vie<\/s>",
+                "StundeNeu": "3",
+                "KlasseNeu": "<s>4a<\/s>",
+                "FachNeu": "En",
+                "RaumNeu": "<s>R4a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#0080FF"
+                },
+                "LehrerNeu": "<s>Js<\/s>?Wil",
+                "VertretungNeu": "<s>Js<\/s>?Wil",
+                "StundeNeu": "3\/\/4",
+                "KlasseNeu": "&nbsp;",
+                "FachNeu": "&nbsp;",
+                "RaumNeu": "Hof2",
+                "AnmerkungNeu": "Pausenaufsicht"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Wg<\/s>",
+                "VertretungNeu": "<s>Wg<\/s>",
+                "StundeNeu": "3\/\/4",
+                "KlasseNeu": "&nbsp;",
+                "FachNeu": "&nbsp;",
+                "RaumNeu": "Sportpl.",
+                "AnmerkungNeu": "<strike>f\u00c3\u00a4llt aus<\/strike>"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": ""
+                },
+                "LehrerNeu": "El",
+                "VertretungNeu": "El",
+                "StundeNeu": "3\/\/4",
+                "KlasseNeu": "&nbsp;",
+                "FachNeu": "&nbsp;",
+                "RaumNeu": "Cafeteria",
+                "AnmerkungNeu": "Trotz Absenz"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#0080FF"
+                },
+                "LehrerNeu": "<s>Sm<\/s>?Be",
+                "VertretungNeu": "<s>Sm<\/s>?Be",
+                "StundeNeu": "3\/\/4",
+                "KlasseNeu": "&nbsp;",
+                "FachNeu": "&nbsp;",
+                "RaumNeu": "Pavillion",
+                "AnmerkungNeu": "Pausenaufsicht"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Sz<\/s>",
+                "VertretungNeu": "<s>Sz<\/s>",
+                "StundeNeu": "4",
+                "KlasseNeu": "<s>10a<\/s>",
+                "FachNeu": "En",
+                "RaumNeu": "<s>R10a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Pe<\/s>",
+                "VertretungNeu": "<s>Pe<\/s>",
+                "StundeNeu": "4",
+                "KlasseNeu": "<s>9a, 9b, 9c<\/s>",
+                "FachNeu": "MaMo",
+                "RaumNeu": "<s>R9a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Re<\/s>",
+                "VertretungNeu": "<s>Re<\/s>",
+                "StundeNeu": "4",
+                "KlasseNeu": "<s>9a, 9b, 9c<\/s>",
+                "FachNeu": "MaMo",
+                "RaumNeu": "<s>R9c<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Schu<\/s>",
+                "VertretungNeu": "<s>Schu<\/s>",
+                "StundeNeu": "4",
+                "KlasseNeu": "<s>9a<\/s>",
+                "FachNeu": "MaF",
+                "RaumNeu": "<s>R9a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Ga<\/s>?Re",
+                "VertretungNeu": "<s>Ga<\/s>?Re",
+                "StundeNeu": "4",
+                "KlasseNeu": "7c",
+                "FachNeu": "NaWi",
+                "RaumNeu": "R7c",
+                "AnmerkungNeu": "Vertretung (S)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Mat<\/s>?Pu",
+                "VertretungNeu": "<s>Mat<\/s>?Pu",
+                "StundeNeu": "4",
+                "KlasseNeu": "5b",
+                "FachNeu": "Ma",
+                "RaumNeu": "R5b",
+                "AnmerkungNeu": "Vertretung (B)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Wg<\/s>?Bor",
+                "VertretungNeu": "<s>Wg<\/s>?Bor",
+                "StundeNeu": "4",
+                "KlasseNeu": "5c",
+                "FachNeu": "Ma",
+                "RaumNeu": "R5c",
+                "AnmerkungNeu": "Vertretung (S)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Sno<\/s>?Weh",
+                "VertretungNeu": "<s>Sno<\/s>?Weh",
+                "StundeNeu": "4",
+                "KlasseNeu": "6c",
+                "FachNeu": "DeD",
+                "RaumNeu": "R6c",
+                "AnmerkungNeu": "Vertretung (B)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": ""
+                },
+                "LehrerNeu": "Gb",
+                "VertretungNeu": "Gb",
+                "StundeNeu": "4",
+                "KlasseNeu": "6a",
+                "FachNeu": "<s>Spo<\/s>?En",
+                "RaumNeu": "<s>Th2<\/s>?R6a",
+                "AnmerkungNeu": "Raum\u00e4nder."
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>A.M\u00c3\u00bcl<\/s>",
+                "VertretungNeu": "<s>A.M\u00c3\u00bcl<\/s>",
+                "StundeNeu": "4",
+                "KlasseNeu": "<s>3b<\/s>",
+                "FachNeu": "MaD",
+                "RaumNeu": "<s>R3b<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Bor<\/s>",
+                "VertretungNeu": "<s>Bor<\/s>",
+                "StundeNeu": "4",
+                "KlasseNeu": "<s>4a<\/s>",
+                "FachNeu": "De",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#0080FF"
+                },
+                "LehrerNeu": "<s>Wen<\/s>?Sie",
+                "VertretungNeu": "<s>Wen<\/s>?Sie",
+                "StundeNeu": "4\/\/5",
+                "KlasseNeu": "&nbsp;",
+                "FachNeu": "&nbsp;",
+                "RaumNeu": "Pavillion",
+                "AnmerkungNeu": "Pausenaufsicht"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Weh<\/s>",
+                "VertretungNeu": "<s>Weh<\/s>",
                 "StundeNeu": "5",
-                "KlasseNeu": "08c",
-                "FachNeu": "D",
-                "RaumNeu": "B03",
-                "AnmerkungNeu": ""
+                "KlasseNeu": "<s>9c<\/s>",
+                "FachNeu": "WK",
+                "RaumNeu": "<s>R9c<\/s>",
+                "AnmerkungNeu": "Freisetzung"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "Hom",
+                "LehrerNeu": "<s>Schu<\/s>",
+                "VertretungNeu": "<s>Schu<\/s>",
+                "StundeNeu": "5",
+                "KlasseNeu": "<s>9a<\/s>",
+                "FachNeu": "EnF",
+                "RaumNeu": "<s>R9a<\/s>",
+                "AnmerkungNeu": "Freisetzung"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Ga<\/s>",
+                "VertretungNeu": "<s>Ga<\/s>",
+                "StundeNeu": "5",
+                "KlasseNeu": "5c",
+                "FachNeu": "<s>DeD<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Mat<\/s>",
+                "VertretungNeu": "<s>Mat<\/s>",
+                "StundeNeu": "5",
+                "KlasseNeu": "5b",
+                "FachNeu": "<s>NaWi<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Sno<\/s>",
+                "VertretungNeu": "<s>Sno<\/s>",
+                "StundeNeu": "5",
+                "KlasseNeu": "5c",
+                "FachNeu": "<s>De<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Fm<\/s>?Bor",
+                "VertretungNeu": "<s>Fm<\/s>?Bor",
+                "StundeNeu": "5",
+                "KlasseNeu": "4a",
+                "FachNeu": "DeF",
+                "RaumNeu": "R4a",
+                "AnmerkungNeu": "Vertretung (B)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FF8080"
+                },
+                "LehrerNeu": "<s>Sm<\/s>?Re",
+                "VertretungNeu": "<s>Sm<\/s>?Re",
+                "StundeNeu": "5",
+                "KlasseNeu": "7b",
+                "FachNeu": "MaD",
+                "RaumNeu": "R7b",
+                "AnmerkungNeu": "Vertretung (B)"
+            },
+            {
+                "Style": {
+                    "fontsize": 0,
+                    "fontcolor": "#000000",
+                    "backgroundcolor": "#FFFF80"
+                },
+                "LehrerNeu": "<s>Ga<\/s>",
+                "VertretungNeu": "<s>Ga<\/s>",
                 "StundeNeu": "6",
-                "KlasseNeu": "08c",
-                "FachNeu": "Bio statt D",
-                "RaumNeu": "Bio2",
-                "AnmerkungNeu": "statt 9. "
+                "KlasseNeu": "5c",
+                "FachNeu": "<s>DeD<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Hom",
-                "VertretungNeu": "",
-                "StundeNeu": "9",
-                "KlasseNeu": "08c",
-                "FachNeu": "Bio",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus, vorg. auf 6."
+                "LehrerNeu": "<s>Sno<\/s>",
+                "VertretungNeu": "<s>Sno<\/s>",
+                "StundeNeu": "6",
+                "KlasseNeu": "5c",
+                "FachNeu": "<s>De<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "09c",
-                "FachNeu": "Geo",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. vorhanden"
+                "LehrerNeu": "<s>Sz<\/s>",
+                "VertretungNeu": "<s>Sz<\/s>",
+                "StundeNeu": "6",
+                "KlasseNeu": "5b",
+                "FachNeu": "<s>De<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "Q1a Q1b Q1c",
-                "FachNeu": "Phil",
-                "RaumNeu": "C04",
-                "AnmerkungNeu": "Stillarbeit Aufg. Ft"
+                "LehrerNeu": "<s>Fm<\/s>",
+                "VertretungNeu": "<s>Fm<\/s>",
+                "StundeNeu": "6",
+                "KlasseNeu": "5b",
+                "FachNeu": "<s>DeF<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "Q1a Q1b Q1c",
-                "FachNeu": "Rel",
-                "RaumNeu": "C12",
-                "AnmerkungNeu": "Stillarbeit Aufg. Sz"
+                "LehrerNeu": "<s>Wen<\/s>",
+                "VertretungNeu": "<s>Wen<\/s>",
+                "StundeNeu": "6",
+                "KlasseNeu": "8a, 8b, 8c",
+                "FachNeu": "<s>WPU8<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
             },
             {
                 "Style": {
                     "fontsize": 0,
                     "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
+                    "backgroundcolor": "#FFFF80"
                 },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "Eb",
-                "FachNeu": "E",
-                "RaumNeu": "D02",
-                "AnmerkungNeu": "Stillarbeit Aufg. vorhanden"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "Ec",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. Rm"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "8",
-                "KlasseNeu": "Ec",
-                "FachNeu": "Geo",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. Gh"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ma",
-                "VertretungNeu": "Ma",
-                "StundeNeu": "FrÃ¼h",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "FrÃ¼h",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bre",
-                "VertretungNeu": "Bre",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bs",
-                "VertretungNeu": "Bs",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Hk",
-                "VertretungNeu": "Hk",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pm",
-                "VertretungNeu": "Pm",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Wf",
-                "VertretungNeu": "Wf",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Hom",
-                "VertretungNeu": "Hom",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Maz",
-                "VertretungNeu": "Maz",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rei",
-                "VertretungNeu": "Rei",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ste",
-                "VertretungNeu": "Ste",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ts",
-                "VertretungNeu": "Ts",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Maz",
-                "VertretungNeu": "Maz",
-                "StundeNeu": "MP 2.1",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "Bm",
-                "StundeNeu": "MP 2.2",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            }
-        ],
-        "PlanZusatz": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#EF7E83"
-                },
-                "Inhalt": "Q2c (Le): MÃ¼llsammeldienst SchulgelÃ¤nde (26.02.18 - 02.03.18)"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#2D8ACA"
-                },
-                "Inhalt": "5. Klassen: Klassenfahrt (26.02.18 - 02.03.18)"
-            }
-        ]
-    },
-    {
-        "Titel": {
-            "Inhalt": "Vertretungsplan fÃ¼r Donnerstag, den 01.03.2018",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "UnterTitel2": {
-            "Inhalt": "Immanuel-Kant-Schule, D-24534 NeumÃ¼nster",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Stand": {
-            "Inhalt": "Stand: 27.02.2018 07:05",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Abwesenheiten": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Cs",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Gh",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Ki  ab 5.",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Ni 5. bis 6.",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Pp",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Rk",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Rm",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Sz",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05a",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05b",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05c",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Hom (n4. Stunde)",
-                "Anmerkung": ""
-            }
-        ],
-        "Vertretungen": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Me",
-                "VertretungNeu": "Me",
-                "StundeNeu": "9. + 10.",
-                "KlasseNeu": "Q2a",
-                "FachNeu": "Inf",
-                "RaumNeu": "Comp1",
-                "AnmerkungNeu": "Klausur "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pe",
-                "VertretungNeu": "Pe",
-                "StundeNeu": "9. + 10.",
-                "KlasseNeu": "Q2a Q2b Q2c",
-                "FachNeu": "Spa",
-                "RaumNeu": "C15",
-                "AnmerkungNeu": "geÃ¤nd. Raum! Klausur"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pp",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "Q2b",
-                "FachNeu": "WP",
-                "RaumNeu": "C13",
-                "AnmerkungNeu": "Stillarbeit Aufg. Pp"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Q2c",
-                "FachNeu": "Geo",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. bei Dkl abholen"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Bru",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05a",
-                "FachNeu": "Sp",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Me",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "05a",
-                "FachNeu": "M",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "5. + 6.",
-                "KlasseNeu": "05a",
-                "FachNeu": "E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Grimme",
-                "VertretungNeu": "",
+                "LehrerNeu": "<s>Wen<\/s>",
+                "VertretungNeu": "<s>Wen<\/s>",
                 "StundeNeu": "7",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Inst(Holz)",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Steffen",
-                "VertretungNeu": "",
-                "StundeNeu": "7",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Inst(Blech)",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Grimme",
-                "VertretungNeu": "",
-                "StundeNeu": "8",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Inst(Holz)",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Steffen",
-                "VertretungNeu": "",
-                "StundeNeu": "8",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Inst(Blech)",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "",
-                "StundeNeu": "1",
-                "KlasseNeu": "05b",
-                "FachNeu": "KL",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "",
-                "StundeNeu": "2",
-                "KlasseNeu": "05b",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "JÃ¶",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "05b",
-                "FachNeu": "E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "",
-                "StundeNeu": "5. + 6.",
-                "KlasseNeu": "05b",
-                "FachNeu": "Geo",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05c",
-                "FachNeu": "Mu",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ma",
-                "VertretungNeu": "",
-                "StundeNeu": "3",
-                "KlasseNeu": "05c",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ste",
-                "VertretungNeu": "",
-                "StundeNeu": "3",
-                "KlasseNeu": "05c",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ma",
-                "VertretungNeu": "",
-                "StundeNeu": "4",
-                "KlasseNeu": "05c",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ste",
-                "VertretungNeu": "",
-                "StundeNeu": "4",
-                "KlasseNeu": "05c",
-                "FachNeu": "D E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Dkl",
-                "VertretungNeu": "",
-                "StundeNeu": "5. + 6.",
-                "KlasseNeu": "05c",
-                "FachNeu": "M",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "Ste",
-                "StundeNeu": "3",
-                "KlasseNeu": "06a 06b 06c 06d",
-                "FachNeu": "L",
-                "RaumNeu": "C02",
-                "AnmerkungNeu": "Aufg. Rm "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "Me",
-                "StundeNeu": "4",
-                "KlasseNeu": "06a 06b 06c 06d",
-                "FachNeu": "L",
-                "RaumNeu": "C02",
-                "AnmerkungNeu": "Aufg. Rm "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Pm",
-                "VertretungNeu": "",
-                "StundeNeu": "8",
-                "KlasseNeu": "06b",
-                "FachNeu": "G",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus, vorg. auf Mi 4."
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Pm",
-                "VertretungNeu": "",
-                "StundeNeu": "9",
-                "KlasseNeu": "06b",
-                "FachNeu": "G",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus, vorg. auf Mi 3."
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "Bru",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "07c",
-                "FachNeu": "Sp",
-                "RaumNeu": "TurnhA",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pe",
-                "VertretungNeu": "Pe",
-                "StundeNeu": "5. + 6.",
-                "KlasseNeu": "08b",
-                "FachNeu": "Ch",
-                "RaumNeu": "ChLS",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "Dkl",
-                "StundeNeu": "5",
-                "KlasseNeu": "09a 09c",
-                "FachNeu": "F L",
-                "RaumNeu": "B11",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pp",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "09b",
-                "FachNeu": "WP",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. Pp"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pp",
-                "VertretungNeu": "Rb",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Ea",
-                "FachNeu": "WP",
-                "RaumNeu": "C05",
-                "AnmerkungNeu": "Zusammenlegung "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "Wf",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "Ea Eb Ec",
-                "FachNeu": "Ku",
-                "RaumNeu": "Ku1 Medien",
-                "AnmerkungNeu": "MitfÃ¼hrung Aufg. Cs"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Eb",
-                "FachNeu": "Geo",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. bei Dkl abholen"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "",
-                "StundeNeu": "8",
-                "KlasseNeu": "Ec",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Sa",
-                "VertretungNeu": "Sa",
-                "StundeNeu": "FrÃ¼h",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "FrÃ¼h",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bru",
-                "VertretungNeu": "Bru",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "Gr",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ks",
-                "VertretungNeu": "Ks",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ma",
-                "VertretungNeu": "Ma",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ni",
-                "VertretungNeu": "Ni",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "Ft",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Hom",
-                "VertretungNeu": "Hom",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Maz",
-                "VertretungNeu": "Maz",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "Pm",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ts",
-                "VertretungNeu": "Ts",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "",
-                "VertretungNeu": "Kr",
-                "StundeNeu": "5",
-                "KlasseNeu": "",
-                "FachNeu": "Ch statt Ausb",
-                "RaumNeu": "ChÃœb",
-                "AnmerkungNeu": "Lehrobe mit E-Jahrgang Chemie "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ho",
-                "VertretungNeu": "Ho",
-                "StundeNeu": "MP 2.1",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pe",
-                "VertretungNeu": "Pe",
-                "StundeNeu": "MP 2.2",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            }
-        ],
-        "PlanZusatz": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Inhalt": "Q2c (Le): MÃ¼llsammeldienst SchulgelÃ¤nde (26.02.18 - 02.03.18)"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Inhalt": "5. Klassen: Klassenfahrt (26.02.18 - 02.03.18)"
-            }
-        ]
-    },
-    {
-        "Titel": {
-            "Inhalt": "Vertretungsplan fÃ¼r Freitag, den 02.03.2018",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "UnterTitel2": {
-            "Inhalt": "Immanuel-Kant-Schule, D-24534 NeumÃ¼nster",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Stand": {
-            "Inhalt": "Stand: 27.02.2018 07:05",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Abwesenheiten": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Cs",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Gh",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Pp",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Rb  bis 2.",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Rk",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Rm",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Sz",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05a",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05b",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "05c",
-                "Anmerkung": ""
-            }
-        ],
-        "Vertretungen": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Dw",
-                "VertretungNeu": "",
-                "StundeNeu": "1",
-                "KlasseNeu": "Q2a",
-                "FachNeu": "M",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus, vorg. auf Mo 5."
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rad",
-                "VertretungNeu": "Rad",
-                "StundeNeu": "6",
-                "KlasseNeu": "Ea Eb Ec Q1a Q1b Q1c Q2b Q2c",
-                "FachNeu": "Rus",
-                "RaumNeu": "C12",
-                "AnmerkungNeu": "Klausur 6. + 7. Std "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pp",
-                "VertretungNeu": "",
-                "StundeNeu": "2",
-                "KlasseNeu": "Q2b",
-                "FachNeu": "WP",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. Pp"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "Q2c",
-                "FachNeu": "Geo",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. Gh"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "Q2c",
-                "FachNeu": "Bio",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gh",
-                "VertretungNeu": "Tg",
-                "StundeNeu": "1",
-                "KlasseNeu": "Feuerwehr",
-                "FachNeu": "Feuerwehr",
-                "RaumNeu": "",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05a",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Wf",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "05a",
-                "FachNeu": "Ku",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "And",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Mu",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Mu",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Nm",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Mu",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "And",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Mu",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Mu",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Nm",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05a 05b",
-                "FachNeu": "Mu",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "And",
-                "VertretungNeu": "And",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "06a 06b",
-                "FachNeu": "Inst(FlÃ¶t)",
-                "RaumNeu": "D04",
-                "AnmerkungNeu": "nur Klasse 06a 06b "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Rm",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05b",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ba",
-                "VertretungNeu": "",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "05b",
-                "FachNeu": "M",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ma",
-                "VertretungNeu": "",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05c",
-                "FachNeu": "Geo",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ma",
-                "VertretungNeu": "",
-                "StundeNeu": "3",
-                "KlasseNeu": "05c",
-                "FachNeu": "E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ste",
-                "VertretungNeu": "",
-                "StundeNeu": "4",
-                "KlasseNeu": "05c",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Ste",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "05c",
-                "FachNeu": "KL",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Dkl",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "05c",
-                "FachNeu": "M",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "Ho",
-                "StundeNeu": "3",
-                "KlasseNeu": "07a",
-                "FachNeu": "D",
-                "RaumNeu": "B04",
-                "AnmerkungNeu": "Aufg. Sz "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Sz",
-                "VertretungNeu": "Ste",
-                "StundeNeu": "4",
-                "KlasseNeu": "07a",
-                "FachNeu": "D",
-                "RaumNeu": "B04",
-                "AnmerkungNeu": "Aufg. Sz "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Wi",
-                "StundeNeu": "3",
-                "KlasseNeu": "08b",
-                "FachNeu": "Geo",
-                "RaumNeu": "Geo2",
-                "AnmerkungNeu": "Aufg. Rk "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Ma",
-                "StundeNeu": "4",
-                "KlasseNeu": "08b",
-                "FachNeu": "Geo",
-                "RaumNeu": "Geo2",
-                "AnmerkungNeu": "Aufg. Rk "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Wi",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "08c",
-                "FachNeu": "F",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus, vorg. auf Di 2."
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pp",
-                "VertretungNeu": "Ba",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "09c",
-                "FachNeu": "Ph statt WP",
-                "RaumNeu": "PhÃœ1",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pp",
-                "VertretungNeu": "Ste",
-                "StundeNeu": "5",
-                "KlasseNeu": "09c",
-                "FachNeu": "Bio statt D",
-                "RaumNeu": "Bio3",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Pp",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "09c",
-                "FachNeu": "D",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rad",
-                "VertretungNeu": "Rad",
-                "StundeNeu": "FrÃ¼h",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "FrÃ¼h",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bre",
-                "VertretungNeu": "Bre",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bru",
-                "VertretungNeu": "Bru",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "Ft",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ts",
-                "VertretungNeu": "Ts",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Wi",
-                "VertretungNeu": "Wi",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Bm",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Jd",
-                "VertretungNeu": "Jd",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pe",
-                "VertretungNeu": "Pe",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ste",
-                "VertretungNeu": "Ste",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Wf",
-                "VertretungNeu": "Wf",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bre",
-                "VertretungNeu": "Bre",
-                "StundeNeu": "MP 2.1",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            }
-        ],
-        "PlanZusatz": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Inhalt": "Q2c (Le): MÃ¼llsammeldienst SchulgelÃ¤nde (26.02.18 - 02.03.18)"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Inhalt": "5. Klassen: Klassenfahrt (26.02.18 - 02.03.18)"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Inhalt": "Die FuÃŸball-AG fÃ¤llt heute leider aus!!!"
-            }
-        ]
-    },
-    {
-        "Titel": {
-            "Inhalt": "Vertretungsplan fÃ¼r Montag, den 05.03.2018",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "UnterTitel2": {
-            "Inhalt": "Immanuel-Kant-Schule, D-24534 NeumÃ¼nster",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Stand": {
-            "Inhalt": "Stand: 27.02.2018 07:05",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Abwesenheiten": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Cs",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Sa (1. Stunde)",
-                "Anmerkung": ""
-            }
-        ],
-        "Vertretungen": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "Wi",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "DaZ",
-                "FachNeu": "DaZ",
-                "RaumNeu": "B01",
-                "AnmerkungNeu": "Zusammenlegung "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bs",
-                "VertretungNeu": "Bs",
-                "StundeNeu": "7",
-                "KlasseNeu": "Q2a Q2b",
-                "FachNeu": "Bio",
-                "RaumNeu": "Bio1",
-                "AnmerkungNeu": "Klausur "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Lz",
-                "VertretungNeu": "Lz",
-                "StundeNeu": "7",
-                "KlasseNeu": "Q2a Q2b",
-                "FachNeu": "Bio",
-                "RaumNeu": "Bio2",
-                "AnmerkungNeu": "Klausur "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bs",
-                "VertretungNeu": "Bs",
-                "StundeNeu": "8",
-                "KlasseNeu": "Q2a Q2b",
-                "FachNeu": "Bio",
-                "RaumNeu": "Bio1",
-                "AnmerkungNeu": "Klausur "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Lz",
-                "VertretungNeu": "Lz",
-                "StundeNeu": "8",
-                "KlasseNeu": "Q2a Q2b",
-                "FachNeu": "Bio",
-                "RaumNeu": "Bio2",
-                "AnmerkungNeu": "Klausur "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Rk",
-                "StundeNeu": "7. + 8.",
-                "KlasseNeu": "Q2c",
-                "FachNeu": "Bio",
-                "RaumNeu": "Bio3",
-                "AnmerkungNeu": "Klausur "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "Bre",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "05c",
-                "FachNeu": "Ku",
-                "RaumNeu": "Ku 2 Zeichnen",
-                "AnmerkungNeu": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "Bre",
-                "StundeNeu": "6",
-                "KlasseNeu": "05c",
-                "FachNeu": "Sp",
-                "RaumNeu": "TurnhC",
-                "AnmerkungNeu": "MitfÃ¼hrung (05b) "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Sa",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "Q1a",
-                "FachNeu": "E",
-                "RaumNeu": "C04",
-                "AnmerkungNeu": "Stillarbeit Aufg. Sa"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Sa",
-                "StundeNeu": "1. + 2.",
-                "KlasseNeu": "Ea",
-                "FachNeu": "E statt Geo",
-                "RaumNeu": "C15",
-                "AnmerkungNeu": "geÃ¤nd. Raum! Klausur"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pe",
-                "VertretungNeu": "Pe",
-                "StundeNeu": "FrÃ¼h",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "FrÃ¼h",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ks",
-                "VertretungNeu": "Ks",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ni",
-                "VertretungNeu": "Ni",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Pm",
-                "VertretungNeu": "Pm",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rk",
-                "VertretungNeu": "Rk",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "StÃ¶",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bs",
-                "VertretungNeu": "Bs",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "Ft",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gr",
-                "VertretungNeu": "Gr",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Hh",
-                "VertretungNeu": "Hh",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Cs",
-                "VertretungNeu": "Lz",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rb",
-                "VertretungNeu": "Rb",
-                "StundeNeu": "MP 2.1",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ho",
-                "VertretungNeu": "Ho",
-                "StundeNeu": "MP 2.2",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            }
-        ],
-        "PlanZusatz": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Inhalt": "5a (Gh): MÃ¼llsammeldienst SchulgelÃ¤nde (05.03.18 - 09.03.18)"
-            }
-        ]
-    },
-    {
-        "Titel": {
-            "Inhalt": "Vertretungsplan fÃ¼r Dienstag, den 06.03.2018",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "UnterTitel2": {
-            "Inhalt": "Immanuel-Kant-Schule, D-24534 NeumÃ¼nster",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Stand": {
-            "Inhalt": "Stand: 27.02.2018 07:05",
-            "Style": {
-                "fontsize": 0,
-                "fontcolor": "#000000",
-                "backgroundcolor": "transparent"
-            }
-        },
-        "Abwesenheiten": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Ba  bis 6.",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Cs",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Ea  bis 7.",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "C03 3. bis 6.",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Hk (n2. Stunde)",
-                "Anmerkung": ""
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Kuerzel": "Tg (4. Stunde)",
-                "Anmerkung": ""
-            }
-        ],
-        "Vertretungen": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ts",
-                "VertretungNeu": "Ts",
-                "StundeNeu": "3. + 4.",
-                "KlasseNeu": "Q2c",
-                "FachNeu": "WP",
-                "RaumNeu": "C14",
-                "AnmerkungNeu": "Klausur "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ft",
-                "VertretungNeu": "Ft",
-                "StundeNeu": "5",
-                "KlasseNeu": "06a",
-                "FachNeu": "D",
-                "RaumNeu": "C12",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Dw",
-                "VertretungNeu": "Dw",
-                "StundeNeu": "6",
-                "KlasseNeu": "06a",
-                "FachNeu": "M",
-                "RaumNeu": "C04",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ba",
-                "VertretungNeu": "Pe",
-                "StundeNeu": "3",
-                "KlasseNeu": "06d",
-                "FachNeu": "M statt Ph",
-                "RaumNeu": "C05",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ba",
-                "VertretungNeu": "Tg",
-                "StundeNeu": "4",
-                "KlasseNeu": "06d",
-                "FachNeu": "G statt Ph",
-                "RaumNeu": "C05",
-                "AnmerkungNeu": "geÃ¤nd. Raum! "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ba",
-                "VertretungNeu": "",
-                "StundeNeu": "6",
-                "KlasseNeu": "09c",
-                "FachNeu": "M",
-                "RaumNeu": "",
-                "AnmerkungNeu": "Stillarbeit Aufg. von Ba"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Sa",
-                "VertretungNeu": "",
-                "StundeNeu": "5",
-                "KlasseNeu": "Ea",
-                "FachNeu": "E",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "#F6ED7E"
-                },
-                "ArtNeu": "Bi",
-                "VertretungNeu": "",
-                "StundeNeu": "7",
-                "KlasseNeu": "Ea",
-                "FachNeu": "G",
-                "RaumNeu": "",
-                "AnmerkungNeu": "fÃ¤llt aus "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Jd",
-                "VertretungNeu": "Jd",
-                "StundeNeu": "1",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "F",
-                "RaumNeu": "D01",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rad",
-                "VertretungNeu": "Rad",
-                "StundeNeu": "1",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "L",
-                "RaumNeu": "C04",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Jd",
-                "VertretungNeu": "Jd",
-                "StundeNeu": "2",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "F",
-                "RaumNeu": "D01",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rad",
-                "VertretungNeu": "Rad",
-                "StundeNeu": "2",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "L",
-                "RaumNeu": "C04",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gn",
-                "VertretungNeu": "Gn",
-                "StundeNeu": "3",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "Sp",
-                "RaumNeu": "TurnhA",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ho",
-                "VertretungNeu": "Ho",
-                "StundeNeu": "3",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "Sp",
-                "RaumNeu": "TurnhB",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Me",
-                "VertretungNeu": "Me",
-                "StundeNeu": "3",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "Sp",
-                "RaumNeu": "TurnhC",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gn",
-                "VertretungNeu": "Gn",
-                "StundeNeu": "4",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "Sp",
-                "RaumNeu": "TurnhA",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ho",
-                "VertretungNeu": "Ho",
-                "StundeNeu": "4",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "Sp",
-                "RaumNeu": "TurnhB",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Me",
-                "VertretungNeu": "Me",
-                "StundeNeu": "4",
-                "KlasseNeu": "Eb Ec",
-                "FachNeu": "Sp",
-                "RaumNeu": "TurnhC",
-                "AnmerkungNeu": "nur Klasse Eb Ec "
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rad",
-                "VertretungNeu": "Rad",
-                "StundeNeu": "FrÃ¼h",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "FrÃ¼h",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Hk",
-                "VertretungNeu": "Hk",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Ho",
-                "VertretungNeu": "Ho",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Jd",
-                "VertretungNeu": "Jd",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "StÃ¶",
-                "VertretungNeu": "StÃ¶",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Wf",
-                "VertretungNeu": "Wf",
-                "StundeNeu": "1.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bm",
-                "VertretungNeu": "Bm",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "B-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Bs",
-                "VertretungNeu": "Bs",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Kant",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Kr",
-                "VertretungNeu": "Kr",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Mensa",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Rei",
-                "VertretungNeu": "Rei",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "Sportplatz",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Sa",
-                "VertretungNeu": "Sa",
-                "StundeNeu": "2.P.",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "C-Trakt",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Gn",
-                "VertretungNeu": "Gn",
-                "StundeNeu": "MP 2.1",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "ArtNeu": "Sh",
-                "VertretungNeu": "Sh",
-                "StundeNeu": "MP 2.2",
-                "KlasseNeu": "",
-                "FachNeu": "",
-                "RaumNeu": "MiP",
-                "AnmerkungNeu": "Aufsicht"
-            }
-        ],
-        "PlanZusatz": [
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Inhalt": "5a (Gh): MÃ¼llsammeldienst SchulgelÃ¤nde (05.03.18 - 09.03.18)"
-            },
-            {
-                "Style": {
-                    "fontsize": 0,
-                    "fontcolor": "#000000",
-                    "backgroundcolor": "transparent"
-                },
-                "Inhalt": "Russomobil (3. - 6. Std.)"
+                "KlasseNeu": "8a, 8b, 8c",
+                "FachNeu": "<s>WPU8<\/s>",
+                "RaumNeu": "---",
+                "AnmerkungNeu": "f\u00e4llt aus"
             }
         ]
     }
-]
+}
